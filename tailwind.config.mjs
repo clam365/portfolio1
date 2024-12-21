@@ -10,6 +10,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'spotify': '#3cda64',
+        'slight-black': '#141517'
       },
     },
   },
