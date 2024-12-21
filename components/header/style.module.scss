@@ -3,7 +3,7 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 20px 40px;
 
   .background {
     background-color: black;
@@ -20,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
     position: relative;
 
@@ -66,7 +66,7 @@
 
       .burger {
         width: 30px;
-        height: 2px;
+        height: 2.2px;
         position: relative;
         pointer-events: none;
         transition: transform 0.3s ease-in-out;
@@ -74,7 +74,7 @@
         &::after,
         &::before {
           content: "";
-          height: 2px;
+          height: 2.2px;
           width: 100%;
           background-color: black;
           position: absolute;
@@ -109,7 +109,7 @@
 
 @media only screen and (min-width: 600px) {
   .header {
-    padding: 20px;
+    padding: 20px 40px;
 
     .bar {
       font-size: 15px;

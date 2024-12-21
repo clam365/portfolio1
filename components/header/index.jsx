@@ -15,7 +15,7 @@ export default function Header() {
             <div className={styles.bar}>
                 <Link href="/">
                     <Image src="/choso2.png" alt="logo" width={87} height={48}
-                           className="rounded-lg mb-4 items-center"/>
+                           className="rounded-lg  items-center"/>
                 </Link>
                 <div
                     onClick={() => setIsActive(!isActive)}
