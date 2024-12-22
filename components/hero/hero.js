@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
+import "./hero.css"
 
 export default function Hero() {
     const fadeIn = {
@@ -34,18 +35,18 @@ export default function Hero() {
                 animate="show"
                 variants={fadeIn}
             >
-                <div className="flex gap-x-2">
+                <div className="flex gap-x-2" id={"tags"}>
                     <p className="border border-gray-300 rounded-full px-2 py-1 text-md inline-block text-slight-black">Front-End</p>
                     <p className="border border-gray-300 rounded-full px-4 py-1 text-md inline-block text-slight-black">UI/UX</p>
-                    <p className="border border-gray-300 rounded-full px-4 py-1 text-md inline-block text-slight-black">Motion</p>
+                    <p className="border border-gray-300 rounded-full px-4 py-1 text-md inline-block text-slight-black">Agile</p>
                     <p className="border border-gray-300 rounded-full px-4 py-1 text-md inline-block text-slight-black">Product Design</p>
                 </div>
-                <hr className="my-3 mt-5" />
+                <hr className="my-3 mt-5 border" />
                 <div className="flex justify-between items-center">
                     <p className="text-gray-400 text-xl">Based in Boston, MA</p>
                     <Link href={"/#craft"}>
                         <p className="text-slight-black text-xl flex items-center">
-                            See selected craft <span><ArrowDown className="ml-1 text-spotify" /></span>
+                            See Selected Craft <span><ArrowDown className="ml-1 text-spotify" /></span>
                         </p>
                     </Link>
                 </div>
