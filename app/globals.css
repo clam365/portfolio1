@@ -11,7 +11,7 @@ html{
 }
 
 html.dark {
-  background-color: #141517;
+  background-color: #080808;
   font-family: 'Manrope', sans-serif;
 }
 
@@ -27,11 +27,30 @@ html.dark h6 {
 
 html.dark div
 {
-  background-color: #141517;
+  background-color: #080808;
 }
 
 html.dark span:hover {
   color: #FAFAFA;
+}
+
+html.dark #footer1 {
+  background-color: #131313;
+}
+
+html.dark #based {
+  color: #808080;
+}
+
+html.dark #tags {
+  border-color: #2b2b2b;
+}
+
+html.dark #borgor {
+  &::after,
+  &::before {
+    background-color: white;
+  }
 }
 
 

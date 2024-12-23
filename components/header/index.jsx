@@ -1,5 +1,6 @@
 'use client';
 import styles from './style.module.scss';
+import "@/app/globals.css"
 import Image from "next/image"
 import Link from 'next/link';
 import { useState } from 'react';
@@ -24,7 +25,7 @@ export default function Header() {
                         <DarkModeButton/>
                     </div>
                     <div onClick={() => setIsActive(!isActive)} className={styles.el}>
-                        <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
+                        <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`} id={"borgor"}></div>
                     </div>
                 </div>
 

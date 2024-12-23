@@ -11,10 +11,22 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'spotify': '#3cda64',
-        'slight-black': '#141517'
+        'slight-black': '#141517',
+        'newGray': '#808080',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities(
+          {
+            '.all-unset': {
+              all: 'unset',
+            },
+          },
+          ['responsive', 'hover']
+      );
+    },
+  ],
   darkMode: 'class',
 };
