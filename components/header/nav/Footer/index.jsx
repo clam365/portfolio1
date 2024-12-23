@@ -11,7 +11,14 @@ export default function Footer() {
                     variants={translate} initial="initial"
                     animate="enter"
                     exit="exit">
-                    <span>© 2024 Chris Lam</span>
+                    <div className={"space-x-3"}>
+                        <a className={"text-xl"} href={"https://www.linkedin.com/in/chrislam365"} target="_blank">LinkedIn</a>
+                        <a className={"text-xl"} href="/resume.pdf" target="_blank" rel="opener referrer">Resume</a>
+                        <a className={"text-xl"} href="mailto:christopherlam110@gmail.com">Email</a>
+
+                    </div>
+
+
                 </motion.li>
             </ul>
 
