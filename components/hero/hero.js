@@ -64,16 +64,16 @@ export default function Hero() {
                 }}
             >
                 <div className="flex gap-x-2" >
-                    <p className="border border-[#d8d8d8] rounded-full px-2 py-1 text-md inline-block text-slight-black" id={"tags"}>
+                    <p className="border border-[#d8d8d8] rounded-full px-2 py-1 text-sm md:text-md inline-block text-slight-black" id={"tags"}>
                         Front-End
                     </p>
-                    <p className="border border-[#d8d8d8] rounded-full px-4 py-1 text-md inline-block text-slight-black" id={"tags"}>
+                    <p className="border border-[#d8d8d8] rounded-full px-4 py-1 text-sm md:text-md inline-block text-slight-black" id={"tags"}>
                         UI/UX
                     </p>
-                    <p className="border border-[#d8d8d8] rounded-full px-4 py-1 text-md inline-block text-slight-black" id={"tags"}>
+                    <p className="border border-[#d8d8d8] rounded-full px-4 py-1 text-sm md:text-md inline-block text-slight-black" id={"tags"}>
                         Agile
                     </p>
-                    <p className="border border-[#d8d8d8] rounded-full px-4 py-1 text-md inline-block text-slight-black" id={"tags"}>
+                    <p className="border border-[#d8d8d8] rounded-full px-4 py-1 text-sm md:text-md inline-block text-slight-black" id={"tags"}>
                         Product Design
                     </p>
                 </div>
