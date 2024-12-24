@@ -36,6 +36,7 @@ html.dark span:hover {
 
 html.dark #footer1 {
   background-color: #131313;
+  border-color: #646464;
 }
 
 html.dark #based {
@@ -63,6 +64,11 @@ html.dark #footerContent {
 
 html.dark .list-dot {
   background-color: #3cda64;
+}
+
+html.dark #newLine {
+  border-color: #646464;
+  color: #646464;
 }
 
 

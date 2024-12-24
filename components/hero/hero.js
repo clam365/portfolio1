@@ -63,7 +63,7 @@ export default function Hero() {
                     show: {opacity: 1, transition: {duration: 0.75}},
                 }}
             >
-                <div className="flex gap-x-2" >
+                <div className="flex gap-x-2 mb-3" >
                     <p className="border border-[#d8d8d8] rounded-full px-2 py-1 text-sm md:text-md inline-block text-slight-black" id={"tags"}>
                         Front-End
                     </p>
@@ -77,12 +77,10 @@ export default function Hero() {
                         Product Design
                     </p>
                 </div>
-                <hr className="my-3 mt-5 border border-[#e1e1e1]" />
-
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center border-t border-t-[#e1e1e1] py-2" id={"newLine"}>
                     <p className="text-newGray text-xl" id={"based"}>Based in Boston, MA</p>
                     <Link href={"/#craft"}>
-                        <p className="text-newGray text-xl flex items-center" >
+                        <p className="text-newGray text-xl flex items-center " >
                             See Selected Craft <span><ArrowDown className="ml-1 text-spotify" /></span>
                         </p>
                     </Link>
