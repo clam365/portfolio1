@@ -27,11 +27,15 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
             <Providers>
-                <Header/>
-                <main className={" pt-6 md:pt-12"}>
+                <div className={" relative z-10"}>
+                    <Header/>
+                </div>
+
+                <main className={"relative z-0 pt-6 md:pt-12"}>
                     {children}
+                    <Footer/>
                 </main>
-                <Footer/>
+
             </Providers>
 
       </body>

@@ -46,11 +46,23 @@ html.dark #tags {
   border-color: #2b2b2b;
 }
 
+html.dark #transparency {
+  background-color: transparent;
+}
+
 html.dark #borgor {
   &::after,
   &::before {
     background-color: white;
   }
+}
+
+html.dark #footerContent {
+  background-color: #131313;
+}
+
+html.dark .list-dot {
+  background-color: #3cda64;
 }
 
 

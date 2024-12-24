@@ -77,7 +77,8 @@ export default function Hero() {
                         Product Design
                     </p>
                 </div>
-                <hr className="my-3 mt-5 border border-[#A1A1A1]" />
+                <hr className="my-3 mt-5 border border-[#e1e1e1]" />
+
                 <div className="flex justify-between items-center">
                     <p className="text-newGray text-xl" id={"based"}>Based in Boston, MA</p>
                     <Link href={"/#craft"}>

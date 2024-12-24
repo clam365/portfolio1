@@ -17,16 +17,20 @@ export default function Header() {
             <div className={styles.bar}>
                 <Link href="/">
                     <Image src="/choso2.png" alt="logo" width={87} height={48}
-                           className="rounded-lg  items-center"/>
+                           className="rounded-lg transition transform hover:-translate-y-1 duration-200 items-center"/>
                 </Link>
 
                 <div className={"flex gap-x-6 items-center cursor-pointer"}>
                     <div >
                         <DarkModeButton/>
                     </div>
-                    <div onClick={() => setIsActive(!isActive)} className={styles.el}>
-                        <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`} id={"borgor"}></div>
+                    <div className={"transition transform hover:-translate-y-1 duration-200"} id={"transparency"}>
+                        <div onClick={() => setIsActive(!isActive)} className={styles.el}>
+                            <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}
+                                 id={"borgor"}></div>
+                        </div>
                     </div>
+
                 </div>
 
             </div>
