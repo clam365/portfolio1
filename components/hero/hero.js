@@ -24,7 +24,7 @@ export default function Hero() {
     ];
 
     return (
-        <section className="pt-14 min-h-[85vh] flex flex-col">
+        <section className="pt-14 min-h-[85vh] flex flex-col ">
             <motion.div
                 className={"max-w-[90rem] flex-grow"}
                 initial={{opacity: 0, x: 15}}
@@ -47,7 +47,6 @@ export default function Hero() {
                                 delay: i * 0.1, // Stagger the lines
                                 duration: 0.6,
                             }}
-
                         >
                             {line}
                         </motion.span>
@@ -77,13 +76,13 @@ export default function Hero() {
                         Product Design
                     </p>
                 </div>
-                <div className="flex justify-between items-center border-t border-t-[#e1e1e1] py-2" id={"newLine"}>
+                <div className="flex justify-between items-center border-t border-t-[#e1e1e1] py-2 " id={"newLine"}>
                     <p className="text-newGray text-xl" id={"based"}>Based in Boston, MA</p>
-                    <Link href={"/#craft"}>
+                    <div >
                         <p className="text-newGray text-xl flex items-center " >
                             See Selected Craft <span><ArrowDown className="ml-1 text-spotify" /></span>
                         </p>
-                    </Link>
+                    </div>
                 </div>
             </motion.footer>
         </section>

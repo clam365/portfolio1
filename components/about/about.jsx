@@ -11,7 +11,7 @@ export default function About() {
 
 
     return (
-        <section id={"#about"} className={"xl:px-48 2xl:px-60"}  ref={ref}>
+        <section id={"#about"} className={"xl:px-48 2xl:px-60 mt-20"}  ref={ref}>
             <div className={"grid grid-cols-1 lg:grid-cols-12 gap-x-8 pb-20"}>
                 <div className={"border-t border-t-[#e1e1e1] sidebar col-span-12 lg:col-span-5 xl:col-span-5"} id={"newLine"}>
                     <h1 className={"text-slight-black text-4xl md:text-5xl mt-4 font-normal xl:w-full"}>About</h1>

@@ -15,6 +15,11 @@ export default function Home() {
         requestAnimationFrame(raf)
     }, []);
 
+    document.getElementById("craft")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+    });
+
   return (
       <div className={"px-10 pt-10"}>
         <Hero/>
