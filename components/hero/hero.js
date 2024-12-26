@@ -13,15 +13,19 @@ export default function Hero() {
     const lines = [
         "I'm Chris Lam, a creative web developer",
         " driven by authentic expression. I'll be interning at ",
-        <span className="text-spotify hover:text-slight-black" key="line2">
-            <Link href={"https://www.se.com/us/en/"}>Schneider Electric</Link>
-        </span>,
-        " as a WebDev PM, previously with the ",
-        <span className="text-spotify hover:text-slight-black" key="line3">
-            <Link href={"https://afciviliancareers.com/"}>AFCS</Link>
-        </span>,
-        ".",
+        <span key="line2" className="selection-group">
+        <span className="text-spotify hover:text-slight-black">
+            <Link href="https://www.se.com/us/en/">Schneider Electric </Link>
+        </span>
+            and previously with the
+        <span className="text-spotify hover:text-slight-black">
+            <Link href="https://afciviliancareers.com/"> AFCS</Link>
+        </span>
+        .
+    </span>,
     ];
+
+
 
     return (
         <section className="pt-14 min-h-[85vh] flex flex-col ">
@@ -32,7 +36,7 @@ export default function Hero() {
                 transition={{type: "spring", stiffness: 25, damping: 12}}
             >
                 <motion.h1
-                    className="text-slight-black font-normal text-3xl md:text-5xl lg:text-[3.5rem] xl:text-[4.5rem]"
+                    className="text-slight-black font-normal text-3xl md:text-5xl lg:text-6xl xl:text-7xl "
                     initial="hidden"
                     animate="show"
                 >

@@ -10,6 +10,23 @@ html{
   background-color: #FAFAFA;
 }
 
+/* Default selection for all text */
+::selection {
+  background-color: #3cda64; /* Highlight background color */
+  color: white; /* Ensure text is visible */
+}
+
+/* Group-specific selection styling */
+.selection-group::selection {
+  background-color: #3cda64; /* Same highlight color */
+  color: white; /* Ensure text remains visible */
+}
+
+.selection-group span::selection {
+  background-color: #3cda64; /* Ensure child spans match */
+  color: white;
+}
+
 html.dark {
   background-color: #080808;
   font-family: 'Manrope', sans-serif;
