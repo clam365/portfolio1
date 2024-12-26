@@ -8,7 +8,7 @@
     overflow: hidden;
     transform: translate3d(0,0,0);
     position: fixed;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
     color:transparent;
 }
 

@@ -102,6 +102,10 @@ html.dark #grayText {
   color: #141517;
 }
 
+html.dark #arrowButton {
+  background-color: #3cda64;
+}
+
 #about {
   scroll-margin-top: 20vh;
 }
