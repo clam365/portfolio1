@@ -27,6 +27,12 @@ html{
   color: white;
 }
 
+html.dark  #appCursor {
+  border: 1px solid #a1a1a1;
+  backdrop-filter: blur(3px);
+  background: transparent;
+}
+
 html.dark {
   background-color: #080808;
   font-family: 'Manrope', sans-serif;

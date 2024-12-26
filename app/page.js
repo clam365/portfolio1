@@ -17,8 +17,8 @@ export default function Home() {
 
   return (
       <div className={"px-10 pt-10"}>
-        <Hero/>
-        <Work/>
+          <Hero/>
+          <Work/>
           <About/>
 
 

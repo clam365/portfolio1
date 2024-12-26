@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "../components/header/index";
 import {Providers} from "@/app/providers";
 import Footer from "@/components/footer/footer1"
+import {Customcursor} from "@/components/cursor/customcursor";
 
 
 const geistSans = Geist({
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
             <Providers>
+                <Customcursor/>
                 <div className={" relative z-10"}>
                     <Header/>
                 </div>
