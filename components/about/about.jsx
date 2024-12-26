@@ -28,7 +28,7 @@ export default function About() {
                         <span className="text-spotify hover:text-slight-black">
                             <Link href={"https://www.se.com/us/en/"}> Schneider Electric </Link>
                         </span>
-                        as a WebDev PM, heading teams in the LifeIsOn vision.
+                        as a WebDev PM, heading teams in the LifeIsOn vision and taking HCI + MobileDev grad courses.
                         <br />
                         <br />
                         I&#39;m driven by the endless possibilities of design and art in our world. My mission is to
