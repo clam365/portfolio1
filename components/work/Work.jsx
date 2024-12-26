@@ -4,13 +4,14 @@ import Project2 from "./project2"
 import Project3 from "./project3"
 import { useRef } from "react";
 import {motion, useInView} from "framer-motion";
+import "@/app/globals.css"
 
 export default function work() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
     return (
-        <section id={"#craft"} className={"xl:px-48 "} >
+        <section id={"craft"} className={"xl:px-48 "} >
             <br/><br/><br/>
             <div className={"flex justify-between"}>
                 <h1 className={"text-slight-black font-normal text-4xl md:text-5xl "}>Selected Craft</h1>

@@ -79,6 +79,14 @@ html.dark #grayText {
   color: #141517;
 }
 
+#about {
+  scroll-margin-top: 20vh;
+}
+
+#craft {
+  scroll-margin-top: 20vh;
+}
+
 
 
 

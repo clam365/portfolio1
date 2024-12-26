@@ -78,11 +78,11 @@ export default function Hero() {
                 </div>
                 <div className="flex justify-between items-center border-t border-t-[#e1e1e1] py-2 " id={"newLine"}>
                     <p className="text-newGray text-xl" id={"based"}>Based in Boston, MA</p>
-                    <div >
+                    <Link href={"/#craft"}>
                         <p className="text-newGray text-xl flex items-center " >
                             See Selected Craft <span><ArrowDown className="ml-1 text-spotify" /></span>
                         </p>
-                    </div>
+                    </Link>
                 </div>
             </motion.footer>
         </section>
