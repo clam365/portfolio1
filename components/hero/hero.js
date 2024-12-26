@@ -32,7 +32,7 @@ export default function Hero() {
                 transition={{type: "spring", stiffness: 25, damping: 12}}
             >
                 <motion.h1
-                    className="text-slight-black font-medium text-3xl md:text-5xl lg:text-[3.5rem] xl:text-[4.5rem]"
+                    className="text-slight-black font-normal text-3xl md:text-5xl lg:text-[3.5rem] xl:text-[4.5rem]"
                     initial="hidden"
                     animate="show"
                 >
