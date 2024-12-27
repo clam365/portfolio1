@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import Lenis from "lenis";
-import {ProjectIntro} from "@/app/iqp-dct/project-intro";
+import {ProjectIntro} from "@/app/kyoto-project-center/project-intro";
 
 export default function Page() {
     useEffect(() => {
