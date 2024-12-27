@@ -17,7 +17,7 @@ export default function Project1() {
                 <div className="mt-2">
                     <h1>Kyoto Project Center</h1>
                     <h1 className="text-newGray" id="based">
-                        Explore WPI Kyoto IQPs
+                        Kyoto IQP Database
                     </h1>
                 </div>
             </Link>

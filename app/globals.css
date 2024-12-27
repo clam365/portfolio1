@@ -106,6 +106,10 @@ html.dark #arrowButton {
   background-color: #3cda64;
 }
 
+html.dark #projectTag {
+  background-color: #3cda64;
+}
+
 #about {
   scroll-margin-top: 20vh;
 }
