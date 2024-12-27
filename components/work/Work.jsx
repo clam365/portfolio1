@@ -27,7 +27,7 @@ export default function work() {
                     <Project1/>
                 </motion.div>
 
-                <div className={"grid grid-cols-1 md:grid-cols-2 gap-[2.5rem] lg:mt-16 gap-y-[3rem] mt-12"}>
+                <div className={"grid grid-cols-1 md:grid-cols-2 gap-[2.5rem] lg:mt-16 gap-y-[3rem] mt-12 "}>
                     <motion.div
                         initial={{opacity: 0, y: 20}}
                         animate={isInView ? {opacity: 1, y: 0} : {}}
