@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import Lenis from "lenis";
 
+
 export default function Page() {
     useEffect(() => {
         const lenis = new Lenis();

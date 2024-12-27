@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import Lenis from "lenis";
+import {ProjectIntro} from "@/app/iqp-dct/project-intro";
 
 export default function Page() {
     useEffect(() => {
@@ -59,9 +60,7 @@ export default function Page() {
                     className={"w-full object-cover min-h-[500px]"}
                 />
             </motion.div>
-            <div >
-                helo
-            </div>
+            <ProjectIntro/>
         </div>
     );
 }

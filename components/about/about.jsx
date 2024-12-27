@@ -1,5 +1,4 @@
 "use client"
-import Link from "next/link";
 import {ArrowDownToLine} from "lucide-react";
 import "@/app/globals.css"
 import { useRef } from "react";
@@ -26,7 +25,7 @@ export default function About() {
                         I&#39;m a creative web developer studying CS at Worcester Polytechnic Institute. In 2025, I will
                         be interning with
                         <span className="text-spotify hover:text-slight-black">
-                            <Link href={"https://www.se.com/us/en/"}> Schneider Electric </Link>
+                            <a href={"https://www.se.com/us/en/"} target="_blank" rel="opener referrer"> Schneider Electric </a>
                         </span>
                         as a WebDev PM, heading teams in the LifeIsOn vision and taking HCI + MobileDev grad courses.
                         <br />
@@ -40,7 +39,7 @@ export default function About() {
                         <br />
                         Before Schneider Electric, I worked as a Data Analyst intern at
                         <span className="text-spotify hover:text-slight-black">
-                            <Link href={"https://afciviliancareers.com/"}> AFCS</Link>
+                            <a href={"https://afciviliancareers.com/"} target="_blank" rel="opener referrer"> AFCS</a>
                         </span>
                         , creating interactive dashboards and restructuring personnel tracking data to enhance decision-making for team members.
                         <br />

@@ -15,11 +15,11 @@ export default function Hero() {
         " driven by authentic expression. I'll be interning at ",
         <span key="line2" className="selection-group">
         <span className="text-spotify hover:text-slight-black">
-            <Link href="https://www.se.com/us/en/">Schneider Electric </Link>
+            <a href="https://www.se.com/us/en/" target="_blank" rel="opener referrer">Schneider Electric </a>
         </span>
             and previously with the
         <span className="text-spotify hover:text-slight-black">
-            <Link href="https://afciviliancareers.com/"> AFCS</Link>
+            <a href="https://afciviliancareers.com/" target="_blank" rel="opener referrer"> AFCS</a>
         </span>
         .
     </span>,
