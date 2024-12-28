@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import Lenis from "lenis";
 import {ProjectIntro} from "@/app/wildscape/project-intro";
+import {ProjectBackground} from "@/app/wildscape/project-background";
 
 export default function Page() {
     useEffect(() => {
@@ -61,6 +62,7 @@ export default function Page() {
                 />
             </motion.div>
             <ProjectIntro/>
+            <ProjectBackground/>
         </div>
     );
 }
