@@ -25,7 +25,7 @@ export const ProjectBackground = () => {
             </div>
             <video
                 src={"/freelance/wildscape_dashboard.mp4"}
-                className={"rounded-lg w-full h-full drop-shadow-xl"}
+                className={"rounded-lg w-full h-full drop-shadow-xl "}
                 autoPlay
                 playsInline
                 loop
@@ -59,14 +59,14 @@ export const ProjectBackground = () => {
                             database and backend setup, we selected Pocketbase.
                         </h1>
                         <div className={"rounded-lg my-14"}>
-                            <video src={"/freelance/wildscape_create.mp4"} className={"rounded-lg w-full h-full drop-shadow-xl"} autoPlay playsInline loop muted/>
+                            <video src={"/freelance/wildscape_create.mp4"} className={"rounded-lg w-full h-full drop-shadow-xl "} autoPlay playsInline loop muted/>
                             <h1 className={"text-newGray text-sm mt-3"} id={"based"}>
                                 Individuals can upload their own spots, fill in the data, and link the location and any
                                 possible donations.
                             </h1>
                         </div>
                         <div className={"rounded-lg my-14"}>
-                            <img src={"/freelance/mapPage.PNG"} className={"rounded-lg w-full h-full drop-shadow-xl"} alt={"eikhgbegv"}/>
+                            <img src={"/freelance/mapPage.PNG"} className={"rounded-lg w-full h-full drop-shadow-xl min-h-[500px] object-cover"} alt={"eikhgbegv"}/>
                             <h1 className={"text-newGray text-sm mt-3"} id={"based"}>
                                 With the power of Google Maps API, users can see from a post and the map hot icon to
                                 view where spots and national parks are.
@@ -75,7 +75,7 @@ export const ProjectBackground = () => {
                     </div>
                 </div>
             </div>
-            <div className={"border-t border-t-[#e1e1e1] my-12 py-2"} id={"newLine"}>
+            <div className={"border-t border-t-[#e1e1e1] mt-12 py-2"} id={"newLine"}>
                 <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16"}>
                     <div>
                         <h1 className={"text-slight-black text-4xl  font-medium xl:w-full"}>Future Goals</h1>

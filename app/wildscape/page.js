@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Lenis from "lenis";
 import {ProjectIntro} from "@/app/wildscape/project-intro";
 import {ProjectBackground} from "@/app/wildscape/project-background";
+import {ProjectNext} from "@/app/wildscape/project-next";
 
 export default function Page() {
     useEffect(() => {
@@ -63,6 +64,7 @@ export default function Page() {
             </motion.div>
             <ProjectIntro/>
             <ProjectBackground/>
+            <ProjectNext/>
         </div>
     );
 }
