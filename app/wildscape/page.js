@@ -57,7 +57,7 @@ export default function Page() {
                     alt={"kyoto"}
                     width={4000}
                     height={2800}
-                    className={"w-full object-cover min-h-[500px]"}
+                    className={"w-full object-cover min-h-[600px]"}
                 />
             </motion.div>
             <ProjectIntro/>
