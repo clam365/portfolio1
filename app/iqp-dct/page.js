@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import Lenis from "lenis";
 import {ProjectIntro} from "@/app/iqp-dct/project-intro";
+import {ProjectBackground} from "@/app/iqp-dct/project-background";
+import {ProjectNext} from "@/app/iqp-dct/project-next";
 
 export default function Page() {
     useEffect(() => {
@@ -61,6 +63,8 @@ export default function Page() {
                 />
             </motion.div>
             <ProjectIntro/>
+            <ProjectBackground/>
+            <ProjectNext/>
         </div>
     );
 }

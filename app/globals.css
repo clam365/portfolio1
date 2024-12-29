@@ -10,20 +10,18 @@ html{
   background-color: #FAFAFA;
 }
 
-/* Default selection for all text */
 ::selection {
-  background-color: #3cda64; /* Highlight background color */
-  color: white; /* Ensure text is visible */
+  background-color: #3cda64;
+  color: white;
 }
 
-/* Group-specific selection styling */
 .selection-group::selection {
-  background-color: #3cda64; /* Same highlight color */
-  color: white; /* Ensure text remains visible */
+  background-color: #3cda64;
+  color: white;
 }
 
 .selection-group span::selection {
-  background-color: #3cda64; /* Ensure child spans match */
+  background-color: #3cda64;
   color: white;
 }
 
@@ -45,7 +43,7 @@ html.dark h3,
 html.dark h4,
 html.dark h5,
 html.dark h6 {
-  color: #FAFAFA; /* Light text for dark mode */
+  color: #FAFAFA;
 }
 
 html.dark div
@@ -127,6 +125,9 @@ html.dark #descriptionTag:hover {
   background-color: #2d2d2d;
 }
 
+html.dark #spotifyText {
+  color: #3cda64;
+}
 
 
 
