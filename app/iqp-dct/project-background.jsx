@@ -1,8 +1,8 @@
-import {ArrowUpRight} from "lucide-react";
 import React from "react";
 import Stats from "@/app/iqp-dct/stats";
 import ProjectGoal from "@/app/iqp-dct/project-goal";
 import Research from "@/app/iqp-dct/research";
+import TestingNumbers from "@/app/iqp-dct/testingNumbers";
 
 export const ProjectBackground = () => {
     return (
@@ -11,13 +11,16 @@ export const ProjectBackground = () => {
                 <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16"}>
                     <div>
                         <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>What&#39;s IQP DCT?</h1>
-                        <h1 className={"text-newGray text-3xl font-medium xl:w-full md:max-w-[80%]"} id={"based"}>A personalized data tool for WPI undergrads</h1>
+                        <h1 className={"text-newGray text-3xl font-medium xl:w-full md:max-w-[80%]"} id={"based"}>A
+                            personalized data tool for WPI undergrads</h1>
                     </div>
                     <div>
                         <h1 className={"text-newGray"} id={"based"}>
                             Worcester Polytechnic Institute juniors participate in a humanitarian project
-                            known as the Interactive Qualifying Project (IQP) in any part of the globe. Our tool serves as an
-                            application that helps students collect interviews and qualitative/quantitative data, along with services such as
+                            known as the Interactive Qualifying Project (IQP) in any part of the globe. Our tool serves
+                            as an
+                            application that helps students collect interviews and qualitative/quantitative data, along
+                            with services such as
                             geotagging, transcriptions, and team management.
                         </h1>
                         <Stats/>
@@ -29,7 +32,8 @@ export const ProjectBackground = () => {
                 <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16"}>
                     <div>
                         <h1 className={"text-slight-black text-2xl font-medium xl:w-full"}>Context</h1>
-                        <h1 className={"text-newGray text-2xl font-medium xl:w-full max-w-[80%]"} id={"based"}>"How do we get started?"</h1>
+                        <h1 className={"text-newGray text-2xl font-medium xl:w-full max-w-[80%]"} id={"based"}>"How do
+                            we get started?"</h1>
                     </div>
                     <div>
                         <h1 className={"text-newGray"} id={"based"}>
@@ -54,47 +58,55 @@ export const ProjectBackground = () => {
                 <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16"}>
                     <div>
                         <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>UXR</h1>
-                        <h1 className={"text-newGray text-3xl font-medium xl:w-full md:max-w-[80%]"} id={"based"}>What do students need?</h1>
+                        <h1 className={"text-newGray text-3xl font-medium xl:w-full mt-1 md:max-w-[80%]"} id={"based"}>What
+                            do students need?</h1>
                     </div>
                     <div>
                         <Research/>
                     </div>
                 </div>
             </div>
+            <div className={"border-t border-t-[#e1e1e1] my-16  py-2"} id={"newLine"}>
+                <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16"}>
+                    <div>
+                        <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>User Testing</h1>
+                        <h1 className={"text-newGray text-3xl font-medium xl:w-full md:max-w-[80%] mt-1"} id={"based"}>What do students think?</h1>
+                    </div>
+                    <div>
+                        <h1 className={"text-newGray"} id={"based"}>
+                            Our user testing consisted of 3 weekly sessions, aiming to do 10 tests for the first 2 weeks each, and then finalize
+                            with 5 test in the last (25 total). Initially in the first beta version, we knew that we would have a lot of issues
+                            or UI tweaks, but in our findings as we got to the second week, those bugs diminished greatly. We tweaked features
+                            such as collapsible accordions for form categories, Form/Link Tile Navigation, and the addition of MCQs.
+                        </h1>
+                        <TestingNumbers/>
+                    </div>
+
+                </div>
+            </div>
             <div className={"border-t border-t-[#e1e1e1] mt-12 py-2"} id={"newLine"}>
                 <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16"}>
                     <div>
-                        <h1 className={"text-slight-black text-4xl  font-medium xl:w-full"}>Future Goals</h1>
-                        <h1 className={"text-newGray text-3xl font-medium mt-1"} id={"based"}>Sustainability First.</h1>
+                        <h1 className={"text-slight-black text-4xl  font-medium xl:w-full"}>Impact</h1>
                     </div>
                     <div>
                         <h1>
-                            We believe Wildscape has a great user concept behind it. In the future, we really want to
-                            expand beyond the time limit we were given. Wildscape deserves a more integrated approach
-                            with
-                            Google Maps API, such that it can go directly in POV mode to see the spot. Additionally,
-                            implementing AI to
-                            differentiate between real nature photos, AI photos, and spam photos would help keep our
-                            dashboard and mission
-                            values rich. It would also be great to turn this into a mobile app, along with partnering
-                            with environmental sustainability
-                            stakeholders, such as the National Park Service.
+                            Our overarching goal was to create a concept application backed by the use case needs of
+                            students
+                            and we have done exactly that. The WPI President Grace Wang & the Global Studies Dean have
+                            shown
+                            significant interest in our developments, and currently this project is hosted by WPI
+                            servers.
+                            Additionally, we were featured on the WPI Computer Science department in a newsletter for
+                            our efforts.
+                            <br/>
+                            <br/>
+                            In April 2025, our team will present our application in our MQP showcase fo further expand
+                            the attention
+                            and needs of the IQP Data Collection Tool.
                         </h1>
-                        <div className={"flex gap-x-3 mt-5"}>
-                            <a href={"https://wildscape.vercel.app/"}
-                               target="_blank" rel="opener referrer"
-                               className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}
-                               id={"descriptionTag"}>
-                                <h1 className={"text-sm"}>WILDSCAPE</h1>
-                                <ArrowUpRight
-                                    className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
-                                />
-                            </a>
-                        </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     )
