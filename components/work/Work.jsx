@@ -15,7 +15,7 @@ export default function work() {
             <br/><br/><br/>
             <div className={"flex justify-between"}>
                 <h1 className={"text-slight-black font-normal text-3xl md:text-5xl "}>Selected Craft</h1>
-                <h1 className={"text-gray-400 font-normal text-3xl md:text-5xl "}>23'-25'</h1>
+                <h1 className={"text-newGray font-normal text-3xl md:text-5xl "} id={"based"}>23'-25'</h1>
             </div>
             <br/><br/>
             <div className={"mt-10"} ref={ref}>
