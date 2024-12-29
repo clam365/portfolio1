@@ -56,7 +56,7 @@ export default function Page() {
             >
                 <Image
                     src={"/mockup4.4.png"}
-                    alt={"kyoto"}
+                    alt={"wildscape"}
                     width={4000}
                     height={2800}
                     className={"w-full object-cover min-h-[600px]"}
