@@ -107,7 +107,7 @@ export const ProjectBackground = () => {
                         </div>
                     </div>
                 </div>
-                <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto mt-10"}>
+                <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto mt-10"} id={"gallery"}>
                     <img src={"/freelance/supportParks.PNG"} className={"rounded-lg w-full h-full drop-shadow-xl"}
                          alt={"eikhgbegv"}/>
                 </div>
