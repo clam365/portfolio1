@@ -43,10 +43,6 @@ export default function Content() {
                                 <div className="list-dot"></div>
                                 <Link href={"/#craft"}><h1 className="list-text">Work</h1></Link>
                             </div>
-                            <div id={"footer1"} className="list-container">
-                                <div className="list-dot"></div>
-                                <Link href={"/photography"}><h1 className="list-text">Photography</h1></Link>
-                            </div>
                         </div>
                         <div id={"footer1"}>
                             <div id={"footer1"} className="list-container">
