@@ -4,6 +4,7 @@ import Header from "../components/header/index";
 import {Providers} from "@/app/providers";
 import Footer from "@/components/footer/footer1"
 import {Customcursor} from "@/components/cursor/customcursor";
+import { Analytics } from "@vercel/analytics/react"
 
 
 const geistSans = Geist({
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+            <Analytics/>
             <Providers>
                 <Customcursor/>
                 <div className={" relative z-10"}>
