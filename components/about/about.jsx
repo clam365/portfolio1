@@ -21,7 +21,7 @@ export default function About() {
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    <h1 className={"text-2xl lg:text-3xl font-thin"}>
+                    <h1 className={" text-xl md:text-2xl lg:text-3xl font-thin"}>
                         I&#39;m a creative web developer studying CS at Worcester Polytechnic Institute. In 2025, I will
                         be interning with
                         <span className="text-spotify hover:text-slight-black">
