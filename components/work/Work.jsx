@@ -5,6 +5,7 @@ import Project3 from "./project3"
 import { useRef } from "react";
 import {motion, useInView} from "framer-motion";
 import "@/app/globals.css"
+import Project4 from "@/components/work/project4";
 
 export default function work() {
     const ref = useRef(null);
@@ -20,9 +21,9 @@ export default function work() {
             <br/><br/>
             <div className={"mt-10"} ref={ref}>
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.75, delay: 0.2 }}
+                    initial={{opacity: 0, y: 20}}
+                    animate={isInView ? {opacity: 1, y: 0} : {}}
+                    transition={{duration: 0.75, delay: 0.2}}
                 >
                     <Project1/>
                 </motion.div>
@@ -43,6 +44,14 @@ export default function work() {
                         <Project3/>
                     </motion.div>
                 </div>
+                <motion.div
+                    initial={{opacity: 0, y: 20}}
+                    animate={isInView ? {opacity: 1, y: 0} : {}}
+                    transition={{duration: 0.75, delay: 0.2}}
+                    className={"lg:mt-16 mt-12"}
+                >
+                    <Project4/>
+                </motion.div>
             </div>
 
         </section>
