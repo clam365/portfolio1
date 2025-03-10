@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "../components/header/index";
 import {Providers} from "@/app/providers";
 import Footer from "@/components/footer/footer1"
-import {Customcursor} from "@/components/cursor/customcursor";
+//import {Customcursor} from "@/components/cursor/customcursor";
 import { Analytics } from "@vercel/analytics/react"
 
 
@@ -30,7 +30,6 @@ export default function RootLayout({ children }) {
       >
             <Analytics/>
             <Providers>
-                <Customcursor/>
                 <div className={" relative z-10"}>
                     <Header/>
                 </div>
