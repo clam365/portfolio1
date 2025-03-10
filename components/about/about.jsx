@@ -22,12 +22,12 @@ export default function About() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     <h1 className={" text-xl md:text-2xl lg:text-3xl font-thin"}>
-                        I&#39;m a creative web developer studying CS at Worcester Polytechnic Institute. In 2025, I will
+                        I&#39;m a creative web developer studying CS at Worcester Polytechnic Institute. I will
                         be interning with
                         <span className="text-spotify hover:text-slight-black">
                             <a href={"https://www.se.com/us/en/"} target="_blank" rel="opener referrer"> Schneider Electric </a>
                         </span>
-                        as a WebDev PM, heading teams in the LifeIsOn vision and taking HCI + MobileDev grad courses.
+                        as a WebDev PM, heading teams in the LifeIsOn vision.
                         <br />
                         <br />
                         I&#39;m driven by the endless possibilities of design and art in our world. My mission is to
@@ -44,7 +44,7 @@ export default function About() {
                         , creating interactive dashboards and restructuring personnel tracking data to enhance decision-making for team members.
                         <br />
                         <br />
-                        In my downtime, I love to olympic lift, watch anime, and explore new cafes!
+                        In my downtime, I love to thrift, cook, watch anime, and explore new cafes!
                     </h1>
                     <a href="/resume.pdf" target="_blank" rel="opener referrer" className={"inline-flex mt-8  hover:bg-[#61E88A] transition   gap-x-1.5 bg-spotify px-4 py-3 rounded-full items-center"}>
                         <ArrowDownToLine width={20} height={20} id={"antiDark"}/>
