@@ -12,16 +12,12 @@ export default function Hero() {
 
     const lines = [
         "I'm Chris Lam, a creative web developer",
-        " driven by authentic expression. I'll be interning at ",
+        " driven by authentic expression. I am currently with ",
         <span key="line2" className="selection-group">
         <span className="text-spotify hover:text-slight-black">
             <a href="https://www.se.com/us/en/" target="_blank" rel="opener referrer">Schneider Electric </a>
         </span>
-            and previously with the
-        <span className="text-spotify hover:text-slight-black">
-            <a href="https://afciviliancareers.com/" target="_blank" rel="opener referrer"> AFCS</a>
-        </span>
-        .
+            as a WebDev PM Intern.
     </span>,
     ];
 
