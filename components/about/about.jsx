@@ -27,7 +27,7 @@ export default function About() {
                         <span className="text-spotify hover:text-slight-black">
                             <a href={"https://www.se.com/us/en/"} target="_blank" rel="opener referrer"> Schneider Electric </a>
                         </span>
-                        as a WebDev PM Intern, supporting missions in web development and design.
+                        as a UI/UX Designer Intern, supporting missions in web development and design.
                         <br />
                         <br />
                         I&#39;m driven by the endless possibilities of design and art in our world. My mission is to
