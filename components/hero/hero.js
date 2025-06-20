@@ -17,7 +17,7 @@ export default function Hero() {
         <span className="text-spotify hover:text-slight-black">
             <a href="https://www.se.com/us/en/" target="_blank" rel="opener referrer">Schneider Electric </a>
         </span>
-            as a WebDev PM Intern.
+            as a UI/UX Designer Intern.
     </span>,
     ];
 
