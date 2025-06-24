@@ -6,6 +6,7 @@ import { useRef } from "react";
 import {motion, useInView} from "framer-motion";
 import "@/app/globals.css"
 import Project4 from "@/components/work/project4";
+import Project5 from "@/components/work/project5";
 
 export default function work() {
     const ref = useRef(null);
@@ -20,6 +21,13 @@ export default function work() {
             </div>
             <br/><br/>
             <div className={"mt-10"} ref={ref}>
+                <motion.div className={"mb-12"}
+                    initial={{opacity: 0, y: 20}}
+                    animate={isInView ? {opacity: 1, y: 0} : {}}
+                    transition={{duration: 0.75, delay: 0.2}}
+                >
+                    <Project5/>
+                </motion.div>
                 <motion.div
                     initial={{opacity: 0, y: 20}}
                     animate={isInView ? {opacity: 1, y: 0} : {}}
