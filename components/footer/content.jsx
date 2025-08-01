@@ -61,7 +61,7 @@ export default function Content() {
                 <div
                     className={"flex justify-between px-6 py-4  text-xs md:text-sm border-t border-t-[#e1e1e1]"}
                     id={"footer1"}>
-                    <h1 className={"text-newGray"} id={"newLine"}>© 2024 Chris Lam</h1>
+                    <h1 className={"text-newGray"} id={"newLine"}>© 2025 Chris Lam</h1>
                     <h1 className={"text-newGray"} id={"newLine"}>I used all my Uji Matcha to make this</h1>
                 </div>
             </div>
