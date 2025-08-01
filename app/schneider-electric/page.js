@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Lenis from "lenis";
 import {ProjectIntro} from "@/app/schneider-electric/project-intro";
 import {ProjectBackground} from "@/app/schneider-electric/project-background";
+import {ProjectNext} from "@/app/kyoto-project-center/project-next";
 
 
 export default function Page() {
@@ -64,6 +65,7 @@ export default function Page() {
             </motion.div>
             <ProjectIntro/>
             <ProjectBackground/>
+            <ProjectNext/>
 
         </div>
     );

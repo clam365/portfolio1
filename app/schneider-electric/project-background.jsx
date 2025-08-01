@@ -1,4 +1,5 @@
 import React from "react";
+import {ArrowUpRight} from "lucide-react";
 
 export const ProjectBackground = () => {
     return (
@@ -24,7 +25,7 @@ export const ProjectBackground = () => {
                 </div>
             </div>
             <div className={"border-t border-t-[#e1e1e1] my-16  py-2"} id={"newLine"}>
-                <div className={"grid grid-cols-1 md:grid-cols-2 mb-10"}>
+                <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16 mb-10"}>
                     <div>
                         <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>Defining the Problem</h1>
                     </div>
@@ -103,7 +104,7 @@ export const ProjectBackground = () => {
                     </div>
                 </div>
                 <div>
-                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16 mt-16"}>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10 mt-16"}>
                         <div>
                             <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
                                 id={"based"}>Article Readability</h1>
@@ -186,21 +187,152 @@ export const ProjectBackground = () => {
                     </h1>
                 </div>
             </div>
+            <div>
+                <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10 mt-16"}>
+                    <div>
+                        <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
+                            id={"based"}>Filter Optimization Case Study</h1>
+                        <div className={"mt-4"}>
+                            <a href={"https://thegood.com/insights/ecommerce-product-filters/"}
+                               target="_blank" rel="opener referrer"
+                               className={"group  items-center mb-3 mr-3  px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition inline-block"}
+                               id={"descriptionTag"}>
+                                <div className={"flex"}>
+                                    <h1 className={"text-sm"}>THE GOOD</h1>
+                                    <ArrowUpRight
+                                        className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className={""}>
+                            In the good&#39;s &#34;25 Ecommerce Product Filters With UX Design Strategies&#34;, it
+                            states filters are the key component to
+                            product discoverability in a seamless frictionless manner. When optimized through a client,
+                            they experienced a 5.97% conversion rate.
+                            Left-side filters are already accustomed to the Ecommerce world, as it reduces cognitive
+                            load, stays visible, and encourages iterative
+                            filtering without losing context.
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10 mt-16"}>
+                    <div>
+                        <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
+                            id={"based"}>Readability Case Study</h1>
+                        <div className={"mt-4"}>
+                            <a href={"https://www.freshconsulting.com/insights/blog/uiux-principle-46-text-box-width-should-help-users-read/#:~:text=In%20web%20design%2C%20one%20element,your%20content%20easy%20to%20read."}
+                               target="_blank" rel="opener referrer"
+                               className={"group  items-center mb-3 mr-3  px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition inline-block"}
+                               id={"descriptionTag"}>
+                                <div className={"flex"}>
+                                    <h1 className={"text-sm"}>FRESH CONSULTING</h1>
+                                    <ArrowUpRight
+                                        className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
+                                    />
+                                </div>
+                            </a>
+                            <a href={"https://pielot.org/pubs/Rello2016-Fontsize.pdf"}
+                               target="_blank" rel="opener referrer"
+                               className={"group  items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition inline-block"}
+                               id={"descriptionTag"}>
+                                <div className={"flex"}>
+                                    <h1 className={"text-sm"}>MAKE IT BIG!</h1>
+                                    <ArrowUpRight
+                                        className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
+                                    />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className={""}>
+                            According to the Baymard Institute & a research study from Carnegie Mellon, the average text
+                            line length should contain 45-85 characters
+                            and the best font size is 18pt. Combining both these studies can have significant effects on
+                            the comprehension and readability of
+                            the B2C's articles.
+                        </h1>
+                    </div>
+                </div>
+            </div>
             <div className={"border-t border-t-[#e1e1e1] mt-16  py-2"} id={"newLine"}>
                 <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16"}>
                     <div>
                         <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>Final Designs</h1>
-                        <h1 className={"text-newGray text-3xl font-medium xl:w-full md:max-w-[80%]"} id={"based"}>What
-                            can we pull?</h1>
+                        <div className={"mt-4"}>
+                            <a href={"https://www.figma.com/proto/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=110-439&t=yExnMr3mmsqno6nw-1"}
+                               target="_blank" rel="opener referrer"
+                               className={"group  items-center mb-3 mr-3  px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition inline-block"}
+                               id={"descriptionTag"}>
+                                <div className={"flex"}>
+                                    <h1 className={"text-sm"}>FIGMA MOCKUP</h1>
+                                    <ArrowUpRight
+                                        className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
+                                    />
+                                </div>
+                            </a>
+                            <a href={"https://www.figma.com/design/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=37-1402&t=yExnMr3mmsqno6nw-1"} target="_blank" rel="opener referrer"
+                               className={"group  items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition inline-block"}
+                               id={"descriptionTag"}>
+                                <div className={"flex"}>
+                                    <h1 className={"text-sm"}>FIGMA ANNOTATIONS</h1>
+                                    <ArrowUpRight
+                                        className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
+                                    />
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div>
+                        <h1>
+                            Through Schneider Electric&#39;s amazing mentorship, I had two senior UX designer mentor me
+                            in my process and
+                            validate the designs. It was presented to my managers and the project global stakeholders as
+                            part of my final presentations.
+                            These will be implemented in their phase 2 edits! On a personal level, I felt a strong sense
+                            of accomplishment seeing my work
+                            being incorporated and making an impact on a global scale.
+
+                        </h1>
                     </div>
                 </div>
                 <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto mt-10"}
                      id={"gallery"}>
                     <iframe className="w-full h-[500px]" width={1000} height={750}
-                        src="https://embed.figma.com/design/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=37-1402&embed-host=share"
-                        allowFullScreen></iframe>
+                            src="https://embed.figma.com/design/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=37-1402&embed-host=share"
+                            allowFullScreen></iframe>
+                </div>
+                <div>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10 mt-16"}>
+                        <div>
+                            <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
+                                id={"based"}>User Flow</h1>
+                        </div>
+                        <div>
+                            <h1 className={""}>
+                                With the new filtering system in-place, it encourages iterative and responsive
+                                filtering, allowing users to browse in a more frictionless
+                                manner. The diagram below shows the average user flow from the homepage, and it cuts
+                                down the click depth by 2. They no longer need
+                                to open a button, the filters are right there in the aside.
+                            </h1>
+                        </div>
+                    </div>
+                    <div>
+                        <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto mt-16"}
+                             id={"gallery"}>
+                            <img
+                                src={"/schneider-electric/userflow.png"}
+                                alt={"article"}
+                                className={"rounded-lg w-full h-full drop-shadow-xl"}
+                            />
+                        </div>
+                    </div>
                 </div>
 
             </div>
