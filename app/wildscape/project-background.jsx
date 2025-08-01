@@ -3,7 +3,7 @@ import React from "react";
 
 export const ProjectBackground = () => {
     return (
-        <div className={"px-10  2xl:px-72 py-24 md:pt-48"}>
+        <div className={"px-10  xl:px-72 py-24 md:pt-48"}>
             <video
                 src={"/freelance/wildscape_landingPage.mp4"}
                 className={"rounded-lg w-full h-full drop-shadow-xl"}
