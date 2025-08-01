@@ -3,6 +3,7 @@ import {ArrowDownToLine} from "lucide-react";
 import "@/app/globals.css"
 import { useRef } from "react";
 import {motion, useInView} from "framer-motion";
+import Image from "next/image";
 
 export default function About() {
     const ref = useRef(null);
@@ -14,6 +15,7 @@ export default function About() {
             <div className={"grid grid-cols-1 lg:grid-cols-12 gap-x-8 pb-20"}>
                 <div className={"border-t border-t-[#e1e1e1] sidebar col-span-12 lg:col-span-5 xl:col-span-5"} id={"newLine"}>
                     <h1 className={"text-slight-black text-4xl md:text-5xl mt-4 font-normal xl:w-full"}>About</h1>
+                    <Image src={"/images/me.jpeg"} alt={"me!"} width={350} height={500} className={"rounded-lg mt-10 hidden lg:block"}/>
                 </div>
                 <motion.div
                     className={"mt-20 lg:mt-6 col-span-12 lg:col-span-7 xl:col-span-7 lg:max-w-[45rem]"}
@@ -27,7 +29,7 @@ export default function About() {
                         <span className="text-spotify hover:text-slight-black">
                             <a href={"https://www.se.com/us/en/"} target="_blank" rel="opener referrer"> Schneider Electric </a>
                         </span>
-                        as a Product Designer Intern, supporting missions in web development and design.
+                        as a Product Design Intern, supporting missions in web development and design.
                         <br />
                         <br />
                         I&#39;m driven by the endless possibilities of design and art in our world. My mission is to
@@ -50,6 +52,7 @@ export default function About() {
                         <ArrowDownToLine width={20} height={20} id={"antiDark"}/>
                         <h1 className={"text-xl"} id={"antiDark"}>Download CV</h1>
                     </a>
+
                 </motion.div>
             </div>
         </section>

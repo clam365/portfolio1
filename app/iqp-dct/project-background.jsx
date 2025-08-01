@@ -111,9 +111,8 @@ export const ProjectBackground = () => {
                             our efforts.
                             <br/>
                             <br/>
-                            In April 2025, our team will present our application in our MQP showcase fo further expand
-                            the attention
-                            and needs of the IQP Data Collection Tool.
+                            In April 2025, we presented our application in our MQP showcase to drive attention, and this
+                            will be continued as another MQP for the future.
                         </h1>
                     </div>
                 </div>
