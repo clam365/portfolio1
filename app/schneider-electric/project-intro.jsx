@@ -8,12 +8,12 @@ export const ProjectIntro = () => {
                 <h1 className={"text-2xl"}>
                     In my internship as a Product Designer, I helped launch the first global B2C web experience tailored
                     for homeowners in France. Through
-                    my refined high-fidelity mockups, I aimed to improve user flows in product discovery.
+                    my refined high-fidelity mockups, I improved user flows in product discovery, validated by senior UX designers.
                     <br/>
                     <br/>
                     This was done by using UX insights from competitive benchmarking of 5+ sites, ContentSquare
                     heatmaps, and much communication from partners
-                    of the United States, France, Span, and India.
+                    of the United States, France, Spain, and India.
                 </h1>
                 <div className={"rounded-full mt-10 inline-block mr-3"} id={"descriptionTag"}>
                     <a href={"https://www.se.com/fr/fr/home/"} target="_blank" rel="opener referrer"

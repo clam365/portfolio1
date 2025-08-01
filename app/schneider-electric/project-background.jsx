@@ -38,43 +38,67 @@ export const ProjectBackground = () => {
                         </h1>
                     </div>
                 </div>
+                <div>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 mb-10 "}>
+                        <div>
+                            <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
+                                id={"based"}>Filter
+                                Optimization & Product Details</h1>
 
-                <div className={"grid grid-cols-1 md:grid-cols-2 mb-10 "}>
-                    <div>
-                        <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"} id={"based"}>Filter
-                            Optimization & Product Details</h1>
+                            <h1 className={"pr-10"}>
+                                <br/>
+                                The Odace Collection serves as a representative to all PLPs, as they are the same
+                                component
+                                structure.
+                                However, finding the product is not so easy. The formatting unintentionally assumes the
+                                user
+                                knows EXACTLY what they want.
+                            </h1>
+                        </div>
+                        <div>
+
+                            <h1 className={"text-spotify text-sm mt-12 lg:mt-0 mb-1"} id={"spotifyText"}>Key Usability
+                                Issues</h1>
+                            <div className={"border-t border-t-[#e1e1e1]  py-3"} id={"newLine"}>
+                                <h1>
+                                    Filters are accessed through a button and require an open/close functionality while
+                                    the
+                                    user has to navigate through up to 108 possible filters.
+                                    With no search bar included, they must continuously scroll for options, impacting
+                                    product journey and overwhelming them.
+                                </h1>
+                            </div>
+                            <div className={"border-t border-t-[#e1e1e1] py-3"} id={"newLine"}>
+                                <h1>
+                                    Product Cards have no relevant specific details and take up massive amounts of
+                                    screen real estate, especially in List Card View.
+                                </h1>
+                            </div>
+                            <div className={"border-t border-t-[#e1e1e1] py-3"} id={"newLine"}>
+                                <h1>
+                                    Use must scroll through 4288 pixels of height or click CTAs before accessing
+                                    products.
+                                </h1>
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <h1 className={""}>
-                            The Odace Collection serves as a representative to all PLPs, as they are the same component
-                            structure.
-                            However, finding the product is not so easy. The formatting unintentionally assumes the user
-                            knows EXACTLY what they want.
-                        </h1>
-                        <h1 className={"text-spotify text-sm mt-12 mb-1"} id={"spotifyText"}>Key Usability Issues</h1>
-                        <div className={"border-t border-t-[#e1e1e1]  py-3"} id={"newLine"}>
-                            <h1>
-                                Filters are accessed through a button and require an open/close functionality while the
-                                user has to navigate through up to 108 possible filters.
-                                With no search bar included, they must continuously scroll for options, impacting
-                                product journey and overwhelming them.
-                            </h1>
-                        </div>
-                        <div className={"border-t border-t-[#e1e1e1] py-3"} id={"newLine"}>
-                            <h1>
-                                Product Cards have no relevant specific details and take up massive amounts of screen
-                                real estate.
-                            </h1>
-                        </div>
-                        <div className={"border-t border-t-[#e1e1e1] py-3"} id={"newLine"}>
-                            <h1>
-                                Use must scroll through 4288 pixels of height or click CTAs before accessing products.
-                            </h1>
+                        <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto mt-10"}
+                             id={"gallery"}>
+                            <video
+                                src={"/schneider-electric/odace_before.mp4"}
+                                className={"rounded-lg w-full h-full drop-shadow-xl"}
+                                autoPlay
+                                playsInline
+                                loop
+                                muted
+                            />
                         </div>
                     </div>
                 </div>
 
-                <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16"}>
+
+                <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16 mt-16"}>
                     <div>
                         <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
                             id={"based"}>Article Readability</h1>
@@ -90,24 +114,19 @@ export const ProjectBackground = () => {
                     </div>
                 </div>
             </div>
+
+
+
             <div>
-                <div className="bg-[#f2f2f2] rounded-lg p-4 md:p-10 grid lg:grid-cols-2 gap-5 mt-20 items-start " id={"gallery"}>
-                    <div id={"transparency"}>
-                        <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Odace Collection (Before)</p>
-                        <video
-                            src={"/schneider-electric/odace_before.mp4"}
-                            className={"rounded-lg w-full h-full drop-shadow-xl"}
-                            autoPlay
-                            playsInline
-                            loop
-                            muted
-                        />
-                    </div>
-                    <div id={"transparency"}>
-                        <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Example Article</p>
-                        <img src={"/schneider-electric/before.png"} alt={"Image"} className={"rounded-md drop-shadow-md mb-5"}/>
-                    </div>
+                <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto "}
+                     id={"gallery"}>
+                    <img
+                        src={"/schneider-electric/before.png"}
+                        alt={"article"}
+                        className={"rounded-lg w-full h-full drop-shadow-xl"}
+                    />
                 </div>
+                
             </div>
 
         </div>

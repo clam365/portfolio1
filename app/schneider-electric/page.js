@@ -45,7 +45,7 @@ export default function Page() {
                     transition={{type: "spring", stiffness: 40, damping: 10, delay: 0.5,}}
                     id={"based"}
                 >
-                    Digital Customer Relationships
+                    B2C Web Experience
                 </motion.h1>
             </div>
             <motion.div
@@ -55,7 +55,7 @@ export default function Page() {
                 transition={{duration: 0.75, ease: "easeInOut", delay: 0.75}}
             >
                 <Image
-                    src={"/images/se.png"}
+                    src={"/schneider-electric/se_backdrop.png"}
                     alt={"kyoto"}
                     width={4000}
                     height={2800}
