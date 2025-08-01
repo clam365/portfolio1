@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Chris Lam | Creative Developer",
+  title: "Chris Lam | Creative Designer",
   description: "Chris Lam's Portfolio",
 };
 

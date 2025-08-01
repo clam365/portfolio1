@@ -40,24 +40,25 @@ export const ProjectBackground = () => {
                     </div>
                 </div>
                 <div>
-                    <div className={"grid grid-cols-1 md:grid-cols-2 mb-10 "}>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 mb-10 mt-20"}>
                         <div>
                             <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
                                 id={"based"}>Filter
                                 Optimization & Product Details</h1>
 
-                            <h1 className={"pr-10"}>
-                                <br/>
+
+                        </div>
+                        <div>
+                            <h1>
                                 The Odace Collection serves as a representative to all PLPs, as they are the same
                                 component
                                 structure.
                                 However, finding the product is not so easy. The formatting unintentionally assumes the
                                 user
                                 knows EXACTLY what they want.
+                                <br/>
+                                <br/>
                             </h1>
-                        </div>
-                        <div>
-
                             <h1 className={"text-spotify text-sm mt-12 lg:mt-0 mb-1"} id={"spotifyText"}>Key Usability
                                 Issues</h1>
                             <div className={"border-t border-t-[#e1e1e1]  py-3"} id={"newLine"}>
@@ -175,7 +176,7 @@ export const ProjectBackground = () => {
                      id={"newLine"}>
                     <h1 className={"font-medium text-xl"}>What do these heatmaps tell us?</h1>
                     <h1 className={"text-sm"}>
-                        In the hero & value proposition sections, the CTAs lead us to the products. Less and Less
+                        In the hero & value proposition sections, the CTAs lead us to the products. Less and less
                         concentrations on the CTAs are shown as we scroll,
                         meaning this is being skipped. Value Proposition can be easily be condensed into a paragraph,
                         and alleviating the vertical real estate.
@@ -193,17 +194,16 @@ export const ProjectBackground = () => {
                         <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
                             id={"based"}>Filter Optimization Case Study</h1>
                         <div className={"mt-4"}>
-                            <a href={"https://thegood.com/insights/ecommerce-product-filters/"}
-                               target="_blank" rel="opener referrer"
-                               className={"group  items-center mb-3 mr-3  px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition inline-block"}
-                               id={"descriptionTag"}>
-                                <div className={"flex"}>
+                            <div className={"rounded-full inline-block mr-3"} id={"descriptionTag"}>
+                                <a href={"https://thegood.com/insights/ecommerce-product-filters/"} target="_blank" rel="opener referrer"
+                                   className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}
+                                   id={"descriptionTag"}>
                                     <h1 className={"text-sm"}>THE GOOD</h1>
                                     <ArrowUpRight
                                         className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
                                     />
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -225,28 +225,30 @@ export const ProjectBackground = () => {
                         <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
                             id={"based"}>Readability Case Study</h1>
                         <div className={"mt-4"}>
-                            <a href={"https://www.freshconsulting.com/insights/blog/uiux-principle-46-text-box-width-should-help-users-read/#:~:text=In%20web%20design%2C%20one%20element,your%20content%20easy%20to%20read."}
-                               target="_blank" rel="opener referrer"
-                               className={"group  items-center mb-3 mr-3  px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition inline-block"}
-                               id={"descriptionTag"}>
-                                <div className={"flex"}>
+                            <div className={"rounded-full inline-block mr-3"} id={"descriptionTag"}>
+                                <a href={"https://www.freshconsulting.com/insights/blog/uiux-principle-46-text-box-width-should-help-users-read/#:~:text=In%20web%20design%2C%20one%20element,your%20content%20easy%20to%20read."}
+                                   target="_blank"
+                                   rel="opener referrer"
+                                   className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}
+                                   id={"descriptionTag"}>
                                     <h1 className={"text-sm"}>FRESH CONSULTING</h1>
                                     <ArrowUpRight
                                         className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
                                     />
-                                </div>
-                            </a>
-                            <a href={"https://pielot.org/pubs/Rello2016-Fontsize.pdf"}
-                               target="_blank" rel="opener referrer"
-                               className={"group  items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition inline-block"}
-                               id={"descriptionTag"}>
-                                <div className={"flex"}>
+                                </a>
+                            </div>
+                            <div className={"rounded-full inline-block mr-3"} id={"descriptionTag"}>
+                                <a href={"https://pielot.org/pubs/Rello2016-Fontsize.pdf"}
+                                   target="_blank"
+                                   rel="opener referrer"
+                                   className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}
+                                   id={"descriptionTag"}>
                                     <h1 className={"text-sm"}>MAKE IT BIG!</h1>
                                     <ArrowUpRight
                                         className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
                                     />
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -265,27 +267,30 @@ export const ProjectBackground = () => {
                     <div>
                         <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>Final Designs</h1>
                         <div className={"mt-4"}>
-                            <a href={"https://www.figma.com/proto/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=110-439&t=yExnMr3mmsqno6nw-1"}
-                               target="_blank" rel="opener referrer"
-                               className={"group  items-center mb-3 mr-3  px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition inline-block"}
-                               id={"descriptionTag"}>
-                                <div className={"flex"}>
+                            <div className={"rounded-full inline-block mr-3"} id={"descriptionTag"}>
+                                <a href={"https://www.figma.com/proto/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=110-439&t=yExnMr3mmsqno6nw-1"}
+                                   target="_blank"
+                                   rel="opener referrer"
+                                   className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}
+                                   id={"descriptionTag"}>
                                     <h1 className={"text-sm"}>FIGMA MOCKUP</h1>
                                     <ArrowUpRight
                                         className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
                                     />
-                                </div>
-                            </a>
-                            <a href={"https://www.figma.com/design/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=37-1402&t=yExnMr3mmsqno6nw-1"} target="_blank" rel="opener referrer"
-                               className={"group  items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition inline-block"}
-                               id={"descriptionTag"}>
-                                <div className={"flex"}>
+                                </a>
+                            </div>
+                            <div className={"rounded-full inline-block mr-3"} id={"descriptionTag"}>
+                                <a href={"https://www.figma.com/design/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=37-1402&t=yExnMr3mmsqno6nw-1"}
+                                   target="_blank"
+                                   rel="opener referrer"
+                                   className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}
+                                   id={"descriptionTag"}>
                                     <h1 className={"text-sm"}>FIGMA ANNOTATIONS</h1>
                                     <ArrowUpRight
                                         className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
                                     />
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -311,6 +316,83 @@ export const ProjectBackground = () => {
                     <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10 mt-16"}>
                         <div>
                             <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
+                                id={"based"}>Focus Areas</h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-10 mt-5 "}>
+                        <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto "}
+                             id={"gallery"}>
+                            <img
+                                src={"/schneider-electric/value_proposition.png"}
+                                alt={"article"}
+                                className={"rounded-lg w-full h-full drop-shadow-xl"}
+                            />
+                        </div>
+                        <div className={"flex item-center m-auto"}>
+                            <h1>
+                                The value proposition is shrunk to a concise paragraph and header, outlining what was
+                                three mini-sections into
+                                one. With this, CTAs with the same functionality are removed, and users can easily see
+                                the products once moving past
+                                the hero section.
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-10 mt-5 "}>
+                        <div className={"flex item-center m-auto order-2 lg:order-1"}>
+                            <h1>
+                                Product cards are still in their desktop 3-grid column, but due to the left filtering
+                                system, it is now
+                                confined to 75% width of the full body div. With more information including color
+                                swatches and the SKUs,
+                                we communicate what&#39;s available in an effective way. The list view has more info
+                                including the product category,
+                                but overall both could things such as reviews and small amounts of detailed info, based
+                                on the view.
+                            </h1>
+                        </div>
+                        <div
+                            className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto order-1 lg:order-2"}
+                            id={"gallery"}>
+                            <img
+                                src={"/schneider-electric/product_Cards.png"}
+                                alt={"article"}
+                                className={"rounded-lg w-full h-full drop-shadow-xl"}
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-10 mt-5 "}>
+                        <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto "}
+                             id={"gallery"}>
+                            <img
+                                src={"/schneider-electric/filters.png"}
+                                alt={"article"}
+                                className={"rounded-lg w-full h-full drop-shadow-xl"}
+                            />
+                        </div>
+                        <div className={"flex item-center m-auto"}>
+                            <h1>
+                                Filters are now placed in an 25% width aside, with options put into an accordion style.
+                                Specifically within the
+                                108 filters, 48 are product type related. The 48 product types are card sorted into 6
+                                respective categories in order to
+                                easily locate and compare items to their needs. Additionally, the color texts are
+                                replaced with color swatches to promote recognition
+                                over recall, not recall over recognition.
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-10 mt-16"}>
+                        <div>
+                            <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
                                 id={"based"}>User Flow</h1>
                         </div>
                         <div>
@@ -334,7 +416,60 @@ export const ProjectBackground = () => {
                         </div>
                     </div>
                 </div>
+                <div>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-10 mt-16"}>
+                        <div>
+                            <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
+                                id={"based"}>Article Readability</h1>
+                        </div>
+                        <div>
+                            <h1 className={""}>
+                                The screenshots are much better in the Figma, yet despite that we can see the clear
+                                differences between the
+                                before and after of adjusting the case study principles. From 176 characters per line
+                                and 20pt font, it is now 96
+                                characters per line and 18pt font, a 45% in characters. Users can read the text more
+                                effectively, which in turn
+                                comprehension is enhanced.
+                            </h1>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="bg-[#f2f2f2] rounded-lg p-4 md:p-10 grid lg:grid-cols-2 gap-5 mt-20 "
+                             id={"gallery"}>
+                            <div id={"transparency"}>
+                                <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Before </p>
+                                <img src={"/schneider-electric/before.png"} alt={"Image"}
+                                     className={"rounded-md drop-shadow-md mb-5"}/>
 
+                            </div>
+                            <div id={"transparency"}>
+                                <p className={"text-newGray text-sm mb-0.5"} id={"based"}>After</p>
+                                <img src={"/schneider-electric/after18.png"} alt={"Image"}
+                                     className={"rounded-md drop-shadow-md mb-5"}/>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={"border-t border-t-[#e1e1e1] mt-16  py-2"} id={"newLine"}>
+                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16"}>
+                        <div>
+                            <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>What's next?</h1>
+                            <h1 className={"text-newGray text-3xl font-medium xl:w-full md:max-w-[80%]"}
+                                id={"based"}></h1>
+                        </div>
+                        <div>
+                            <h1 className={"mb-4"}>
+                                Currently, the website will continue its pilot phase and move onto other countries until it is fully global!
+                                I had an amazing time working with amazing co-workers building and refining this website, and I can't wait to
+                                see it blast off. I've been able to thrive and blossom, and this where I took my abilities to the next level.
+                                I'm excited for the upcoming opportunities awaiting me.
+                            </h1>
+                            <img src={"/schneider-electric/coworkers.png"} alt={"coworkers.png"}/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

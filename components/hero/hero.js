@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { ArrowDown } from "lucide-react";
+import {ArrowDown, Book, CodeXml, Smartphone} from "lucide-react";
 import { motion } from "framer-motion";
 import "@/app/globals.css"
 
@@ -12,7 +12,7 @@ export default function Hero() {
 
     const lines = [
         "I'm Chris Lam, a creative designer & developer",
-        " driven by authentic expression. I am currently with ",
+        " driven by authentic expression. Currently with ",
         <span key="line2" className="selection-group">
         <span className="text-spotify hover:text-slight-black">
             <a href="https://www.se.com/us/en/" target="_blank" rel="opener referrer">Schneider Electric </a>
@@ -63,18 +63,22 @@ export default function Hero() {
                 }}
             >
                 <div className="flex gap-x-2 mb-3">
-                    <p className="border border-[#d8d8d8] rounded-full px-3 py-1 text-xs sm:text-sm md:text-md inline-block text-slight-black"
-                       id={"tags"}>
-                        Product Design
-                    </p>
-                    <p className="border border-[#d8d8d8] rounded-full px-3 py-1 text-xs sm:text-sm md:text-md inline-block text-slight-black"
-                       id={"tags"}>
-                        UI/UX
-                    </p>
-                    <p className="border border-[#d8d8d8] rounded-full px-3 py-1 text-xs sm:text-sm md:text-md inline-block text-slight-black"
-                       id={"tags"}>
-                        Front-End Development
-                    </p>
+                    <div
+                        className={"border border-[#d8d8d8] rounded-full px-3 py-1 text-xs sm:text-sm md:text-md flex items-center text-slight-black gap-1"}>
+                        <Smartphone className={"w-4 h-4"}/>
+                        <p id={"tags"}>Product Design</p>
+
+                    </div>
+                    <div
+                        className={"border border-[#d8d8d8] rounded-full px-3 py-1 text-xs sm:text-sm md:text-md flex items-center text-slight-black gap-1"}>
+                        <Book className={"w-4 h-4"}/>
+                        <p id={"tags"}>Storytelling</p>
+                    </div>
+                    <div
+                        className={"border border-[#d8d8d8] rounded-full px-3 py-1 text-xs sm:text-sm md:text-md flex items-center text-slight-black gap-1"}>
+                        <CodeXml className={"w-4 h-4"}/>
+                        <p id={"tags"}>Front-End Development</p>
+                    </div>
                 </div>
                 <div className="flex justify-between items-center border-t border-t-[#e1e1e1] py-2 " id={"newLine"}>
                     <p className="text-newGray text-sm md:text-xl" id={"based"}>Based in Boston, MA</p>

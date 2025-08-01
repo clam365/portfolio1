@@ -18,6 +18,7 @@ export const ProjectIntro = () => {
                     and gain insights for future work.
                 </h1>
                 <div className={"flex gap-x-3 mt-10"}>
+
                     <a href={"https://kyotoprojectcenter.vercel.app/"} target="_blank" rel="opener referrer"
                        className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}
                        id={"descriptionTag"}>
