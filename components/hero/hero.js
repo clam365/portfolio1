@@ -12,12 +12,12 @@ export default function Hero() {
 
     const lines = [
         "I'm Chris Lam, a creative designer & developer",
-        " driven by authentic expression. Currently with ",
+        " driven by authentic expression. Formerly with ",
         <span key="line2" className="selection-group">
         <span className="text-spotify hover:text-slight-black">
             <a href="https://www.se.com/us/en/" target="_blank" rel="opener referrer">Schneider Electric </a>
         </span>
-            as a Product Design Intern.
+            as a UI/UX Designer.
     </span>,
     ];
 

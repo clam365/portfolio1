@@ -24,12 +24,11 @@ export default function About() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     <h1 className={" text-xl md:text-2xl lg:text-3xl font-thin"}>
-                        I&#39;m a creative web developer studying CS at Worcester Polytechnic Institute. I am
-                        currently with
+                        I&#39;m a creative web developer studying CS at Worcester Polytechnic Institute. Formerly with
                         <span className="text-spotify hover:text-slight-black">
                             <a href={"https://www.se.com/us/en/"} target="_blank" rel="opener referrer"> Schneider Electric </a>
                         </span>
-                        as a Product Design Intern, supporting missions in web development and design.
+                        as a UI/UX Design Intern, where I refined user flows in their B2C web experience.
                         <br />
                         <br />
                         I&#39;m driven by the endless possibilities of design and art in our world. My mission is to
