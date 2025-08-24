@@ -52,7 +52,7 @@ export default function Page() {
                 className="relative overflow-hidden "
                 initial={{clipPath: "inset(0% 0% 100% 0%)"}}
                 animate={{clipPath: "inset(0% 0% 0% 0%)"}}
-                transition={{duration: 0.75, ease: "easeInOut", delay: 0.75}}
+                transition={{duration: 0.65, ease: "easeInOut", delay: 0.75}}
             >
                 <Image
                     src={"/mockup4.4.png"}
