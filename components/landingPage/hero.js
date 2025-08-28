@@ -23,7 +23,7 @@ export default function Hero() {
                     I&#39;m Chris Lam, a creative designer and developer for digital interfaces, driven by
                     <span className={"italic"}>authentic expression </span>
                     and
-                    <span className={"italic"}>sustainability</span>.
+                    <span className={"italic"}> sustainability</span>.
                     Currently with&nbsp;
                     <CustomLink link={"https://www.toddagriscience.com/"} text={"Todd"}/>, formerly with&nbsp;
                     <CustomLink link={"https://www.se.com/us/en/"} text={"Schneider Electric"}/>.
