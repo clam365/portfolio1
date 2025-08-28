@@ -1,7 +1,7 @@
 "use client"
-import Hero from "@/components/hero/hero"
-import Work from "@/components/work/Work"
-import About from "@/components/about/about"
+import Hero from "@/components/landingPage/hero"
+import Work from "@/components/landingPage/Work"
+import About from "@/components/landingPage/about"
 import Lenis from "lenis"
 import {useEffect} from "react";
 
@@ -20,8 +20,6 @@ export default function Home() {
           <Hero/>
           <Work/>
           <About/>
-
-
       </div>
   );
 }
