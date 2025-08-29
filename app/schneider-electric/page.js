@@ -29,7 +29,6 @@ export default function Page() {
             <ProjectIntro/>
             <ProjectBackground/>
             <ProjectNext/>
-
         </div>
     );
 }
