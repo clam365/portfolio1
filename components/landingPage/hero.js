@@ -21,7 +21,7 @@ export default function Hero() {
                     animate="show"
                 >
                     I&#39;m Chris Lam, a creative designer and developer for digital interfaces, driven by
-                    <span className={"italic"}>authentic expression </span>
+                    <span className={"italic"}> authentic expression </span>
                     and
                     <span className={"italic"}> sustainability</span>.
                     Currently with&nbsp;
