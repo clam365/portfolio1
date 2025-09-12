@@ -1,6 +1,4 @@
 import React from "react";
-import {CaseStudyIntro} from "@/components/caseStudy/caseStudyIntro";
-
 export function CaseStudySection({children}) {
     return (
         <div className={"border-t border-t-[#e1e1e1] my-16 py-2"} id={"newLine"}>
@@ -9,11 +7,12 @@ export function CaseStudySection({children}) {
     )
 }
 
-CaseStudySection.Title = function CaseStudySectionTitle({title, subtitle}) {
+CaseStudySection.Title = function CaseStudySectionTitle({title, subtitle, children}) {
     return (
         <div>
             <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>{title}</h1>
             <h1 className={"text-newGray text-3xl font-medium xl:w-full md:max-w-[80%]"} id={"based"}>{subtitle}</h1>
+            {children}
         </div>
     )
 }

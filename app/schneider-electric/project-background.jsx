@@ -1,5 +1,4 @@
 import React from "react";
-import {ArrowUpRight} from "lucide-react";
 import {CaseStudySection} from "@/components/caseStudy/caseStudySection";
 import {List} from "@/components/List";
 import {Clickable} from "@/components/clickable";
@@ -205,8 +204,10 @@ export const ProjectBackground = () => {
                             In the PLP value proposition section, it takes up 4,288 pixels of vertical real estate.
                             There are 3 main value proposition statements, all containing a CTA button linking to the
                             products after the section. However, as users scroll, attention on the value proposition and
-                            CTAs diminishes, suggesting that after the first value proposition the overall section is being
-                            skipped. This could be condensed into a concise paragraph, reducing vertical real estate while still
+                            CTAs diminishes, suggesting that after the first value proposition the overall section is
+                            being
+                            skipped. This could be condensed into a concise paragraph, reducing vertical real estate
+                            while still
                             conveying key messages effectively.
                         </h1>
                         <Clickable>
@@ -214,7 +215,8 @@ export const ProjectBackground = () => {
                                 <div
                                     className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto mt-10"}
                                     id={"gallery"}>
-                                    <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Product Collection Section & Filter Button</p>
+                                    <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Product Collection Section
+                                        & Filter Button</p>
                                     <img src={"/schneider-electric/odace_heatmap2.png"} alt={"Image"}
                                          className={"rounded-md drop-shadow-md"}/>
                                 </div>
@@ -239,16 +241,23 @@ export const ProjectBackground = () => {
                             id={"based"}>Filter Optimization</h1>
                         <LinkButton link={"https://thegood.com/insights/ecommerce-product-filters/"} text={"THE GOOD"}/>
                         <h1 className={"mt-2"}>
-                            Highlighted in "25 Ecommerce Product Filters with UX Design Strategies", filters are a critical
-                            component of product discoverability, enabling a seamless and frictionless browsing experience. When
-                            optimized for a client, these improvements led to a 5.97% increase in conversion rate. Left-aligned filters
-                            in particular are widely adopted in ecommerce because they reduce cognitive load, remain visible during browsing,
+                            Highlighted in "25 Ecommerce Product Filters with UX Design Strategies", filters are a
+                            critical
+                            component of product discoverability, enabling a seamless and frictionless browsing
+                            experience. When
+                            optimized for a client, these improvements led to a 5.97% increase in conversion rate.
+                            Left-aligned filters
+                            in particular are widely adopted in ecommerce because they reduce cognitive load, remain
+                            visible during browsing,
                             and support iterative filtering without losing context.
                             <br/>
                             <br/>
-                            This reinforces the usability issues we observed in our Product Collection section: the current filter button
-                            adds friction and hides options that could guide users more efficiently. By making filters more accessible and
-                            visible, we can improve product discoverability, reduce user effort, and align the experience with UX practices.
+                            This reinforces the usability issues we observed in our Product Collection section: the
+                            current filter button
+                            adds friction and hides options that could guide users more efficiently. By making filters
+                            more accessible and
+                            visible, we can improve product discoverability, reduce user effort, and align the
+                            experience with UX practices.
                         </h1>
                         <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%] mt-10 mb-2"}
                             id={"based"}>Article Readability</h1>
@@ -260,65 +269,84 @@ export const ProjectBackground = () => {
                         </div>
                         <h1 className={"mt-2"}>
                             Research from the Baymard Institute, along with a study from Carnegie Mellon, suggests that
-                            the optimal line length for text is between 45-85 characters, with a recommended font size of 18pt.
-                            Applying these guidelines can have a significant impact on the comprehension for the B2C articles, directly
-                            addressing the issues we identified with long lines and font size in our desktop layout. Aligning article design
-                            will reduce eye strain, improve focus, and encourage users to engage more deeply with the content.
+                            the optimal line length for text is between 45-85 characters, with a recommended font size
+                            of 18pt.
+                            Applying these guidelines can have a significant impact on the comprehension for the B2C
+                            articles, directly
+                            addressing the issues we identified with long lines and font size in our desktop layout.
+                            Aligning article design
+                            will reduce eye strain, improve focus, and encourage users to engage more deeply with the
+                            content.
                         </h1>
                     </CaseStudySection.Content>
                 </CaseStudySection.SubSection>
             </CaseStudySection>
-
-            <div className={"border-t border-t-[#e1e1e1] mt-16  py-2"} id={"newLine"}>
-                <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16"}>
-                    <div>
-                        <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>Final Designs</h1>
-                        <div className={"mt-4"}>
-                            <div className={"rounded-full inline-block mr-3"} id={"descriptionTag"}>
-                                <a href={"https://www.figma.com/proto/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=110-439&t=yExnMr3mmsqno6nw-1"}
-                                   target="_blank"
-                                   rel="opener referrer"
-                                   className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}
-                                   id={"descriptionTag"}>
-                                    <h1 className={"text-sm"}>FIGMA MOCKUP</h1>
-                                    <ArrowUpRight
-                                        className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
-                                    />
-                                </a>
-                            </div>
-                            <div className={"rounded-full inline-block mr-3"} id={"descriptionTag"}>
-                                <a href={"https://www.figma.com/design/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=37-1402&t=yExnMr3mmsqno6nw-1"}
-                                   target="_blank"
-                                   rel="opener referrer"
-                                   className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}
-                                   id={"descriptionTag"}>
-                                    <h1 className={"text-sm"}>FIGMA ANNOTATIONS</h1>
-                                    <ArrowUpRight
-                                        className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
-                                    />
-                                </a>
-                            </div>
+            <CaseStudySection>
+                <CaseStudySection.SubSection>
+                    <CaseStudySection.Title title={"Final Designs"}>
+                        <div className={"space-x-3 mt-4"}>
+                            <LinkButton
+                                link={"https://www.figma.com/proto/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=110-439&t=yExnMr3mmsqno6nw-1"}
+                                text={"FIGMA MOCKUP"}/>
+                            <LinkButton
+                                link={"https://www.figma.com/design/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=37-1402&t=yExnMr3mmsqno6nw-1"}
+                                text={"FIGMA ANNOTATIONS"}/>
                         </div>
-                    </div>
-                    <div>
+                    </CaseStudySection.Title>
+                    <CaseStudySection.Content>
                         <h1>
-                            Through Schneider Electric&#39;s amazing mentorship, I had two senior UX designer mentor me
-                            in my process and
-                            validate the designs. It was presented to my managers and the project global stakeholders as
-                            part of my final presentations.
-                            These will be implemented in their phase 2 edits! On a personal level, I felt a strong sense
-                            of accomplishment seeing my work
-                            being incorporated and making an impact on a global scale.
-
+                            Throughout my internship, I had the privilege of being guided by two senior UX designers
+                            outside of my department
+                            whose mentorship was invaluable to my growth. They not only gave me feedback at each stage
+                            of my process but also
+                            helped me validate design decisions with a critical and professional lens. My initial
+                            findings focused on the nitpicks
+                            of the UI, but through them did I figure out that the user journey and flow was the end
+                            goal. With their guidance, I refined
+                            my recommendations into a cohesive set of solutions that were presented to my managers and
+                            Schneider Electric&#39;s B2C stakeholders
+                            + developers as part of my final deliverables.
+                            <br/>
+                            <br/>
+                            Their reactions were incredibly positive, where my work is now slated for implementation in
+                            the Phase 2 updates.
+                            Knowing my contributions will influence a live, global product was rewarding and motivating
+                            as a designer. On a more
+                            personal level, the sense of accomplishment seeing my designs evolve from the UX research
+                            insights to a solution was thrilling.
+                            This experience not only reinforced my passion for UX, but also gave me more confidence in
+                            the value I can bring to complex
+                            projects.
                         </h1>
-                    </div>
+                    </CaseStudySection.Content>
+                </CaseStudySection.SubSection>
+            </CaseStudySection>
+            <div className="-mx-10 xl:-mx-72 mt-12">
+                <img
+                    src={"/schneider-electric/se_mockup.png"}
+                    alt="Image"
+                    className="w-screen max-w-none"
+                />
+            </div>
+            <div className={" grid grid-cols-1 gap-4 md:grid-cols-2 -mx-10 xl:-mx-72 mt-4"}>
+                <div className="">
+                    <img
+                        src={"/schneider-electric/article_page.png"}
+                        alt="Image"
+                        className="w-full"
+                    />
                 </div>
-                <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto mt-10"}
-                     id={"gallery"}>
-                    <iframe className="w-full h-[500px]" width={1000} height={750}
-                            src="https://embed.figma.com/design/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=37-1402&embed-host=share"
-                            allowFullScreen></iframe>
+                <div className="">
+                    <img
+                        src={"/schneider-electric/se_mockup1.png"}
+                        alt="Image"
+                        className="w-full"
+                    />
                 </div>
+            </div>
+
+
+            <div className={" mt-16  py-2"} >
                 <div>
                     <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10 mt-16"}>
                         <div>
