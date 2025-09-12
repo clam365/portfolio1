@@ -18,7 +18,7 @@ export const ProjectIntro = () => {
                     showcasing 40+ projects as a resource for policymakers, students, and faculty to explore
                     and gain insights for future work.
                 </h1>
-                <div className={"space-x-3"}>
+                <div className={"space-x-3 mt-10"}>
                     <LinkButton link={"https://kyotoprojectcenter.vercel.app/"} text={"KYOTO PROJECT CENTER"}/>
                     <LinkButton link={"https://www.wpi.edu/project-based-learning/project-based-education/interactive-qualifying-project"} text={"WPI IQP"}/>
                 </div>

@@ -4,7 +4,7 @@ import "@/app/globals.css"
 import { useRef } from "react";
 import {motion, useInView} from "framer-motion";
 import {CustomLink} from "@/components/link";
-import Tooltip from "@/components/tooltip";
+import Tooltip from "@/components/clickable";
 
 export default function About() {
     const ref = useRef(null);
@@ -24,7 +24,7 @@ export default function About() {
                 transition={{duration: 0.5, delay: 0.2}}
             >
                 <h1 className={" text-xl md:text-2xl lg:text-3xl font-thin"}>
-                    <span className={"font-semibold"}><Tooltip/></span> fell in love with <span
+                    <span className={"font-semibold"}>Chris Lam</span> fell in love with <span
                     className={"italic font-medium"}>design</span> and <span className={"italic font-medium"}>code</span> in 6th grade when he
                     built a webpage for Halo 5 in Replit.
                 </h1>

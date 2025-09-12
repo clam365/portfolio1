@@ -4,7 +4,7 @@ import React from "react";
 
 export function LinkButton({ link: link, text }) {
     return (
-        <div className={"rounded-full mt-10 inline-block"} id={"descriptionTag"}>
+        <div className={"rounded-full inline-block"} id={"descriptionTag"}>
             <a href={link}
                target="_blank" rel="opener referrer"
                className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}

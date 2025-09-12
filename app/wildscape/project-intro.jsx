@@ -14,7 +14,7 @@ export const ProjectIntro = () => {
                     <br/>
                     I led the idea and vision behind our project, along with the front-end development and mockups.
                 </h1>
-                <div className={"space-x-3"}>
+                <div className={"space-x-3 mt-10"}>
                     <LinkButton link={"https://wildscape.vercel.app"} text={"WILDSCAPE"}/>
                 </div>
             </CaseStudyIntro.Summary>
