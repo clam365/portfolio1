@@ -188,12 +188,12 @@ export const ProjectBackground = () => {
                         <Clickable>
                             <Clickable.Trigger>
                                 <div
-                                    className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto"}
+                                    className={"bg-[#f2f2f2] rounded-xl p-4 w-full flex flex-col justify-center m-auto"}
                                     id={"gallery"}>
                                     <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Value Proposition
                                         Section </p>
                                     <img src={"/schneider-electric/odace_heatmap1.png"} alt={"Image"}
-                                         className={"rounded-md drop-shadow-md"}/>
+                                         className={"rounded-md drop-shadow-md w-full"}/>
                                 </div>
                             </Clickable.Trigger>
                             <Clickable.Content>
@@ -353,7 +353,7 @@ export const ProjectBackground = () => {
                     <Clickable>
                         <Clickable.Trigger>
                             <div
-                                className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto"}
+                                className={"bg-[#f2f2f2] rounded-xl p-4 w-full flex flex-col justify-center m-auto"}
                                 id={"gallery"}>
                                 <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Value Proposition Section</p>
                                 <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
@@ -362,7 +362,7 @@ export const ProjectBackground = () => {
                         </Clickable.Trigger>
                         <Clickable.Content>
                             <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
-                                 className={"rounded-md drop-shadow-md"}/>
+                                 className={"rounded-md  w-full drop-shadow-md"}/>
                         </Clickable.Content>
                     </Clickable>
                     <h1 className={"mt-4"}>
@@ -373,7 +373,7 @@ export const ProjectBackground = () => {
                     <Clickable>
                         <Clickable.Trigger>
                             <div
-                                className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto mt-10"}
+                                className={"bg-[#f2f2f2] rounded-xl w-full p-4 flex flex-col justify-center m-auto mt-10"}
                                 id={"gallery"}>
                                 <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Product Cards</p>
                                 <img src={"/schneider-electric/product_Cards.png"} alt={"Image"}
@@ -382,7 +382,7 @@ export const ProjectBackground = () => {
                         </Clickable.Trigger>
                         <Clickable.Content>
                             <img src={"/schneider-electric/product_Cards.png"} alt={"Image"}
-                                 className={"rounded-md drop-shadow-md"}/>
+                                 className={"rounded-md w-full drop-shadow-md"}/>
                         </Clickable.Content>
                     </Clickable>
                     <h1 className={"mt-4"}>
@@ -398,7 +398,7 @@ export const ProjectBackground = () => {
                     <Clickable>
                         <Clickable.Trigger>
                             <div
-                                className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto mt-10"}
+                                className={"bg-[#f2f2f2] rounded-xl p-4 w-full flex flex-col justify-center m-auto mt-10"}
                                 id={"gallery"}>
                                 <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Filter Optimization</p>
                                 <img src={"/schneider-electric/filters.png"} alt={"Image"}
@@ -407,7 +407,7 @@ export const ProjectBackground = () => {
                         </Clickable.Trigger>
                         <Clickable.Content>
                             <img src={"/schneider-electric/filters.png"} alt={"Image"}
-                                 className={"rounded-md drop-shadow-md"}/>
+                                 className={"rounded-md w-full drop-shadow-md"}/>
                         </Clickable.Content>
                     </Clickable>
                     <h1 className={"mt-4"}>
