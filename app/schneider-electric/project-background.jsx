@@ -262,7 +262,7 @@ export const ProjectBackground = () => {
                         </h1>
                         <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%] mt-10 mb-2"}
                             id={"based"}>Article Readability</h1>
-                        <div className={"space-x-3"}>
+                        <div className={"inline-flex flex-col md:flex-row gap-3"}>
                             <LinkButton
                                 link={"https://www.freshconsulting.com/insights/blog/uiux-principle-46-text-box-width-should-help-users-read/#:~:text=In%20web%20design%2C%20one%20element,your%20content%20easy%20to%20read."}
                                 text={"FRESH CONSULTING"}/>
