@@ -3,6 +3,7 @@ import {CaseStudySection} from "@/components/caseStudy/caseStudySection";
 import {List} from "@/components/List";
 import {Clickable} from "@/components/clickable";
 import {LinkButton} from "@/components/linkButton";
+import SimpleParallax from "simple-parallax-js";
 
 export const ProjectBackground = () => {
     return (
@@ -322,13 +323,15 @@ export const ProjectBackground = () => {
                 </CaseStudySection.SubSection>
             </CaseStudySection>
             <div className="-mx-10 xl:-mx-72 mt-12">
-                <img
-                    src={"/schneider-electric/se_mockup.png"}
-                    alt="Image"
-                    className="w-screen max-w-none"
-                />
+                <SimpleParallax scale={1.05}>
+                    <img
+                        src={"/schneider-electric/se_mockup.png"}
+                        alt="Image"
+                        className="w-screen max-w-none"
+                    />
+                </SimpleParallax>
             </div>
-            <div className={" grid grid-cols-1 gap-4 md:grid-cols-2 -mx-10 xl:-mx-72 mt-4"}>
+            <div className={"grid grid-cols-1 gap-4 md:grid-cols-2 -mx-10 xl:-mx-72 mt-4 mb-16"}>
                 <div className="">
                     <img
                         src={"/schneider-electric/article_page.png"}
@@ -344,171 +347,165 @@ export const ProjectBackground = () => {
                     />
                 </div>
             </div>
-
-
-            <div className={" mt-16  py-2"} >
-                <div>
-                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10 mt-16"}>
-                        <div>
-                            <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
-                                id={"based"}>Focus Areas</h1>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-10 mt-5 "}>
-                        <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto "}
-                             id={"gallery"}>
-                            <img
-                                src={"/schneider-electric/value_proposition.png"}
-                                alt={"article"}
-                                className={"rounded-lg w-full h-full drop-shadow-xl"}
-                            />
-                        </div>
-                        <div className={"flex item-center m-auto"}>
-                            <h1>
-                                The value proposition is shrunk to a concise paragraph and header, outlining what was
-                                three mini-sections into
-                                one. With this, CTAs with the same functionality are removed, and users can easily see
-                                the products once moving past
-                                the hero section.
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-10 mt-5 "}>
-                        <div className={"flex item-center m-auto order-2 lg:order-1"}>
-                            <h1>
-                                Product cards are still in their desktop 3-grid column, but due to the left filtering
-                                system, it is now
-                                confined to 75% width of the full body div. With more information including color
-                                swatches and the SKUs,
-                                we communicate what&#39;s available in an effective way. The list view has more info
-                                including the product category,
-                                but overall both could things such as reviews and small amounts of detailed info, based
-                                on the view.
-                            </h1>
-                        </div>
-                        <div
-                            className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto order-1 lg:order-2"}
-                            id={"gallery"}>
-                            <img
-                                src={"/schneider-electric/product_Cards.png"}
-                                alt={"article"}
-                                className={"rounded-lg w-full h-full drop-shadow-xl"}
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-10 mt-5 "}>
-                        <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto "}
-                             id={"gallery"}>
-                            <img
-                                src={"/schneider-electric/filters.png"}
-                                alt={"article"}
-                                className={"rounded-lg w-full h-full drop-shadow-xl"}
-                            />
-                        </div>
-                        <div className={"flex item-center m-auto"}>
-                            <h1>
-                                Filters are now placed in an 25% width aside, with options put into an accordion style.
-                                Specifically within the
-                                108 filters, 48 are product type related. The 48 product types are card sorted into 6
-                                respective categories in order to
-                                easily locate and compare items to their needs. Additionally, the color texts are
-                                replaced with color swatches to promote recognition
-                                over recall, not recall over recognition.
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-10 mt-16"}>
-                        <div>
-                            <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
-                                id={"based"}>User Flow</h1>
-                        </div>
-                        <div>
-                            <h1 className={""}>
-                                With the new filtering system in-place, it encourages iterative and responsive
-                                filtering, allowing users to browse in a more frictionless
-                                manner. The diagram below shows the average user flow from the homepage, and it cuts
-                                down the click depth by 2. They no longer need
-                                to open a button, the filters are right there in the aside.
-                            </h1>
-                        </div>
-                    </div>
-                    <div>
-                        <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto mt-16"}
-                             id={"gallery"}>
-                            <img
-                                src={"/schneider-electric/userflow.png"}
-                                alt={"article"}
-                                className={"rounded-lg w-full h-full drop-shadow-xl"}
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-10 mt-16"}>
-                        <div>
-                            <h1 className={"text-newGray text-2xl font-medium xl:w-full md:max-w-[80%]"}
-                                id={"based"}>Article Readability</h1>
-                        </div>
-                        <div>
-                            <h1 className={""}>
-                                The screenshots are much better in the Figma, yet despite that we can see the clear
-                                differences between the
-                                before and after of adjusting the case study principles. From 176 characters per line
-                                and 20pt font, it is now 96
-                                characters per line and 18pt font, a 45% in characters. Users can read the text more
-                                effectively, which in turn
-                                comprehension is enhanced.
-                            </h1>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="bg-[#f2f2f2] rounded-lg p-4 md:p-10 grid lg:grid-cols-2 gap-5 mt-20 "
-                             id={"gallery"}>
-                            <div id={"transparency"}>
-                                <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Before </p>
+            <CaseStudySection.SubSection >
+                <CaseStudySection.SubHeader subheader={"Focus Areas"}/>
+                <CaseStudySection.Content>
+                    <Clickable>
+                        <Clickable.Trigger>
+                            <div
+                                className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto"}
+                                id={"gallery"}>
+                                <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Value Proposition Section</p>
+                                <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
+                                     className={"rounded-md drop-shadow-md"}/>
+                            </div>
+                        </Clickable.Trigger>
+                        <Clickable.Content>
+                            <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
+                                 className={"rounded-md drop-shadow-md"}/>
+                        </Clickable.Content>
+                    </Clickable>
+                    <h1 className={"mt-4"}>
+                        The value proposition was condensed into a single, concise header and supporting paragraph, previously from
+                        three separate mini sections. With this fix, redundant CTAs with identical functionality were removed,
+                        allowing users to move past the hero section and reach products more quickly and without distraction.
+                    </h1>
+                    <Clickable>
+                        <Clickable.Trigger>
+                            <div
+                                className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto mt-10"}
+                                id={"gallery"}>
+                                <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Product Cards</p>
+                                <img src={"/schneider-electric/product_Cards.png"} alt={"Image"}
+                                     className={"rounded-md drop-shadow-md"}/>
+                            </div>
+                        </Clickable.Trigger>
+                        <Clickable.Content>
+                            <img src={"/schneider-electric/product_Cards.png"} alt={"Image"}
+                                 className={"rounded-md drop-shadow-md"}/>
+                        </Clickable.Content>
+                    </Clickable>
+                    <h1 className={"mt-4"}>
+                        Product cards remain in a three-column grid on desktop, but with the placement of the left-side
+                        filtering system, they now occupy 75% of the page width. Within this layout structure, the cards
+                        provide more relevant information, including color swatches and SKUs, giving a clearer understanding
+                        of product availability at a glance.
+                        <br/>
+                        <br/>
+                        However, as time builds upon the website, opportunities including user reviews, ratings, and other
+                        improvements can be added to strengthen product evaluation.
+                    </h1>
+                    <Clickable>
+                        <Clickable.Trigger>
+                            <div
+                                className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto mt-10"}
+                                id={"gallery"}>
+                                <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Filter Optimization</p>
+                                <img src={"/schneider-electric/filters.png"} alt={"Image"}
+                                     className={"rounded-md drop-shadow-md"}/>
+                            </div>
+                        </Clickable.Trigger>
+                        <Clickable.Content>
+                            <img src={"/schneider-electric/filters.png"} alt={"Image"}
+                                 className={"rounded-md drop-shadow-md"}/>
+                        </Clickable.Content>
+                    </Clickable>
+                    <h1 className={"mt-4"}>
+                        Filters are now positioned in a left-aligned sidebar occupying 25% of the page width, with options
+                        organized into an accordion-style layout for easier navigation. Of the original 108 total filters,
+                        48 are related to product types. Those 48 were card-sorted into 6 clear categories, allowing users to
+                        quickly locate and compare items based on their needs without feeling overwhelmed by vertical scroll.
+                        <br/>
+                        <br/>
+                        In addition, text-based color options were replaced with visual swatches, promoting recognition over recall
+                        and enabling users to better identify product variations at a glance. Together, these fixes reduce cognitive
+                        load, support iterative filtering, and create a better browsing and product discovery experience.
+                    </h1>
+                </CaseStudySection.Content>
+            </CaseStudySection.SubSection>
+            <div className={"mt-24"}/>
+            <CaseStudySection.SubSection>
+                <CaseStudySection.SubHeader subheader={"User Flow"}/>
+                <CaseStudySection.Content>
+                    <Clickable>
+                        <Clickable.Trigger>
+                            <div
+                                className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto"}
+                                id={"gallery"}>
+                                <img src={"/schneider-electric/userflow.png"} alt={"Image"}
+                                     className={"rounded-md drop-shadow-md"}/>
+                            </div>
+                        </Clickable.Trigger>
+                        <Clickable.Content>
+                            <img src={"/schneider-electric/userflow.png"} alt={"Image"}
+                                 className={"rounded-md drop-shadow-md"}/>
+                        </Clickable.Content>
+                    </Clickable>
+                    <h1 className={"mt-4"}>
+                        With the new filtering system in place, users are encourages to filter iteratively
+                        and responsively, making product discovery far more seamless than before. By surfacing
+                        filters directly in a left-hand sidebar, the need to repeatedly open, close, apply, and reset
+                        a filter button is eliminated, reducing friction and cutting the average click depth from the
+                        home page by 2, or 33%. The diagram above illustrates the improved user flow.
+                    </h1>
+                </CaseStudySection.Content>
+            </CaseStudySection.SubSection>
+            <div className={"mt-24"}/>
+            <CaseStudySection.SubSection>
+                <CaseStudySection.SubHeader subheader={"Article Readability"}/>
+                <CaseStudySection.Content>
+                    <div className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto"} id={"gallery"}>
+                        <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Before</p>
+                        <Clickable>
+                            <Clickable.Trigger>
                                 <img src={"/schneider-electric/before.png"} alt={"Image"}
-                                     className={"rounded-md drop-shadow-md mb-5"}/>
-
-                            </div>
-                            <div id={"transparency"}>
-                                <p className={"text-newGray text-sm mb-0.5"} id={"based"}>After</p>
+                                     className={"rounded-md drop-shadow-md"}/>
+                            </Clickable.Trigger>
+                            <Clickable.Content>
+                                <img src={"/schneider-electric/before.png"} alt={"Image"}
+                                     className={"rounded-md drop-shadow-md"}/>
+                            </Clickable.Content>
+                        </Clickable>
+                        <p className={"text-newGray text-sm mb-0.5 mt-4"} id={"based"}>After</p>
+                        <Clickable>
+                            <Clickable.Trigger>
                                 <img src={"/schneider-electric/after18.png"} alt={"Image"}
-                                     className={"rounded-md drop-shadow-md mb-5"}/>
-
-                            </div>
-                        </div>
+                                     className={"rounded-md drop-shadow-md"}/>
+                            </Clickable.Trigger>
+                            <Clickable.Content>
+                                <img src={"/schneider-electric/after18.png"} alt={"Image"}
+                                     className={"rounded-md drop-shadow-md"}/>
+                            </Clickable.Content>
+                        </Clickable>
                     </div>
-                </div>
-                <div className={"border-t border-t-[#e1e1e1] mt-16  py-2"} id={"newLine"}>
-                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16"}>
-                        <div>
-                            <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>What's next?</h1>
-                            <h1 className={"text-newGray text-3xl font-medium xl:w-full md:max-w-[80%]"}
-                                id={"based"}></h1>
-                        </div>
-                        <div>
-                            <h1 className={"mb-4"}>
-                                Currently, the website will continue its pilot phase and move onto other countries until
-                                it is fully global!
-                                I had an amazing time working with amazing co-workers building and refining this
-                                website, and I can't wait to
-                                see it blast off. I've been able to thrive and blossom, and this where I took my
-                                abilities to the next level.
-                                I'm excited for the upcoming opportunities awaiting me.
-                            </h1>
-                            <img src={"/schneider-electric/coworkers.png"} alt={"coworkers.png"}/>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <h1 className={"mt-4"}>
+                        The screenshots are much better in the Figma, yet despite that we can see the clear
+                        differences between the
+                        before and after of adjusting the case study principles. From 176 characters per line
+                        and 20pt font, it is now 96
+                        characters per line and 18pt font, a 45% decrease in characters. Users can read the text more
+                        effectively, which in turn
+                        comprehension is enhanced.
+                    </h1>
+                </CaseStudySection.Content>
+            </CaseStudySection.SubSection>
+            <CaseStudySection>
+                <CaseStudySection.SubSection>
+                    <CaseStudySection.Title title={"What's next?"}/>
+                    <CaseStudySection.Content>
+                        <h1 className={"mb-4"}>
+                            Currently, the website will continue its pilot phase and move onto other countries until
+                            it is fully global!
+                            I had an amazing time working with amazing co-workers building and refining this
+                            website, and I can't wait to
+                            see it blast off. I've been able to thrive and blossom, and this where I took my
+                            abilities to the next level.
+                            I'm excited for the upcoming opportunities awaiting me.
+                        </h1>
+                        <img src={"/schneider-electric/coworkers.png"} alt={"coworkers.png"}/>
+                    </CaseStudySection.Content>
+                </CaseStudySection.SubSection>
+            </CaseStudySection>
         </div>
     )
 
