@@ -16,7 +16,7 @@ export const ProjectIntro = () => {
                     heatmaps, Builder.io CMS, and much collaboration from partners
                     of the United States, France, Spain, and India.
                 </h1>
-                <div className={"space-x-3 mt-10"}>
+                <div className={"inline-flex flex-col md:flex-row gap-3 mt-10"}>
                     <LinkButton
                         link={"https://www.se.com/fr/fr/home/"}
                         text={"B2C WEBSITE"}

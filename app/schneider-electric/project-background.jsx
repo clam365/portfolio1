@@ -285,7 +285,7 @@ export const ProjectBackground = () => {
             <CaseStudySection>
                 <CaseStudySection.SubSection>
                     <CaseStudySection.Title title={"Final Designs"}>
-                        <div className={"space-x-3 mt-4"}>
+                        <div className={"inline-flex flex-col md:flex-row gap-3 mt-4"}>
                             <LinkButton
                                 link={"https://www.figma.com/proto/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=110-439&t=yExnMr3mmsqno6nw-1"}
                                 text={"FIGMA MOCKUP"}/>
@@ -357,7 +357,7 @@ export const ProjectBackground = () => {
                                 id={"gallery"}>
                                 <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Value Proposition Section</p>
                                 <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
-                                     className={"rounded-md drop-shadow-md"}/>
+                                     className={"rounded-md w-full h-auto drop-shadow-md"}/>
                             </div>
                         </Clickable.Trigger>
                         <Clickable.Content>
@@ -377,7 +377,7 @@ export const ProjectBackground = () => {
                                 id={"gallery"}>
                                 <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Product Cards</p>
                                 <img src={"/schneider-electric/product_Cards.png"} alt={"Image"}
-                                     className={"rounded-md drop-shadow-md"}/>
+                                     className={"rounded-md w-full h-auto drop-shadow-md"}/>
                             </div>
                         </Clickable.Trigger>
                         <Clickable.Content>
@@ -402,7 +402,7 @@ export const ProjectBackground = () => {
                                 id={"gallery"}>
                                 <p className={"text-newGray text-sm mb-0.5"} id={"based"}>Filter Optimization</p>
                                 <img src={"/schneider-electric/filters.png"} alt={"Image"}
-                                     className={"rounded-md drop-shadow-md"}/>
+                                     className={"rounded-md w-full h-auto drop-shadow-md"}/>
                             </div>
                         </Clickable.Trigger>
                         <Clickable.Content>
