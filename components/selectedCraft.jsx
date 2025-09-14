@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import {ArrowRight} from "lucide-react";
 import "@/app/globals.css"
 import PropTypes from "prop-types"
+import SimpleParallax from "simple-parallax-js";
 
 export function SelectedCraft({pageLink, imageSrc, projectDescription, projectName}) {
-    return(
+    return (
         <div className={"group"}>
             <Link href={pageLink} className="relative z-0">
                 <div>

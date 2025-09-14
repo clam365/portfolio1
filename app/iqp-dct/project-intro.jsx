@@ -14,7 +14,7 @@ export const ProjectIntro = () => {
                     In this PERN stack app, I led the design and development of the responsive UI and conducted user
                     research and testing.
                 </h1>
-                <div className={"space-3"}>
+                <div className={"space-3 mt-10"}>
                     <LinkButton
                         link={"https://www.wpi.edu/project-based-learning/project-based-education/interactive-qualifying-project"}
                         text={"WPI IQP DESCRIPTION"}

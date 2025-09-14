@@ -3,6 +3,7 @@ import "@/app/globals.css"
 import { motion } from "framer-motion";
 import PropTypes from "prop-types"
 import Image from "next/image";
+import SimpleParallax from "simple-parallax-js";
 
 export default function CaseStudyStart({tag, title, description, imageAlt, imageSrc}) {
     return(
@@ -41,13 +42,15 @@ export default function CaseStudyStart({tag, title, description, imageAlt, image
                 animate={{clipPath: "inset(0% 0% 0% 0%)"}}
                 transition={{duration: 0.65, ease: "easeInOut", delay: 0.75}}
             >
-                <Image
-                    src={imageSrc}
-                    alt={imageAlt}
-                    width={4000}
-                    height={2800}
-                    className={"w-full object-cover min-h-[600px]"}
-                />
+                <SimpleParallax scale={1.1}>
+                    <Image
+                        src={imageSrc}
+                        alt={imageAlt}
+                        width={4000}
+                        height={2800}
+                        className={"w-full object-cover min-h-[600px]"}
+                    />
+                </SimpleParallax>
             </motion.div>
         </>
     )

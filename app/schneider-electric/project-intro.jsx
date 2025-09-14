@@ -7,16 +7,16 @@ export const ProjectIntro = () => {
         <CaseStudyIntro>
             <CaseStudyIntro.Summary>
                 <h1 className={"text-2xl"}>
-                    In my internship as a Product Designer, I helped launch the first global B2C web experience
+                    In my internship as a Product Designer, I aided in launching their first global B2C web experience
                     tailored for homeowners in France. Through my refined high-fidelity mockups, I improved user
                     flows in product discovery, validated by senior UX designers.
                     <br/>
                     <br/>
-                    This was done by using UX insights from competitive benchmarking of 5+ sites, ContentSquare
-                    heatmaps, and much communication from partners
+                    This was done by using UX insights from competitive benchmarking of 5+ sites, heuristic analysis, ContentSquare
+                    heatmaps, Builder.io CMS, and much collaboration from partners
                     of the United States, France, Spain, and India.
                 </h1>
-                <div className={"space-x-3"}>
+                <div className={"space-x-3 mt-10"}>
                     <LinkButton
                         link={"https://www.se.com/fr/fr/home/"}
                         text={"B2C WEBSITE"}
