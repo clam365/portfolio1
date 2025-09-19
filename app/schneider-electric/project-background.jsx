@@ -347,7 +347,7 @@ export const ProjectBackground = () => {
                     />
                 </div>
             </div>
-            <CaseStudySection.SubSection >
+            <CaseStudySection.SubSection>
                 <CaseStudySection.SubHeader subheader={"Focus Areas"}/>
                 <CaseStudySection.Content>
                     <Clickable>

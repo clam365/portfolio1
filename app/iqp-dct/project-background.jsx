@@ -3,16 +3,16 @@ import Gallery from "@/app/iqp-dct/gallery";
 import {CaseStudySection} from "@/components/caseStudy/caseStudySection";
 import {List} from "@/components/List";
 import {AppWindow, ListOrdered, Sprout} from "lucide-react";
-
 export const ProjectBackground = () => {
     return (
         <div className={"px-10  xl:px-72 py-24 md:pt-48"}>
             <CaseStudySection>
                 <CaseStudySection.SubSection>
-                    <CaseStudySection.Title title={"What's IQP DCT?"} subtitle={"A personalized data tool for WPI undergrads"}/>
+                    <CaseStudySection.Title title={"What's IQP DCT?"}
+                                            subtitle={"A personalized data tool for WPI undergrads"}/>
                     <CaseStudySection.Content>
                         <h1 className={""}>
-                            Worcester Polytechnic Institute juniors participate in a humanitarian project
+                            Worcester Polytechnic Institute undergraduates participate in a humanitarian project
                             known as the Interactive Qualifying Project (IQP) in any part of the globe. Our tool serves
                             as an
                             application that helps students collect interviews and qualitative/quantitative data, along
@@ -23,7 +23,7 @@ export const ProjectBackground = () => {
                                 <List.Header header={"Some numbers for context"}/>
                                 <List.Section>
                                     <h1 className={"text-5xl font-medium"}>1,200</h1>
-                                    <h1 className={"my-1"}>juniors travel per year</h1>
+                                    <h1 className={"my-1"}>students travel per year</h1>
                                 </List.Section>
                                 <List.Section>
                                     <h1 className={"text-5xl font-medium"}>50+</h1>
@@ -40,21 +40,23 @@ export const ProjectBackground = () => {
             </CaseStudySection>
             <CaseStudySection>
                 <CaseStudySection.SubSection>
-                    <CaseStudySection.Title title={"Context"} subtitle={"How do we get started?"}/>
+                    <CaseStudySection.Title title={"Defining the Problem"} subtitle={"From Chaos to Clarity"}/>
                     <CaseStudySection.Content>
-                        <h1 className={"text-newGray"} id={"based"}>
-                            Depending on the project, usually teams must collect vast amounts of different types of data
-                            ranging from qualitative,
-                            quantitative, surveys, and interviews. With multiple platforms and applications tracking
-                            this data, it becomes easy to be disorganized
-                            and inefficient while putting together their comprehensive solutions.
+                        <h1 id={"based"}>
+                            For many projects, teams must gather large volumes of diverse data, those being
+                            qualitative/quantitative
+                            inputs, surveys, and interviews. With this information logged and scattered across multiple
+                            platforms and applications,
+                            the process can quickly become disorganized and inefficient, making it harder to develop
+                            cohesive solutions.
                             <br/>
                             <br/>
-                            The 2023 Iceland Team initially tried to tackle on this massive overhead cost but the app
-                            was confined to its project archive.
-                            We sought out to continue their vision and create a standardized flow for juniors so that
-                            they can focus on the analysis that is
-                            important.
+                            In 2023, the IQP Iceland Team began addressing this challenge by creating an app to reduce
+                            the overhead of data management. However, their solution remained confined to its project
+                            archive.
+                            Building on their vision, we aim to establish a standardized workflow that empowers future
+                            teams to
+                            spend less time on logistics and more time on meaningful analysis.
                         </h1>
                         <div className={"border-t border-t-[#e1e1e1] mt-8 mb-10 py-2"} id={"newLine"}>
                             <h1 className={"text-spotify text-sm"} id={"spotifyText"}>Project Goal</h1>
@@ -97,7 +99,7 @@ export const ProjectBackground = () => {
             </CaseStudySection>
             <CaseStudySection>
                 <CaseStudySection.SubSection>
-                    <CaseStudySection.Title title={"UXR"} subtitle={"What do students need?"}/>
+                    <CaseStudySection.Title title={"UXR"} subtitle={"Student Needs & Competitive Analysis"}/>
                     <CaseStudySection.Content>
                         <div className={"mt-4"}/>
                         <List>
@@ -154,6 +156,61 @@ export const ProjectBackground = () => {
                     </CaseStudySection.Content>
                 </CaseStudySection.SubSection>
             </CaseStudySection>
+            <CaseStudySection.SubSection>
+                <CaseStudySection.SubHeader subheader={"User Flows"}/>
+                <CaseStudySection.Content>
+                    <h1>
+                        Building on those insights, we designed the following user flows to directly address the challenges.
+                        Below, the first flow on the left details the onboarding process for a student, guiding users from SSO login to project selection.
+                        Students can create a new project, join with a PIN provided by a team, or view an existing project. Role-based permissions
+                        ensures that project leads maintain oversight while the members collaborate efficiently.
+                        <br/>
+                        <br/>
+                        The second flow on the right focuses on how users engage with the forms, starting from the project dashboard and branching into
+                        options such as creating, reusing, editing, and adding data. Through the mapping page, we can visualize the geotagged data over time.
+                        Forms are accessible through both pages.
+                    </h1>
+                </CaseStudySection.Content>
+            </CaseStudySection.SubSection>
+            <div className={"grid grid-cols-1 gap-4 md:grid-cols-2 -mx-10 xl:-mx-72 mb-16 mt-20"}>
+                <div className="">
+                    <img
+                        src={"/dct/user_flow_login.png"}
+                        alt="Image"
+                        className="w-full"
+                    />
+                </div>
+                <div className="">
+                    <img
+                        src={"/dct/user_flow_dashboard.png"}
+                        alt="Image"
+                        className="w-full"
+                    />
+                </div>
+            </div>
+            <CaseStudySection>
+                <CaseStudySection.SubSection>
+                    <CaseStudySection.Title title={"Design System"}/>
+                    <CaseStudySection.Content>
+                        <h1>
+                            The design system of the IQP DCT serves as a visual bridge between WPI&#39;s existing
+                            interfaces and
+                            a refreshed, modern aesthetic from shadcn. By blending in familiarity with modern minimalist
+                            principles,
+                            we ensure consistency across the platform while introducing a cleaner and more intuitive
+                            student experience.
+                        </h1>
+                    </CaseStudySection.Content>
+                </CaseStudySection.SubSection>
+            </CaseStudySection>
+            <div className="-mx-10 xl:-mx-72 mt-12">
+                <img
+                    src={"/dct/iqp_palette.png"}
+                    alt="Image"
+                    className="w-screen max-w-none"
+                />
+            </div>
+
             <CaseStudySection>
                 <CaseStudySection.SubSection>
                     <CaseStudySection.Title title={"User Testing"} subtitle={"What do students think?"}/>
