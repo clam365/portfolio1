@@ -160,19 +160,24 @@ export const ProjectBackground = () => {
                 <CaseStudySection.SubHeader subheader={"User Flows"}/>
                 <CaseStudySection.Content>
                     <h1>
-                        Building on those insights, we designed the following user flows to directly address the challenges.
-                        Below, the first flow on the left details the onboarding process for a student, guiding users from SSO login to project selection.
-                        Students can create a new project, join with a PIN provided by a team, or view an existing project. Role-based permissions
+                        Building on those insights, we designed the following user flows to directly address the
+                        challenges.
+                        Below, the first flow on the left details the onboarding process for a student, guiding users
+                        from SSO login to project selection.
+                        Students can create a new project, join with a PIN provided by a team, or view an existing
+                        project. Role-based permissions
                         ensures that project leads maintain oversight while the members collaborate efficiently.
                         <br/>
                         <br/>
-                        The second flow on the right focuses on how users engage with the forms, starting from the project dashboard and branching into
-                        options such as creating, reusing, editing, and adding data. Through the mapping page, we can visualize the geotagged data over time.
+                        The second flow on the right focuses on how users engage with the forms, starting from the
+                        project dashboard and branching into
+                        options such as creating, reusing, editing, and adding data. Through the mapping page, we can
+                        visualize the geotagged data over time.
                         Forms are accessible through both pages.
                     </h1>
                 </CaseStudySection.Content>
             </CaseStudySection.SubSection>
-            <div className={"grid grid-cols-1 gap-4 md:grid-cols-2 -mx-10 xl:-mx-72 mb-16 mt-20"}>
+            <div className={"grid grid-cols-1 gap-4 md:grid-cols-2 -mx-10 xl:-mx-72 my-20"}>
                 <div className="">
                     <img
                         src={"/dct/user_flow_login.png"}
@@ -203,14 +208,33 @@ export const ProjectBackground = () => {
                     </CaseStudySection.Content>
                 </CaseStudySection.SubSection>
             </CaseStudySection>
-            <div className="-mx-10 xl:-mx-72 mt-12">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 -mx-10 xl:-mx-72 mt-20 mb-4 items-stretch">
+                <div className="flex flex-col h-full">
+                    <div className="grid grid-cols-2 gap-4 mb-4">
+                        <img src="/dct/eye.png" alt="Image" className="w-full"/>
+                        <img src="/dct/createForm.png" alt="Image" className="w-full"/>
+                    </div>
+                    <img src="/dct/card.png" alt="Image" className="w-full flex-1 object-cover"/>
+                </div>
+                <div className="h-full">
+                    <img src="/dct/icons.png" alt="Image" className="w-full h-full object-cover"/>
+                </div>
+            </div>
+
+            <div className="-mx-10 xl:-mx-72">
                 <img
                     src={"/dct/iqp_palette.png"}
                     alt="Image"
                     className="w-screen max-w-none"
                 />
             </div>
-
+            <div className="-mx-10 xl:-mx-72 mt-4">
+                <img
+                    src={"/dct/system.png"}
+                    alt="Image"
+                    className="w-screen max-w-none"
+                />
+            </div>
             <CaseStudySection>
                 <CaseStudySection.SubSection>
                     <CaseStudySection.Title title={"User Testing"} subtitle={"What do students think?"}/>
