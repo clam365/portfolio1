@@ -3,6 +3,7 @@ import Gallery from "@/app/iqp-dct/gallery";
 import {CaseStudySection} from "@/components/caseStudy/caseStudySection";
 import {List} from "@/components/List";
 import {AppWindow, ListOrdered, Sprout} from "lucide-react";
+import {Clickable} from "@/components/clickable";
 export const ProjectBackground = () => {
     return (
         <div className={"px-10  xl:px-72 py-24 md:pt-48"}>
@@ -177,7 +178,7 @@ export const ProjectBackground = () => {
                     </h1>
                 </CaseStudySection.Content>
             </CaseStudySection.SubSection>
-            <div className={"grid grid-cols-1 gap-4 md:grid-cols-2 -mx-10 xl:-mx-72 my-20"}>
+            <div className={"grid grid-cols-1 gap-4 md:grid-cols-2 -mx-10 xl:-mx-72 my-20 mb-40"}>
                 <div className="">
                     <img
                         src={"/dct/user_flow_login.png"}
@@ -220,7 +221,6 @@ export const ProjectBackground = () => {
                     <img src="/dct/icons.png" alt="Image" className="w-full h-full object-cover"/>
                 </div>
             </div>
-
             <div className="-mx-10 xl:-mx-72">
                 <img
                     src={"/dct/iqp_palette.png"}
@@ -228,13 +228,130 @@ export const ProjectBackground = () => {
                     className="w-screen max-w-none"
                 />
             </div>
-            <div className="-mx-10 xl:-mx-72 mt-4">
+            <div className="-mx-10 xl:-mx-72 mt-4 mb-40">
                 <img
                     src={"/dct/system.png"}
                     alt="Image"
                     className="w-screen max-w-none"
                 />
             </div>
+            <CaseStudySection>
+                <CaseStudySection.SubSection>
+                    <CaseStudySection.Title title={"Design Iterations"}/>
+                    <CaseStudySection.Content>
+                        <h1>
+                            After defining the design system, we began to explore how the core flows would look in
+                            practice. The initial mockups
+                            helped visualize basic layouts for forms, dashboards, and project onboarding. These early
+                            drawings focused on functionality,
+                            making sure all the required steps were represented.
+                            <br/>
+                            <br/>
+                            As a note, all of us were unfamiliar with Figma and the fact that shadcn has their own Figma
+                            design system in place. As a
+                            result, our early mockups were limited by the initial learning curve, but never the less
+                            this provided a valuable learning
+                            experience on how to format our application.
+                        </h1>
+                    </CaseStudySection.Content>
+                </CaseStudySection.SubSection>
+            </CaseStudySection>
+            <div className="-mx-10 xl:-mx-72 mt-4 mb-20">
+                <img
+                    src={"/dct/before.png"}
+                    alt="Image"
+                    className="w-screen max-w-none"
+                />
+            </div>
+            <CaseStudySection.SubSection>
+                <CaseStudySection.SubHeader subheader={"A/B User Testing"}/>
+                <CaseStudySection.Content>
+                    <h1>
+                        With our starting full-stack prototype reflecting our first iteration mockups, we began
+                        conducting
+                        A/B user testing to uncover usability issues and validate design decisions. This phase allowed
+                        us
+                        to directly compare different interface variations, helping us identify which layouts,
+                        navigation patterns,
+                        and UI best aligned with student expectations.
+                        <br/>
+                        <br/>
+                        Our user testing was done over three weeks with a goal of completing 10 tests in each week, for
+                        a total of 30 sessions. Most of our feedback came from the first two weeks.
+                        <br/>
+                        <br/>
+                    </h1>
+                    <List>
+                        <List.Header header={"Student & Faculty Feedback"}/>
+                        <List.Section>
+                            <List.NumberSubtitle number={1} header={"Form Tiles & Sections"}/>
+                            <Clickable>
+                                <Clickable.Trigger>
+                                    <div
+                                        className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto mb-4"}
+                                        id={"gallery"}>
+                                        <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
+                                             className={"rounded-md drop-shadow-md"}/>
+                                    </div>
+                                </Clickable.Trigger>
+                                <Clickable.Content>
+                                    <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
+                                         className={"rounded-md drop-shadow-md"}/>
+                                </Clickable.Content>
+                            </Clickable>
+                            <h1>
+                                Our previous design on the Forms Page contained a table of forms, filterable through the
+                                top filters.
+                                However, this approach quickly became cluttered and made it difficult for users to
+                                distinguish between
+                                different types of forms.
+                            </h1>
+                            <Clickable>
+                                <Clickable.Trigger>
+                                    <div
+                                        className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto  mt-4 mb-4"}
+                                        id={"gallery"}>
+                                        <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
+                                             className={"rounded-md drop-shadow-md"}/>
+                                    </div>
+                                </Clickable.Trigger>
+                                <Clickable.Content>
+                                    <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
+                                         className={"rounded-md drop-shadow-md"}/>
+                                </Clickable.Content>
+                            </Clickable>
+                            <h1>
+                                In the new design, each category of forms (Data, Interview, Links) is organized into
+                                collapsible
+                                accordions, allowing teams to expand only the sections most relevant to their focus
+                                area. This not only
+                                reduces visual noise, but also makes navigation more intuitive. A prominent green button
+                                now provides
+                                a clear entry point for data collection as a primary button. Additionally, supporting
+                                functions for data
+                                analysis and project management are placed on the right hand side, giving quick access
+                                to secondary actions
+                                without overwhelming the main workflow.
+                            </h1>
+                        </List.Section>
+                    </List>
+                </CaseStudySection.Content>
+            </CaseStudySection.SubSection>
+            <div className="-mx-10 xl:-mx-72 mt-20">
+                <img
+                    src={"/dct/after.png"}
+                    alt="Image"
+                    className="w-screen max-w-none"
+                />
+            </div>
+            <div className="-mx-10 xl:-mx-72 mt-4 mb-20">
+                <img
+                    src={"/dct/iqp_mockup.png"}
+                    alt="Image"
+                    className="w-screen max-w-none"
+                />
+            </div>
+
             <CaseStudySection>
                 <CaseStudySection.SubSection>
                     <CaseStudySection.Title title={"User Testing"} subtitle={"What do students think?"}/>
