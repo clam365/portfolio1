@@ -4,6 +4,7 @@ import {CaseStudySection} from "@/components/caseStudy/caseStudySection";
 import {List} from "@/components/List";
 import {AppWindow, ListOrdered, Sprout} from "lucide-react";
 import {Clickable} from "@/components/clickable";
+import SimpleParallax from "simple-parallax-js";
 export const ProjectBackground = () => {
     return (
         <div className={"px-10  xl:px-72 py-24 md:pt-48"}>
@@ -290,49 +291,166 @@ export const ProjectBackground = () => {
                                     <div
                                         className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto mb-4"}
                                         id={"gallery"}>
-                                        <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
+                                        <img src={"/dct/forms_before.png"} alt={"Image"}
                                              className={"rounded-md drop-shadow-md"}/>
                                     </div>
                                 </Clickable.Trigger>
                                 <Clickable.Content>
-                                    <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
+                                    <img src={"/dct/forms_before.png"} alt={"Image"}
                                          className={"rounded-md drop-shadow-md"}/>
                                 </Clickable.Content>
                             </Clickable>
                             <h1>
-                                Our previous design on the Forms Page contained a table of forms, filterable through the
-                                top filters.
-                                However, this approach quickly became cluttered and made it difficult for users to
-                                distinguish between
-                                different types of forms.
+                                Our previous designs on the Form Page relied on a table of forms, filterable through the top filters
+                                and organized by category in a side navigation bar. However, this structure created unnecessary click
+                                depth and pages, forcing users to navigate through multiple layers before reaching the form they needed.
+                                As a result, quick access to specific forms was limited, and it became harder for users to distinguish forms
+                                and conduct the necessary functions.
                             </h1>
                             <Clickable>
                                 <Clickable.Trigger>
                                     <div
                                         className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto  mt-4 mb-4"}
                                         id={"gallery"}>
-                                        <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
+                                        <img src={"/dct/forms_after.png"} alt={"Image"}
                                              className={"rounded-md drop-shadow-md"}/>
                                     </div>
                                 </Clickable.Trigger>
                                 <Clickable.Content>
-                                    <img src={"/schneider-electric/value_proposition.png"} alt={"Image"}
+                                    <img src={"/dct/forms_after.png"} alt={"Image"}
                                          className={"rounded-md drop-shadow-md"}/>
                                 </Clickable.Content>
                             </Clickable>
                             <h1>
-                                In the new design, each category of forms (Data, Interview, Links) is organized into
-                                collapsible
-                                accordions, allowing teams to expand only the sections most relevant to their focus
-                                area. This not only
-                                reduces visual noise, but also makes navigation more intuitive. A prominent green button
-                                now provides
-                                a clear entry point for data collection as a primary button. Additionally, supporting
-                                functions for data
-                                analysis and project management are placed on the right hand side, giving quick access
-                                to secondary actions
-                                without overwhelming the main workflow.
+                                In the new design, each category of forms is organized into collapsible accordions, allowing teams to
+                                expand only the sections most relevant to their project. Previously, the sidebar had Qualitative, Quantitative,
+                                Interviews, Surveys, and QR codes as separate pages, with a sub-page to the tables and graphs of the respective data.
+                                Based on feedback about the unnecessary click depth, we realized that instead of thinking for each category, we needed
+                                to think for each form.
+                                <br/>
+                                <br/>
+                                By restructuring around forms rather than the distinct categories, users access the resource using fewer steps. This shift
+                                also allows used to unify form types (qualitative, quantitative, and survey) under &#34;Data Form&#34;. Instead of sending
+                                users across multiple pages for similar tasks, each form now serves as a hub where its respective data entry, tables, and graphs are
+                                immediately accessible.
                             </h1>
+                        </List.Section>
+                        <List.Section>
+                            <List.NumberSubtitle number={2} header={"Dashboard Info"}/>
+                            <Clickable>
+                                <Clickable.Trigger>
+                                    <div
+                                        className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto mb-4"}
+                                        id={"gallery"}>
+                                        <img src={"/dct/dashboard_before.png"} alt={"Image"}
+                                             className={"rounded-md drop-shadow-md"}/>
+                                    </div>
+                                </Clickable.Trigger>
+                                <Clickable.Content>
+                                    <img src={"/dct/dashboard_before.png"} alt={"Image"}
+                                         className={"rounded-md drop-shadow-md"}/>
+                                </Clickable.Content>
+                            </Clickable>
+                            <h1>
+                                The project dashboard contains relevant card statistics, recent team activity, and a data map. However,
+                                the data map takes up valuable real estate away from potential components for team project management. With
+                                a map page already dedicated, duplicating it on the dashboard added little value.
+                            </h1>
+                            <Clickable>
+                                <Clickable.Trigger>
+                                    <div
+                                        className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto  mt-4 mb-4"}
+                                        id={"gallery"}>
+                                        <img src={"/dct/dashboard.png"} alt={"Image"}
+                                             className={"rounded-md drop-shadow-md"}/>
+                                    </div>
+                                </Clickable.Trigger>
+                                <Clickable.Content>
+                                    <img src={"/dct/dashboard.png"} alt={"Image"}
+                                         className={"rounded-md drop-shadow-md"}/>
+                                </Clickable.Content>
+                            </Clickable>
+                            <h1>
+                                Based on user feedback, students expressed a stronger need for real-time project updates over
+                                repetitive visualizations. The revised dashboard prioritizes team-focused elements, replacing the data map
+                                with member contributions. It now becomes a true project hub where IQP team members immediately understand their
+                                progress and steps.
+                            </h1>
+                        </List.Section>
+                        <List.Section>
+                            <List.NumberSubtitle number={3} header={"Interview Form"}/>
+                            <Clickable>
+                                <Clickable.Trigger>
+                                    <div
+                                        className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto mb-4"}
+                                        id={"gallery"}>
+                                        <img src={"/dct/interview_before.png"} alt={"Image"}
+                                             className={"rounded-md drop-shadow-md"}/>
+                                    </div>
+                                </Clickable.Trigger>
+                                <Clickable.Content>
+                                    <img src={"/dct/interview_before.png"} alt={"Image"}
+                                         className={"rounded-md drop-shadow-md"}/>
+                                </Clickable.Content>
+                            </Clickable>
+                            <h1>
+                                The mockup for the interview form collection demonstrates a lack of clear IA and visual hierarchy. The
+                                form fields for context, questions, and notes appear identical, offering no indication of their relative
+                                importance or what should be filled out. With no prioritization, it makes it difficult for students to quickly
+                                understand where to begin. Additionally, the placement and function of the recording button are unclear.
+                            </h1>
+                            <Clickable>
+                                <Clickable.Trigger>
+                                    <div
+                                        className={"bg-[#f2f2f2] rounded-xl p-4 flex flex-col justify-center m-auto  mt-4 mb-4"}
+                                        id={"gallery"}>
+                                        <img src={"/dct/interview.png"} alt={"Image"}
+                                             className={"rounded-md drop-shadow-md"}/>
+                                    </div>
+                                </Clickable.Trigger>
+                                <Clickable.Content>
+                                    <img src={"/dct/interview.png"} alt={"Image"}
+                                         className={"rounded-md drop-shadow-md"}/>
+                                </Clickable.Content>
+                            </Clickable>
+                            <h1>
+                                Compared to the earlier mockup, this updated design delivers a far more organized and functional layout.
+                                The screen is now divided into two distinct sections: the left side dedicated to structured form fields
+                                and the right side reserved for audio recording and AI transcription. This split not only helps users stay
+                                focused on data entry but also enables multitasking by allowing interviews to be recorded while
+                                documentation is completed. By aligning the processes of documentation and recording side by
+                                side rather than forcing them to compete for the same visual space, the design creates a smoother, more intuitive
+                                workflow that better supports how teams actually conduct interviews.
+                            </h1>
+                        </List.Section>
+                    </List>
+                </CaseStudySection.Content>
+            </CaseStudySection.SubSection>
+            <div className={"mt-20"}></div>
+            <CaseStudySection.SubSection>
+                <CaseStudySection.SubHeader subheader={"Final Design Thoughts"}/>
+                <CaseStudySection.Content>
+                    <h1 className={"mb-10"}>
+                        After a successful user testing session, we asked the last testing session to fill out an experience survey of the application.
+                        Below are the final screenshots of the application and stats of the Likert scale survey.
+                    </h1>
+                    <List>
+                        <List.Header header={"Students rated 8 or higher on these metrics on a scale of 1-10"}/>
+                        <List.Section>
+                            <h1 className={"text-5xl font-medium"}>88%</h1>
+                            <h1 className={"my-1"}>Overall Satisfaction </h1>
+                        </List.Section>
+                        <List.Section>
+                            <h1 className={"text-5xl font-medium"}>100%</h1>
+                            <h1 className={"my-1"}>Aesthetics</h1>
+                        </List.Section>
+                        <List.Section>
+                            <h1 className={"text-5xl font-medium"}>87%</h1>
+                            <h1 className={"my-1"}>Navigation</h1>
+                        </List.Section>
+                        <List.Section>
+                            <h1 className={"text-5xl font-medium"}>81%</h1>
+                            <h1 className={"my-1"}>Performance</h1>
                         </List.Section>
                     </List>
                 </CaseStudySection.Content>
@@ -345,52 +463,16 @@ export const ProjectBackground = () => {
                 />
             </div>
             <div className="-mx-10 xl:-mx-72 mt-4 mb-20">
-                <img
-                    src={"/dct/iqp_mockup.png"}
-                    alt="Image"
-                    className="w-screen max-w-none"
-                />
+                <SimpleParallax scale={1.05}>
+                    <img
+                        src={"/dct/iqp_mockup.png"}
+                        alt="Image"
+                        className="w-screen max-w-none"
+                    />
+                </SimpleParallax>
             </div>
-
-            <CaseStudySection>
-                <CaseStudySection.SubSection>
-                    <CaseStudySection.Title title={"User Testing"} subtitle={"What do students think?"}/>
-                    <CaseStudySection.Content>
-                        <h1 className={"text-newGray"} id={"based"}>
-                            Our user testing consisted of 3 weekly sessions, aiming to do 10 tests for the first 2 weeks
-                            each, and then finalize
-                            with 5 test in the last (25 total). Initially in the first beta version, we knew that we
-                            would have a lot of issues
-                            or UI tweaks, but in our findings as we got to the second week, those bugs diminished
-                            greatly. We tweaked features
-                            such as collapsible accordions for form categories, Form/Link Tile Navigation, and the
-                            addition of MCQs.
-                        </h1>
-                        <div className={"mt-10"}/>
-                        <List>
-                            <List.Header header={"Students rated 8 or higher on these metrics on a scale of 1-10"}/>
-                            <List.Section>
-                                <h1 className={"text-5xl font-medium"}>88%</h1>
-                                <h1 className={"my-1"}>Overall Satisfaction </h1>
-                            </List.Section>
-                            <List.Section>
-                                <h1 className={"text-5xl font-medium"}>100%</h1>
-                                <h1 className={"my-1"}>Aesthetics</h1>
-                            </List.Section>
-                            <List.Section>
-                                <h1 className={"text-5xl font-medium"}>87%</h1>
-                                <h1 className={"my-1"}>Navigation</h1>
-                            </List.Section>
-                            <List.Section>
-                                <h1 className={"text-5xl font-medium"}>81%</h1>
-                                <h1 className={"my-1"}>Performance</h1>
-                            </List.Section>
-                        </List>
-                    </CaseStudySection.Content>
-                </CaseStudySection.SubSection>
-            </CaseStudySection>
             <div className={"border-t border-t-[#e1e1e1] my-16  py-2"} id={"newLine"}>
-                <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>Final Design</h1>
+                <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>Functionality</h1>
                 <Gallery/>
             </div>
             <div className={"border-t border-t-[#e1e1e1] mt-40 py-2"} id={"newLine"}>

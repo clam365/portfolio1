@@ -19,11 +19,10 @@ export default function Gallery() {
                     <h1 className={"font-medium text-xl"}>Logging into your team dashboard</h1>
                     <h1 className={"text-sm"}>
                         Create your own account and login to your team's dashboard. If you do not have a team, you can
-                        create/join one.
+                        create/join one. The first part of the process is meant to be through WPI SSO.
                     </h1>
                 </div>
             </div>
-
             <div>
                 <div className={"bg-[#f2f2f2] rounded-xl p-4 md:p-10 flex flex-col justify-center m-auto mt-20"} id={"gallery"}>
                     <video
