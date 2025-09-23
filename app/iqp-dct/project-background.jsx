@@ -475,12 +475,10 @@ export const ProjectBackground = () => {
                 <h1 className={"text-slight-black text-4xl font-medium xl:w-full"}>Functionality</h1>
                 <Gallery/>
             </div>
-            <div className={"border-t border-t-[#e1e1e1] mt-40 py-2"} id={"newLine"}>
-                <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16"}>
-                    <div>
-                        <h1 className={"text-slight-black text-4xl  font-medium xl:w-full"}>Impact</h1>
-                    </div>
-                    <div>
+            <CaseStudySection>
+                <CaseStudySection.SubSection>
+                    <CaseStudySection.Title title={"Impact"}/>
+                    <CaseStudySection.Content>
                         <h1>
                             Our overarching goal was to create a concept application backed by the use case needs of
                             students
@@ -495,9 +493,9 @@ export const ProjectBackground = () => {
                             In April 2025, we presented our application in our MQP showcase to drive attention, and this
                             will be continued as another MQP for the future.
                         </h1>
-                    </div>
-                </div>
-            </div>
+                    </CaseStudySection.Content>
+                </CaseStudySection.SubSection>
+            </CaseStudySection>
         </div>
     )
 
