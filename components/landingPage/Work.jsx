@@ -43,10 +43,10 @@ export default function work() {
                 {/*Kyoto Project Center*/}
                 <RevealOnScroll>
                     <SelectedCraft
-                        pageLink={"/kyoto-project-center"}
-                        imageSrc={"/mockup1.1.png"}
-                        projectName={"Kyoto Project Center"}
-                        projectDescription={"Kyoto IQP Database"}
+                        pageLink={"/iqp-dct"}
+                        imageSrc={"/mockup2.png"}
+                        projectName={"IQP DCT"}
+                        projectDescription={"Senior Capstone Project"}
                     />
                 </RevealOnScroll>
 
@@ -54,10 +54,10 @@ export default function work() {
                     {/*IQP DCT*/}
                     <RevealOnScroll delay={0.5} duration={1}>
                         <SelectedCraft
-                            pageLink={"/iqp-dct"}
-                            imageSrc={"/mockup2.png"}
-                            projectName={"IQP DCT"}
-                            projectDescription={"Senior Capstone Project"}
+                            pageLink={"/kyoto-project-center"}
+                            imageSrc={"/mockup1.1.png"}
+                            projectName={"Kyoto Project Center"}
+                            projectDescription={"Kyoto IQP Database"}
                         />
                     </RevealOnScroll>
                     {/*Createv*/}
