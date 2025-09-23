@@ -44,21 +44,30 @@ export default function work() {
                 <RevealOnScroll>
                     <SelectedCraft
                         pageLink={"/iqp-dct"}
-                        imageSrc={"/mockup2.png"}
+                        imageSrc={"/mockup2.2.png"}
                         projectName={"IQP DCT"}
                         projectDescription={"Senior Capstone Project"}
                     />
                 </RevealOnScroll>
-
+                {/*Wildscape*/}
+                <RevealOnScroll>
+                    <SelectedCraft
+                        pageLink={"/kyoto-project-center"}
+                        imageSrc={"/mockup1.1.png"}
+                        projectName={"Kyoto Project Center"}
+                        projectDescription={"Kyoto IQP Database"}
+                    />
+                </RevealOnScroll>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-[2.5rem] gap-y-[3rem]">
                     {/*IQP DCT*/}
                     <RevealOnScroll delay={0.5} duration={1}>
                         <SelectedCraft
-                            pageLink={"/kyoto-project-center"}
-                            imageSrc={"/mockup1.1.png"}
-                            projectName={"Kyoto Project Center"}
-                            projectDescription={"Kyoto IQP Database"}
+                            pageLink={"/wildscape"}
+                            imageSrc={"/mockup4.png"}
+                            projectName={"Wildscape"}
+                            projectDescription={"Discover. Share. Protect."}
                         />
+
                     </RevealOnScroll>
                     {/*Createv*/}
                     <RevealOnScroll delay={0.6} duration={1}>
@@ -70,15 +79,7 @@ export default function work() {
                         />
                     </RevealOnScroll>
                 </div>
-                {/*Wildscape*/}
-                <RevealOnScroll>
-                    <SelectedCraft
-                        pageLink={"/wildscape"}
-                        imageSrc={"/mockup4.4.png"}
-                        projectName={"Wildscape"}
-                        projectDescription={"Discover. Share. Protect."}
-                    />
-                </RevealOnScroll>
+
             </div>
 
         </section>

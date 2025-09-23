@@ -14,7 +14,7 @@ export default function Gallery() {
                         muted
                     />
                 </div>
-                <div className={"grid grid-cols-1 md:grid-cols-2 border-t border-t-[#e1e1e1] mt-8 py-2 gap-y-4"}
+                <div className={"grid grid-cols-1 md:grid-cols-2 border-t border-t-[#e1e1e1] mt-8 py-2 gap-y-4 gap-x-12"}
                      id={"newLine"}>
                     <h1 className={"font-medium text-xl"}>Logging into your team dashboard</h1>
                     <h1 className={"text-sm"}>
@@ -34,7 +34,7 @@ export default function Gallery() {
                         muted
                     />
                 </div>
-                <div className={"grid grid-cols-1 md:grid-cols-2 border-t border-t-[#e1e1e1] mt-8 py-2 gap-y-4"}
+                <div className={"grid grid-cols-1 md:grid-cols-2 border-t border-t-[#e1e1e1] mt-8 py-2 gap-y-4 gap-x-12"}
                      id={"newLine"}>
                     <h1 className={"font-medium text-xl"}>Create your own forms</h1>
                     <h1 className={"text-sm"}>
@@ -56,7 +56,7 @@ export default function Gallery() {
                         muted
                     />
                 </div>
-                <div className={"grid grid-cols-1 md:grid-cols-2 border-t border-t-[#e1e1e1] mt-8 py-2 gap-y-4"}
+                <div className={"grid grid-cols-1 md:grid-cols-2 border-t border-t-[#e1e1e1] mt-8 py-2 gap-y-4 gap-x-12"}
                      id={"newLine"}>
                     <h1 className={"font-medium text-xl"}>Geotag your form data</h1>
                     <h1 className={"text-sm"}>
@@ -81,7 +81,7 @@ export default function Gallery() {
                         <img src={"/dct/question.PNG"} alt={"Image"} className={"rounded-md drop-shadow-md"}/>
                     </div>
                 </div>
-                <div className={"grid grid-cols-1 md:grid-cols-2 border-t border-t-[#e1e1e1] mt-8 py-2 gap-y-4"}
+                <div className={"grid grid-cols-1 md:grid-cols-2 border-t border-t-[#e1e1e1] mt-8 py-2 gap-y-4 gap-x-12"}
                      id={"newLine"}>
                     <h1 className={"font-medium text-xl"}>Project management and ease of access</h1>
                     <h1 className={"text-sm"}>
