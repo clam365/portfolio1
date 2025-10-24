@@ -265,12 +265,12 @@ export const ProjectBackground = () => {
                 />
             </div>
             <CaseStudySection.SubSection>
-                <CaseStudySection.SubHeader subheader={"A/B User Testing"}/>
+                <CaseStudySection.SubHeader subheader={"Iterative User Testing"}/>
                 <CaseStudySection.Content>
                     <h1>
                         With our starting full-stack prototype reflecting our first iteration mockups, we began
                         conducting
-                        A/B user testing to uncover usability issues and validate design decisions. This phase allowed
+                        iterative user testing to uncover usability issues and validate design decisions. This phase allowed
                         us
                         to directly compare different interface variations, helping us identify which layouts,
                         navigation patterns,
