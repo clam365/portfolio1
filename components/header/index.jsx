@@ -16,7 +16,7 @@ export default function Header() {
         <div className={styles.header}>
             <div className={styles.bar}>
                 <Link href="/">
-                    <Image src="/choso2.png" alt="logo" width={87} height={48}
+                    <Image src="/lotus.png" alt="logo" width={87} height={48}
                            className="rounded-lg transition transform hover:-translate-y-1 duration-200 items-center"/>
                 </Link>
 

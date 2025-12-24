@@ -13,7 +13,7 @@ export default function Content() {
                     <div id={"footer1"}>
                         <Link href={"/"} className={"inline-block"}>
                             <Image
-                                src="/choso3.png"
+                                src="/lotus2.png"
                                 alt="logo"
                                 width={87}
                                 height={48}
