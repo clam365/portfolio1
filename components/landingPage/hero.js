@@ -20,10 +20,7 @@ export default function Hero() {
                     initial="hidden"
                     animate="show"
                 >
-                    I&#39;m Chris Lam, a creative designer and developer for digital interfaces, driven by
-                    <span className={"italic"}> authentic expression </span>
-                    and
-                    <span className={"italic"}> sustainability</span>.
+                    I&#39;m Chris Lam, a product designer who bridges the gap between user needs, design vision, and technical reality.
                     Currently with&nbsp;
                     <CustomLink link={"https://www.toddagriscience.com/"} text={"Todd"}/>, formerly with&nbsp;
                     <CustomLink link={"https://www.se.com/us/en/"} text={"Schneider Electric"}/>.
