@@ -5,27 +5,49 @@ import {Tag} from "@/components/tag"
 import { motion } from "framer-motion";
 import "@/app/globals.css"
 import {CustomLink} from "@/components/link"
+import { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { SplitText } from "gsap/SplitText";
+
+gsap.registerPlugin(SplitText);
 
 export default function Hero() {
+    const textRef = useRef(null);
+
+    useEffect(() => {
+        if (textRef.current) {
+            const split = new SplitText(textRef.current, {
+                type: "lines",
+                linesClass: "line"
+            });
+
+            gsap.from(split.lines, {
+                duration: 1.2,
+                opacity: 0,
+                y: 50,
+                ease: "power3.out",
+                stagger: 0.15
+            });
+
+            return () => {
+                split.revert();
+            };
+        }
+    }, []);
+
     return (
         <section className="pt-14 min-h-[85vh] flex flex-col ">
-            <motion.div
-                className={"max-w-[90rem] flex-grow"}
-                initial={{opacity: 0, x: 15}}
-                animate={{opacity: 1, x: 0}}
-                transition={{type: "spring", stiffness: 25, damping: 12}}
-            >
-                <motion.h1
+            <div className={"max-w-[90rem] flex-grow"}>
+                <h1
+                    ref={textRef}
                     className="text-slight-black font-normal text-3xl md:text-5xl md:mr-40"
-                    initial="hidden"
-                    animate="show"
                 >
-                    I&#39;m Chris Lam, a product designer who bridges the gap between user needs, design vision, and technical reality.
+                    I&#39;m Chris Lam, a UX designer who bridges the gap between user needs, design vision, and technical reality.
                     Currently with&nbsp;
                     <CustomLink link={"https://www.toddagriscience.com/"} text={"Todd"}/>, formerly with&nbsp;
                     <CustomLink link={"https://www.se.com/us/en/"} text={"Schneider Electric"}/>.
-                </motion.h1>
-            </motion.div>
+                </h1>
+            </div>
 
             <motion.footer
                 initial="hidden"
@@ -44,7 +66,7 @@ export default function Hero() {
                     <p className="text-newGray text-sm md:text-xl" id={"based"}>Based in Greater Boston</p>
                     <Link href={"/#craft"}>
                         <p className="text-newGray text-sm md:text-xl flex items-center " >
-                             Selected Craft <span><ArrowDown className="ml-1 text-spotify" /></span>
+                            Selected Craft <span><ArrowDown className="ml-1 text-spotify" /></span>
                         </p>
                     </Link>
                 </div>
