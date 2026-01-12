@@ -9,7 +9,7 @@ import Footer from './Footer';
 const links = [
     { title: "Home", href: "/" },
     { title: "Craft", href: "/#craft" },
-    { title: "About", href: "/#about" },
+    { title: "About", href: "/about" },
     { title: "Contact", href: "/#contact" },
 ];
 
