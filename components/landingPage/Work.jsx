@@ -30,7 +30,7 @@ export default function work() {
                         projectDescription={"Designing systems and marketing website"}
                         imageSrc={"/thumbnail.png"}
                         projectName={"Todd Agriscience"}
-                        pageLink={"https://toddagriscience.com/en"}/>
+                        pageLink={"/todd"}/>
                 </RevealOnScroll>
                 {/*Schneider Electric*/}
                 <RevealOnScroll>

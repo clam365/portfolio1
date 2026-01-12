@@ -477,21 +477,14 @@ export const ProjectBackground = () => {
             </div>
             <CaseStudySection>
                 <CaseStudySection.SubSection>
-                    <CaseStudySection.Title title={"Impact"}/>
+                    <CaseStudySection.Title title={"Reflection"}/>
                     <CaseStudySection.Content>
                         <h1>
-                            Our overarching goal was to create a concept application backed by the use case needs of
-                            students
-                            and we have done exactly that. The WPI President Grace Wang & the Global Studies Dean have
-                            shown
-                            significant interest in our developments, and currently this project is hosted by WPI
-                            servers.
-                            Additionally, we were featured on the WPI Computer Science department in a newsletter for
-                            our efforts.
+                            After our presentation of the application, we garnered significant interest by the university president and global studies
+                            dean all while being featured in our department newsletter! Currently to continue development, this will be continued as another MQP.
                             <br/>
                             <br/>
-                            In April 2025, we presented our application in our MQP showcase to drive attention, and this
-                            will be continued as another MQP for the future.
+                            For me, this project was a defining moment in my life. I thought in systems, how growing things will fit into it and users' mental models.
                         </h1>
                     </CaseStudySection.Content>
                 </CaseStudySection.SubSection>

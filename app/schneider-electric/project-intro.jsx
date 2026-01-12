@@ -7,7 +7,7 @@ export const ProjectIntro = () => {
         <CaseStudyIntro>
             <CaseStudyIntro.Summary>
                 <h1 className={"text-2xl"}>
-                    In my internship as a UX Product Designer, I aided in launching their first global B2C web experience
+                    In my internship as a Product Designer, I aided in launching their first global B2C web experience
                     tailored for homeowners in France. Through my refined high-fidelity mockups, I improved user
                     flows in product discovery, validated by senior UX designers.
                     <br/>
@@ -41,7 +41,7 @@ export const ProjectIntro = () => {
                 </CaseStudyIntro.InfoSection>
                 <CaseStudyIntro.InfoSection>
                     <h1 className={"text-newGray"} id={"based"}>My Role</h1>
-                    <h1>UX Product Designer</h1>
+                    <h1>Product Designer</h1>
                 </CaseStudyIntro.InfoSection>
                 <CaseStudyIntro.InfoSection>
                     <h1 className={"text-newGray"} id={"based"}>Timeline</h1>

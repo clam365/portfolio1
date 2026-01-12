@@ -43,7 +43,7 @@ export default function Hero() {
                     className="text-black font-mono text-3xl md:text-5xl md:mr-44"
                 >
                     I&#39;m Chris Lam,
-                    a UX designer who builds with <span className={"italic"}>authentic expression</span> and <span
+                    a product designer who builds with <span className={"italic"}>authentic expression</span> and <span
                     className={"italic"}>strategy</span>.
                 </h1>
 
