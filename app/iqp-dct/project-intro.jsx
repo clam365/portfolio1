@@ -42,7 +42,7 @@ export const ProjectIntro = () => {
                 </CaseStudyIntro.InfoSection>
                 <CaseStudyIntro.InfoSection>
                     <h1 className={"text-newGray"} id={"based"}>My Role</h1>
-                    <h1>UI/UX Designer/Researcher</h1>
+                    <h1>Product Designer</h1>
                     <h1>Lead Front-End Developer</h1>
                 </CaseStudyIntro.InfoSection>
                 <CaseStudyIntro.InfoSection>

@@ -51,7 +51,7 @@ export default function Content() {
                             </div>
                             <div id={"footer1"} className="list-container">
                                 <div className="list-dot"></div>
-                                <a href="/resume.pdf" target="_blank" rel="opener referrer"><h1 className="list-text">See my CV</h1></a>
+                                <a href="/resume.pdf" target="_blank" rel="opener referrer"><h1 className="list-text">Resume</h1></a>
                             </div>
                         </div>
                     </div>
@@ -61,8 +61,8 @@ export default function Content() {
                 <div
                     className={"flex justify-between px-6 py-4  text-xs md:text-sm border-t border-t-[#e1e1e1]"}
                     id={"footer1"}>
-                    <h1 className={"text-newGray"} id={"newLine"}>© 2025 Chris Lam</h1>
-                    <h1 className={"text-newGray"} id={"newLine"}>I used all my Uji Matcha to make this</h1>
+                    <h1 className={"text-newGray"} id={"newLine"}>© 2026 Chris Lam</h1>
+                    <h1 className={"text-newGray"} id={"newLine"}>Designed & coded by me!</h1>
                 </div>
             </div>
 

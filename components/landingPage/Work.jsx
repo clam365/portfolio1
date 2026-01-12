@@ -23,65 +23,46 @@ export default function work() {
     }
 
     return (
-        <section id={"craft"} className={"md:px-48"} >
-            <br/><br/><br/>
-            <div className={"flex justify-between"}>
-                <h1 className={"text-slight-black font-normal text-3xl md:text-5xl "}>Selected Craft</h1>
-                <h1 className={"text-newGray font-normal text-3xl md:text-5xl "} id={"based"}>23'-25'</h1>
-            </div>
-            <br/><br/>
-            <div className="mt-10 space-y-12">
+        <>
+            <section id={"craft"} className={"grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 pb-20"}>
+                <RevealOnScroll>
+                    <SelectedCraft
+                        projectDescription={"Designing systems and marketing website"}
+                        imageSrc={"/thumbnail.png"}
+                        projectName={"Todd Agriscience"}
+                        pageLink={"/todd"}/>
+                </RevealOnScroll>
                 {/*Schneider Electric*/}
                 <RevealOnScroll>
                     <SelectedCraft
                         pageLink={"/schneider-electric"}
-                        imageSrc={"/schneider-electric/se_backdrop.png"}
+                        imageSrc={"/schneider-electric/se_mockupe.png"}
                         projectName={"Schneider Electric"}
-                        projectDescription={"B2C Web Experience"}
+                        projectDescription={"Ecommerce platform for French homeowners"}
                     />
                 </RevealOnScroll>
-                {/*Kyoto Project Center*/}
+                {/*IQP*/}
                 <RevealOnScroll>
                     <SelectedCraft
                         pageLink={"/iqp-dct"}
-                        imageSrc={"/mockup2.2.png"}
+                        imageSrc={"/mockup2.png"}
                         projectName={"IQP DCT"}
-                        projectDescription={"Senior Capstone Project"}
+                        projectDescription={"Data collection and analysis tool for WPI undergrads"}
                     />
                 </RevealOnScroll>
-                {/*Wildscape*/}
+
+
+                {/*Kyoto*/}
                 <RevealOnScroll>
                     <SelectedCraft
                         pageLink={"/kyoto-project-center"}
-                        imageSrc={"/mockup1.1.png"}
+                        imageSrc={"/mockup1.png"}
                         projectName={"Kyoto Project Center"}
-                        projectDescription={"Kyoto IQP Database"}
+                        projectDescription={"Hub for student research projects"}
                     />
                 </RevealOnScroll>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-[2.5rem] gap-y-[3rem]">
-                    {/*IQP DCT*/}
-                    <RevealOnScroll delay={0.5} duration={1}>
-                        <SelectedCraft
-                            pageLink={"/wildscape"}
-                            imageSrc={"/mockup4.png"}
-                            projectName={"Wildscape"}
-                            projectDescription={"Discover. Share. Protect."}
-                        />
+            </section>
+        </>
 
-                    </RevealOnScroll>
-                    {/*Createv*/}
-                    <RevealOnScroll delay={0.6} duration={1}>
-                        <SelectedCraft
-                            pageLink={"https://createv.vercel.app/"}
-                            imageSrc={"/createv1.png"}
-                            projectName={"Createv"}
-                            projectDescription={"Curated UI/UX Resource Gallery"}
-                        />
-                    </RevealOnScroll>
-                </div>
-
-            </div>
-
-        </section>
     )
 }

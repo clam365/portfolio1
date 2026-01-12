@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "../components/header/index";
 import {Providers} from "@/app/providers";
 import Footer from "@/components/footer/footer1"
-//import {Customcursor} from "@/components/cursor/customcursor";
+import {Customcursor} from "@/components/cursor/customcursor";
 import { Analytics } from "@vercel/analytics/react"
 
 
@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Chris Lam | Creative Designer",
+  title: "Chris Lam | Product Designer",
   description: "Chris Lam's Portfolio",
 };
 
@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
             <Analytics/>
+            <Customcursor/>
             <Providers>
                 <div className={" relative z-10"}>
                     <Header/>

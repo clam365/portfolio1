@@ -3,11 +3,11 @@ import styles from './style.module.scss';
 import "@/app/globals.css"
 import Image from "next/image"
 import Link from 'next/link';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { background } from './anim';
 import Nav from './nav';
-import DarkModeButton from "@/components/DarkModeButton";
+
 
 export default function Header() {
     const [isActive, setIsActive] = useState(false);
@@ -20,11 +20,18 @@ export default function Header() {
                            className="rounded-lg transition transform hover:-translate-y-1 duration-200 items-center"/>
                 </Link>
 
+
                 <div className={"flex gap-x-6 items-center cursor-pointer"}>
-                    <div >
-                        <DarkModeButton/>
+                    {/*<div>*/}
+                    {/*    <DarkModeButton/>*/}
+                    {/*</div>*/}
+                    <div className={"space-x-8 hidden lg:block dark:text-white"}>
+                        <Link href={"/#craft"}>Projects</Link>
+                        <Link href={"/about"}>About</Link>
+                        <a href="/resume.pdf" target="_blank" rel="opener referrer">Resume</a>
                     </div>
-                    <div className={"transition transform hover:-translate-y-1 duration-200"} id={"transparency"}>
+                    <div className={"transition transform hover:-translate-y-1 duration-200 lg:hidden"}
+                         id={"transparency"}>
                         <div onClick={() => setIsActive(!isActive)} className={styles.el}>
                             <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}
                                  id={"borgor"}></div>
@@ -41,7 +48,7 @@ export default function Header() {
                 className={styles.background}
             ></motion.div>
             <AnimatePresence mode="wait">
-                {isActive && <Nav setIsActive={setIsActive}/>}
+            {isActive && <Nav setIsActive={setIsActive}/>}
             </AnimatePresence>
         </div>
     );
