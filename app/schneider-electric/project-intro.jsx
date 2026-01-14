@@ -29,7 +29,7 @@ export const ProjectIntro = () => {
                 <div className={"mt-20 space-y-2 scroll-mt-40"} id={"overview"}>
                     <h1 className={"text-newGray"}>OVERVIEW</h1>
                     <h1 className={"font-medium text-3xl"}>My Summer @ Schneider Electric</h1>
-                    <h1 className={"text-newGray"}>
+                    <h1>
                         Over the summer, I interned in Boston with Schneider Electric&apos;s Digital Customer
                         Relationship Team.
                         Working alongside colleagues from the France, Spain, India, and the U.S, we launched the first
