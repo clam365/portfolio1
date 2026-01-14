@@ -21,17 +21,9 @@ export default function work() {
             </motion.div>
         );
     }
-
     return (
         <>
             <section id={"craft"} className={"grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 pb-20"}>
-                <RevealOnScroll>
-                    <SelectedCraft
-                        projectDescription={"Designing systems and marketing website"}
-                        imageSrc={"/thumbnail.png"}
-                        projectName={"Todd Agriscience"}
-                        pageLink={"/todd"}/>
-                </RevealOnScroll>
                 {/*Schneider Electric*/}
                 <RevealOnScroll>
                     <SelectedCraft
@@ -50,8 +42,6 @@ export default function work() {
                         projectDescription={"Data collection and analysis tool for WPI undergrads"}
                     />
                 </RevealOnScroll>
-
-
                 {/*Kyoto*/}
                 <RevealOnScroll>
                     <SelectedCraft
@@ -60,6 +50,13 @@ export default function work() {
                         projectName={"Kyoto Project Center"}
                         projectDescription={"Hub for student research projects"}
                     />
+                </RevealOnScroll>
+                <RevealOnScroll>
+                    <SelectedCraft
+                        projectDescription={"Designing systems and marketing website"}
+                        imageSrc={"/thumbnail.png"}
+                        projectName={"Todd Agriscience"}
+                        pageLink={"/todd"}/>
                 </RevealOnScroll>
             </section>
         </>
