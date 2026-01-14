@@ -16,7 +16,6 @@ export default function Page() {
                 imageSrc={"/mockup1.1.png"}
                 imageAlt={"kyoto"}/>
             <div className={"flex flex-col lg:flex-row"}>
-
                 <nav className="lg:w-1/4 hidden lg:block">
                     <ul className="space-y-4 sticky top-24 p-10">
                         <li><a href="#overview" className="hover:text-black text-newGray transition">Overview</a></li>
@@ -31,8 +30,6 @@ export default function Page() {
                     <ProjectBackground/>
                     <ProjectNext/>
                 </main>
-
-
             </div>
 
         </>
