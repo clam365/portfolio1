@@ -1,22 +1,10 @@
 "use client";
 import "@/app/globals.css"
-import {useEffect} from "react";
-import Lenis from "lenis";
 import Image from "next/image";
 import {CustomLink} from "@/components/link";
 import {ArrowDownToLine} from "lucide-react";
 
 export default function Page() {
-    useEffect(() => {
-        const lenis = new Lenis();
-
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-
-        requestAnimationFrame(raf);
-    }, []);
 
     return (
         <div className={"py-32 px-10 lg:px-32"}>
