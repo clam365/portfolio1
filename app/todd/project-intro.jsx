@@ -26,7 +26,7 @@ export const ProjectIntro = () => {
             {/*Overview*/}
             <div className={"mt-20 space-y-2 scroll-mt-40 mb-40"} id={"overview"}>
                 <h1 className={"text-newGray"}>OVERVIEW</h1>
-                <h1 className={"font-medium text-3xl"}>WPI Capstone Project</h1>
+                <h1 className={"font-medium text-3xl"}>Foundational Pieces</h1>
                 <h1>
                     As part of a small startup team, I am actively engaged in Todd's vision of partnering with
                     bio dynamic farms by envisioning their creative resources, from the design system, brand guidelines,
