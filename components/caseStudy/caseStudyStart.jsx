@@ -1,63 +1,21 @@
 "use client";
 import "@/app/globals.css"
-import { motion } from "framer-motion";
 import PropTypes from "prop-types"
 import Image from "next/image";
-import SimpleParallax from "simple-parallax-js";
 
-export default function CaseStudyStart({tag, title, description, imageAlt, imageSrc}) {
-    return(
+export default function CaseStudyStart({title, description, imageAlt, imageSrc}) {
+    return (
         <>
-            <div className={"p-12 pt-36 px-8 md:px-16 lg:px-36 xl:px-64"}>
-                <motion.div
-                    className={"px-3 py-1 bg-spotify rounded-full inline-block mb-2 text-sm"}
-                    initial={{clipPath: "inset(100% 0% 0% 0%)", opacity: 0, y: 25,}}
-                    animate={{clipPath: "inset(0% 0% 0% 0%)", opacity: 1, y: 0,}}
-                    transition={{type: "spring", stiffness: 40, damping: 10, delay: 0.4,}}
-                    id={"projectTag"}
-                >
-                    <h1 id={"antiDark"}>{tag}</h1>
-                </motion.div>
-                <motion.h1
-                    className={"text-4xl md:text-6xl font-medium leading-[3rem] md:leading-[4.8rem] lg:leading-[5.5rem]"}
-                    initial={{clipPath: "inset(100% 0% 0% 0%)", opacity: 0, y: 25,}}
-                    animate={{clipPath: "inset(0% 0% 0% 0%)", opacity: 1, y: 0,}}
-                    transition={{type: "spring", stiffness: 40, damping: 10, delay: 0.2,}}
-                >
-                    {title}
-                </motion.h1>
-                <motion.h1
-                    className={"text-2xl md:text-3xl text-newGray mt-3"}
-                    initial={{clipPath: "inset(100% 0% 0% 0%)", opacity: 0, y: 25,}}
-                    animate={{clipPath: "inset(0% 0% 0% 0%)", opacity: 1, y: 0,}}
-                    transition={{type: "spring", stiffness: 40, damping: 10, delay: 0.5,}}
-                    id={"based"}
-                >
-                    {description}
-                </motion.h1>
+            <div className={"py-10 pt-20 md:pt-20"}>
+                <h1 className={"text-4xl md:text-4xl font-medium"}>{title}</h1>
+                <h1  className={"text-xl md:text-2xl text-newGray mt-3"}>{description}</h1>
             </div>
-            <motion.div
-                className="relative overflow-hidden"
-                initial={{clipPath: "inset(0% 0% 100% 0%)"}}
-                animate={{clipPath: "inset(0% 0% 0% 0%)"}}
-                transition={{duration: 0.65, ease: "easeInOut", delay: 0.75}}
-            >
-                <SimpleParallax scale={1.1}>
-                    <Image
-                        src={imageSrc}
-                        alt={imageAlt}
-                        width={4000}
-                        height={2800}
-                        className={"w-full object-cover min-h-[600px]"}
-                    />
-                </SimpleParallax>
-            </motion.div>
+            <Image src={imageSrc} alt={imageAlt} className={"w-full object-cover max-h-[600px]"} width={1280} height={720}/>
         </>
     )
 }
 
 CaseStudyStart.propTypes = {
-    tag: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     imageSrc: PropTypes.string.isRequired,

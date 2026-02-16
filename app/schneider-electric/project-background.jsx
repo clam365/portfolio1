@@ -11,14 +11,23 @@ export const ProjectBackground = () => {
                     BostonHub DCR Team!
                 </h1>
             </div>
+            <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"context"}>
+                <h1 className={"text-newGray"}>CONTEXT</h1>
+                <h1 className={"font-medium text-3xl"}>Meeting consumers where they are</h1>
+                <h1>
+                    With the digital landscape evolving, we recognized the need to rethink its enterprise-focused
+                    digital ecosystem. 80-90% of B2B buyers now expect B2C-like experiences that are fast, personalized,
+                    and mobile-friendly. They no longer want to sit through the lengthy sales cycles, they want insights and
+                    digital platforms with self-service. During the development of the B2C experience, I drove our CMS and
+                    conducted UI fixes across the site.
+                </h1>
+            </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"problem"}>
                 <h1 className={"text-newGray"}>PROBLEM</h1>
                 <h1 className={"font-medium text-3xl"}>Reducing Friction</h1>
                 <h1>
                     We benchmarked the product landing pages against industry standards, combining competitive analysis
-                    with heuristic evaluation and heatmaps. This revealed critical usability issues: ineffective
-                    navigation
-                    to products, poor browsing experiences, and weak article readability that limited user engagement.
+                    with heuristic evaluation and heatmaps. This revealed critical usability issues.
                 </h1>
             </div>
             <div className={"my-10"}>
@@ -30,10 +39,8 @@ export const ProjectBackground = () => {
                     loop
                     muted
                 />
-                <img src={"/schneider-electric/before.png"} alt={"team photo"}
-                     className={"w-full mt-10 border border-gray-300"}/>
             </div>
-            <div className={"grid grid-cols-1 md:grid-cols-2 gap-8"}>
+            <div className={"grid grid-cols-1 md:grid-cols-3 gap-8"}>
                 <div>
                     <h1 className={"text-newGray text-xl"}>Repetitive Flow</h1>
                     <h1 className={""}>Filters require repeated opening/closing to apply or reset,
@@ -50,13 +57,6 @@ export const ProjectBackground = () => {
                     <h1 className={"text-newGray text-xl"}>Sparse Cards</h1>
                     <h1 className={""}>Product cards lacked essential details yet take excessive,
                         forcing users to scroll more while still missing information.
-                    </h1>
-                </div>
-                <div>
-                    <h1 className={"text-newGray text-xl"}>Article Readability</h1>
-                    <h1 className={""}>
-                        Articles span full-width with 20pt font (~176 characters/line), forcing
-                        excessive eye travel that impairs readability and reduces engagement.
                     </h1>
                 </div>
             </div>
@@ -85,21 +85,6 @@ export const ProjectBackground = () => {
                     practices.
                 </h1>
                 <LinkButton link={"https://thegood.com/insights/ecommerce-product-filters/"} text={"THE GOOD"}/>
-            </div>
-            <div className={"mt-10 space-y-2 scroll-mt-40 "} id={"problem"}>
-                <h1 className={" text-newGray"}>Article Guidelines</h1>
-                <h1>
-                    Baymard Institute and Carnegie Mellon recommend 45-85 characters per line with 18pt font for
-                    optimal readability. Applying these guidelines to our articles will reduce eye strain,
-                    improve focus, and boost engagement—directly addressing the issues we found with our current
-                    desktop layout.
-                </h1>
-                <div className={"flex space-x-2"}>
-                    <LinkButton
-                        link={"https://www.freshconsulting.com/insights/blog/uiux-principle-46-text-box-width-should-help-users-read/#:~:text=In%20web%20design%2C%20one%20element,your%20content%20easy%20to%20read."}
-                        text={"FRESH CONSULTING"}/>
-                    <LinkButton link={"https://pielot.org/pubs/Rello2016-Fontsize.pdf"} text={"MAKE IT BIG!"}/>
-                </div>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"finaldesigns"}>
                 <h1 className={"text-newGray"}>FINAL DESIGNS</h1>
@@ -169,18 +154,7 @@ export const ProjectBackground = () => {
                     </h1>
                 </div>
             </div>
-            <div className={"mt-10 grid grid-cols-1 md:grid-cols-2 gap-5"}>
-                <img src={"/schneider-electric/after18.png"} alt={"Image"}
-                     className={"w-full h-auto border border-gray-300"}/>
-                <div className="flex flex-col justify-end">
-                    <h1 className={"text-newGray"}>Better Reading!</h1>
-                    <h1>
-                        The improvements are clear: from 176 characters/line at 20pt to 96 characters/line at 18pt, a
-                        45% reduction.
-                        This enhances readability and comprehension.
-                    </h1>
-                </div>
-            </div>
+
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"userflow"}>
                 <h1 className={"text-newGray"}>IMPROVED USER FLOW</h1>
                 <h1 className={"font-medium text-3xl"}>Less clickity clackity!</h1>
@@ -198,9 +172,12 @@ export const ProjectBackground = () => {
                 <h1 className={"text-newGray"}>OUTCOME</h1>
                 <h1 className={"font-medium text-3xl"}>The big stage...</h1>
                 <h1>
-                    I presented my designs to a HUGE stakeholder crowd: 2 directors, 5 engineers, and my 2 senior designer mentors.
-                    It was overwhelmingly positive, being approved for implementation in Phase 2 of the site&apos;s development. The pilot
-                    launch continues in France, with plans to expand to additional countries en route to full global load out.
+                    I presented my designs to a HUGE stakeholder crowd: 2 directors, 5 engineers, and my 2 senior
+                    designer mentors.
+                    It was overwhelmingly positive, being approved for implementation in Phase 2 of the site&apos;s
+                    development. The pilot
+                    launch continues in France, with plans to expand to additional countries en route to full global
+                    load out.
                 </h1>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"reflections"}>
@@ -218,7 +195,8 @@ export const ProjectBackground = () => {
                 <div>
                     <h1 className={"text-newGray text-xl"}>Business goals don&apos;t conflict user needs</h1>
                     <h1>
-                        They can reinforce each other. Removing barriers for users also removes barriers to conversion and
+                        They can reinforce each other. Removing barriers for users also removes barriers to conversion
+                        and
                         growth.
                     </h1>
                 </div>

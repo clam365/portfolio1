@@ -8,7 +8,7 @@ export const ProjectIntro = () => {
                 <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6"}>
                     <div>
                         <h1 className={"text-newGray"} id={"based"}>ROLE</h1>
-                        <h1>Product Designer</h1>
+                        <h1>Product Designer Intern</h1>
                     </div>
                     <div>
                         <h1 className={"text-newGray"} id={"based"}>TIMELINE</h1>
@@ -31,14 +31,15 @@ export const ProjectIntro = () => {
                     <h1 className={"font-medium text-3xl"}>My Summer @ Schneider Electric</h1>
                     <h1>
                         Over the summer, I interned in Boston with Schneider Electric&apos;s Digital Customer
-                        Relationship Team.
-                        Working alongside colleagues from the France, Spain, India, and the U.S, we launched the first
-                        global E2E B2C
-                        web experience for homeowners, starting with a pilot in France. From heuristic analysis,
-                        competitive benchmarking,
-                        data driven design, I proposed insights to product discovery aimed to help owners find what
-                        they&apos;re looking for more
-                        effectively.
+                        Relationship Team, collaborating with partners across France, Spain, and the U.S. Together,
+                        we launched their first global E2E B2C web experience for homeowners, beginning with a Pilot in
+                        France.
+                        <br/><br/>
+                        I focused on improving product discovery through heuristic audits, competitive benchmarking of 5+ platforms, and
+                        heatmap analysis. By redesigning key user flows and optimizing filter architecture, I reduced click
+                        depth by 33%, helping homeowners find products faster and supporting conversion goals while ensuring
+                        WCAG AA accessibility standards.
+
                     </h1>
                     <div className={"inline-flex f gap-3"}>
                         <LinkButton
