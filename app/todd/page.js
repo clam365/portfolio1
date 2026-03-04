@@ -25,7 +25,7 @@ export default function Page() {
                         <CaseStudyStart
                             tag={"PART TIME"}
                             title={"Todd Agriscience"}
-                            description={"Designing systems and marketing website"}
+                            description={"Farm-to-screen design"}
                             imageSrc={"/todd.png"}
                             imageAlt={"todd"}/>
                         <ProjectIntro/>

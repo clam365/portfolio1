@@ -16,7 +16,7 @@ export function SelectedCraft({ pageLink, imageSrc, projectDescription, projectN
                         alt={projectName}
                         width={1920}
                         height={1080}
-                        className="w-full drop-shadow-lg min-h-[240px] max-h-[1080px] object-cover"
+                        className="w-full  min-h-[240px] max-h-[1080px] object-cover rounded-xl"
                     />
 
                     {/* Highlight overlay */}

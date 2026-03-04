@@ -53,7 +53,7 @@ export default function work() {
                 </RevealOnScroll>
                 <RevealOnScroll>
                     <SelectedCraft
-                        projectDescription={"Designing systems and marketing website"}
+                        projectDescription={"Farm-to-Screen Design"}
                         imageSrc={"/thumbnail.png"}
                         projectName={"Todd Agriscience"}
                         pageLink={"/todd"}/>
