@@ -39,7 +39,7 @@ export default function Page() {
                     <main className="lg:w-2/4 px-10 lg:px-0">
                         <CaseStudyStart
                             tag={"MAJOR QUALIFYING PROJECT"}
-                            title={"IQP Data Collection Tool"}
+                            title={"WPI Global Research Data Platform"}
                             description={"Unite all data methods into one platform"}
                             imageSrc={"/mockup2.2.png"}
                             imageAlt={"iqp-dct"}/>
