@@ -38,7 +38,7 @@ export default function work() {
                     <SelectedCraft
                         pageLink={"/iqp-dct"}
                         imageSrc={"/mockup2.png"}
-                        projectName={"IQP DCT"}
+                        projectName={"WPI Global Research Data Platform"}
                         projectDescription={"Data collection and analysis tool for WPI undergrads"}
                     />
                 </RevealOnScroll>
@@ -48,7 +48,7 @@ export default function work() {
                         pageLink={"/kyoto-project-center"}
                         imageSrc={"/mockup1.png"}
                         projectName={"Kyoto Project Center"}
-                        projectDescription={"Hub for student research projects"}
+                        projectDescription={"Serving policymakers, students, and business partners across Kyoto"}
                     />
                 </RevealOnScroll>
                 <RevealOnScroll>

@@ -32,9 +32,10 @@ export const ProjectIntro = () => {
                     <h1 className={"text-newGray"}>OVERVIEW</h1>
                     <h1 className={"font-medium text-3xl"}>Study Abroad in Kyoto, Japan</h1>
                     <h1>
-                        While working on my team&apos;s humanitarian project of tourism impact in the Kikuhama neighborhood,
-                        one piece of our goal was to create a dedicated platform to showcase 40+ student research projects
-                        for policymakers, students, and business partners.
+                        While studying abroad in Kyoto, Japan, I helped build a platform to give 40+
+                        student humanitarian research projects the visibility they deserved — connecting
+                        policymakers, students, and business partners with insights shaping Kyoto&apos;s
+                        community.
                     </h1>
                     <div className={"inline-flex f gap-3"}>
                         <LinkButton link={"https://kyotoprojectcenter.vercel.app/"} text={"KYOTO PROJECT CENTER"}/>
