@@ -20,7 +20,7 @@ export default function Page() {
                             <h1
                                 id={"hero"}
                                 className={"text-4xl"}>
-                                I&apos;m a designer with a software engineering foundation who builds with authentic expression and
+                                I&apos;m a designer with a software engineering foundation who builds on authentic expression and
                                 strategy.
                             </h1>
                             <h1 className={"text-newGray mt-8"}>
@@ -34,7 +34,8 @@ export default function Page() {
                                 <br/>
                                 <br/>
                                 That same sensibility carries into how I work: translating complex technical systems into clear,
-                                human-centered workflows, partnering closely with engineering to ship scalable, adoption ready products.
+                                human-centered workflows, partnering closely with engineering to ship scalable, adoption ready products. I create spaces for design where
+                                it has not flourished yet.
                                 <br/>
                                 <br/>
                             </h1>

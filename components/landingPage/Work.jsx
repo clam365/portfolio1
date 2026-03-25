@@ -24,6 +24,13 @@ export default function work() {
     return (
         <>
             <section id={"craft"} className={"grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 pb-20"}>
+                <RevealOnScroll>
+                    <SelectedCraft
+                        projectDescription={"Farm-to-Screen Design"}
+                        imageSrc={"/thumbnail.png"}
+                        projectName={"Todd Agriscience"}
+                        pageLink={"/todd"}/>
+                </RevealOnScroll>
                 {/*Schneider Electric*/}
                 <RevealOnScroll>
                     <SelectedCraft
@@ -51,13 +58,7 @@ export default function work() {
                         projectDescription={"Serving policymakers, students, and business partners across Kyoto"}
                     />
                 </RevealOnScroll>
-                <RevealOnScroll>
-                    <SelectedCraft
-                        projectDescription={"Farm-to-Screen Design"}
-                        imageSrc={"/thumbnail.png"}
-                        projectName={"Todd Agriscience"}
-                        pageLink={"/todd"}/>
-                </RevealOnScroll>
+
             </section>
         </>
 
