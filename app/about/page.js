@@ -67,32 +67,32 @@ export default function Page() {
                     </h1>
                     <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"}>
                         <div
-                            className={"bg-[#f2f2f2] rounded-xl p-4 w-full flex flex-col justify-center m-auto"}
+                            className={" w-full flex flex-col justify-center m-auto"}
                             id={"gallery"}>
                             <img src={"/place1.png"} alt={"Image"}
-                                 className={"rounded-md drop-shadow-md w-full"}/>
+                                 className={" w-full"}/>
                             <p className={"text-newGray text-sm mt-2 text-center"} id={"based"}>Weekender's Coffee,
                                 Kyoto Japan</p>
                         </div>
                         <div
-                            className={"bg-[#f2f2f2] rounded-xl p-4 w-full flex flex-col justify-center m-auto"}
+                            className={"w-full flex flex-col justify-center m-auto"}
                             id={"gallery"}>
                             <img src={"/place2.png"} alt={"Image"}
-                                 className={"rounded-md drop-shadow-md w-full"}/>
+                                 className={" w-full"}/>
                             <p className={"text-newGray text-sm mt-2 text-center"} id={"based"}>Mt. Fuji, Japan</p>
                         </div>
                         <div
-                            className={"bg-[#f2f2f2] rounded-xl p-4 w-full flex flex-col justify-center m-auto"}
+                            className={"w-full flex flex-col justify-center m-auto"}
                             id={"gallery"}>
                             <img src={"/place3.png"} alt={"Image"}
-                                 className={"rounded-md drop-shadow-md w-full"}/>
+                                 className={" w-full"}/>
                             <p className={"text-newGray text-sm mt-2 text-center"} id={"based"}>Venice!</p>
                         </div>
                         <div
-                            className={"bg-[#f2f2f2] rounded-xl p-4 w-full flex flex-col justify-center m-auto"}
+                            className={"w-full flex flex-col justify-center m-auto"}
                             id={"gallery"}>
                             <img src={"/place4.png"} alt={"Image"}
-                                 className={"rounded-md drop-shadow-md w-full"}/>
+                                 className={" w-full"}/>
                             <p className={"text-newGray text-sm mt-2 text-center"} id={"based"}>Jay Peak, VT!</p>
                         </div>
                     </div>

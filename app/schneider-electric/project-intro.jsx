@@ -1,5 +1,6 @@
 import React from "react";
 import {LinkButton} from "@/components/linkButton";
+import {IoSparkles} from "react-icons/io5";
 export const ProjectIntro = () => {
     return (
         <>
@@ -27,7 +28,10 @@ export const ProjectIntro = () => {
                 </div>
                 {/*Overview*/}
                 <div className={"mt-20 space-y-2 scroll-mt-40"} id={"overview"}>
-                    <h1 className={"text-newGray"}>OVERVIEW</h1>
+                    <div className={"flex items-center m-auto space-x-2"}>
+                        <IoSparkles className={"text-newGray w-6 h-6"}/>
+                        <h1 className={"text-newGray"}>Chris-generated Overview</h1>
+                    </div>
                     <h1 className={"font-medium text-3xl"}>My Summer @ Schneider Electric</h1>
                     <h1>
                         Over the summer, I interned in Boston with Schneider Electric&apos;s Digital Customer
@@ -51,6 +55,23 @@ export const ProjectIntro = () => {
                             text={"FIGMA MOCKUPS"}
                         />
                     </div>
+                </div>
+                <div className={"mt-20 space-y-2 border-l-4 border-gray-300 pl-4"}>
+                    <h1 className={"text-newGray italic"}>
+                        I had the pleasure of working with Chris during his 10-week internship on our B2C Web Experience projects, and he
+                        quickly proved himself to be an invaluable contributor.
+                        <br/>
+                        <br/>
+                        He brought fresh perspectives, strong attention to detail, and an impressive ability to translate ideas into clear,
+                        practical outputs in Figma. Chris not only supported design work but also provided thoughtful recommendations that
+                        improved out user experience approach.
+                        <br/>
+                        <br/>
+                        His curiosity, professionalism, and collaborative spirit made him a great addition to the team.
+                        <br/>
+                        <br/>
+                        ~ Oz Hassan, Director of Digital Transformation & Strategic Communications
+                    </h1>
                 </div>
             </div>
         </>

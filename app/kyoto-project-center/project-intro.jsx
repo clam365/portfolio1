@@ -1,5 +1,6 @@
 import React from "react";
 import {LinkButton} from "@/components/linkButton";
+import {IoSparkles} from "react-icons/io5";
 
 export const ProjectIntro = () => {
     return (
@@ -29,7 +30,10 @@ export const ProjectIntro = () => {
                 </div>
                 {/*Overview*/}
                 <div className={"mt-20 space-y-2 scroll-mt-40"} id={"overview"}>
-                    <h1 className={"text-newGray"}>OVERVIEW</h1>
+                    <div className={"flex items-center m-auto space-x-2"}>
+                        <IoSparkles className={"text-newGray w-6 h-6"}/>
+                        <h1 className={"text-newGray"}>Chris-generated Overview</h1>
+                    </div>
                     <h1 className={"font-medium text-3xl"}>Study Abroad in Kyoto, Japan</h1>
                     <h1>
                         While studying abroad in Kyoto, Japan, I helped build a platform to give 40+

@@ -1,5 +1,5 @@
 import React from "react";
-import {IoLockClosed} from "react-icons/io5";
+import {IoLockClosed, IoSparkles} from "react-icons/io5";
 
 export const ProjectIntro = () => {
     return (
@@ -26,8 +26,11 @@ export const ProjectIntro = () => {
                 </div>
             </div>
             {/*Overview*/}
-            <div className={"mt-20 space-y-2 mb-20"} id={"mission"}>
-                <h1 className={"text-newGray"}>MISSION</h1>
+            <div className={"mt-20 space-y-2 mb-20 scroll-mt-40"} id={"overview"}>
+                <div className={"flex items-center m-auto space-x-2"}>
+                    <IoSparkles className={"text-newGray w-6 h-6"}/>
+                    <h1 className={"text-newGray"}>Chris-generated Overview</h1>
+                </div>
                 <h1 className={"font-medium text-3xl"}>Designing end-to-end product experience for an AI-driven
                     agricultural analytics platform</h1>
                 <h1>
@@ -47,6 +50,24 @@ export const ProjectIntro = () => {
                     lives directly!
                 </h1>
             </div>
+            <div className={"mt-20 space-y-2 border-l-4 border-gray-300 pl-4"}>
+                <h1 className={"text-newGray italic"}>
+                    Chris helped me and Todd translate all of our messy ideas into Figma designs, user flows, and
+                    a
+                    brand identity that allowed me to develop solutions for our customers much quicker. Chris is great
+                    at
+                    taking an abstract idea and laying it out in a way that I, someone with only a little practical
+                    experience
+                    in UI/UX could easily understand.
+                    <br/>
+                    <br/>
+                    Furthermore, he laid out all of the foundational framework for future UI/UX development, and gave me
+                    a standard to build new features off of via Figma.
+                    <br/>
+                    <br/>
+                    ~ Oscar Gaske, Founding Software Engineer
+                </h1>
+            </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"reflections"}>
                 <h1 className={"text-newGray"}>REFLECTIONS</h1>
                 <h1 className={"font-medium text-3xl"}>What I learned</h1>
@@ -63,7 +84,8 @@ export const ProjectIntro = () => {
                 <div>
                     <h1 className={"text-newGray text-xl"}>Creating a Space for Design</h1>
                     <h1>
-                        Design isn't always seen as a priority in many environments. The value of my work shows up
+                        Design isn't always seen as a priority in many environments at first. The value of my work shows
+                        up
                         in rationale and consistency, until the work spoke for itself.
                     </h1>
                 </div>
