@@ -1,5 +1,6 @@
 import React from "react";
-import {IoLockClosed, IoSparkles} from "react-icons/io5";
+import { IoSparkles} from "react-icons/io5";
+import {RiProgress2Line} from "react-icons/ri";
 
 export const ProjectIntro = () => {
     return (
@@ -92,9 +93,9 @@ export const ProjectIntro = () => {
             </div>
             <div className={"bg-[#f2f2f2] rounded-lg p-16 scroll-mt-40 mb-40 space-y-2"}>
                 <div className={"bg-white p-4 inline-block rounded-[20rem] drop-shadow-sm"}>
-                    <IoLockClosed className={"text-newGray w-6 h-6"}/>
+                    <RiProgress2Line className={"text-newGray w-6 h-6"}/>
                 </div>
-                <h1 className={"text-2xl"}>This work is confidential.</h1>
+                <h1 className={"text-2xl"}>This case study is currently under construction.</h1>
                 <h1 className={"text-xl text-newGray"}>Please
                     <a className="hover:text-blue-400 transition" href="mailto:christopherlam110@gmail.com"> email
                         me </a>
