@@ -25,7 +25,6 @@ export function SelectedCraft({ pageLink, imageSrc, projectDescription, projectN
                     {/* Arrow button */}
                     <div
                         className="absolute right-10 bottom-10 z-50 rounded-full p-2 bg-spotify opacity-0 group-hover:opacity-100 translate-x-0 group-hover:translate-x-4 transition duration-300 ease-in-out"
-                        id="arrowButton"
                     >
                         <ArrowRight className="text-black" width={25} height={25} />
                     </div>

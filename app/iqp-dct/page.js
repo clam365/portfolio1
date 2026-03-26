@@ -3,7 +3,7 @@ import "@/app/globals.css"
 import {ProjectIntro} from "@/app/iqp-dct/project-intro";
 import {ProjectBackground} from "@/app/iqp-dct/project-background";
 import {ProjectNext} from "@/app/iqp-dct/project-next";
-import CaseStudyStart from "@/components/caseStudy/caseStudyStart";
+import CaseStudyStart from "@/components/caseStudyStart";
 import {motion} from "framer-motion";
 
 export default function Page() {

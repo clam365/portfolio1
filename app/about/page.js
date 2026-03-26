@@ -20,7 +20,8 @@ export default function Page() {
                             <h1
                                 id={"hero"}
                                 className={"text-4xl"}>
-                                I&apos;m a designer with a software engineering foundation who builds on authentic expression and
+                                I&apos;m a designer with a software engineering foundation who builds on authentic
+                                expression and
                                 strategy.
                             </h1>
                             <h1 className={"text-newGray mt-8"}>
@@ -33,8 +34,10 @@ export default function Page() {
                                 <span>Design to me is noticing patterns, tuning into subtle emotions, and shaping experiences that truly resonate with real people.</span>
                                 <br/>
                                 <br/>
-                                That same sensibility carries into how I work: translating complex technical systems into clear,
-                                human-centered workflows, partnering closely with engineering to ship scalable, adoption ready products. I create spaces for design where
+                                That same sensibility carries into how I work: translating complex technical systems
+                                into clear,
+                                human-centered workflows, partnering closely with engineering to ship scalable, adoption
+                                ready products. I create spaces for design where
                                 it has not flourished yet.
                                 <br/>
                                 <br/>
@@ -56,8 +59,8 @@ export default function Page() {
                     <br/>
                     <a href="/resume.pdf" target="_blank" rel="opener referrer"
                        className={"inline-flex hover:bg-[#61E88A] transition gap-x-1.5 bg-spotify px-4 py-3 rounded-full items-center"}>
-                        <ArrowDownToLine width={20} height={20} id={"antiDark"}/>
-                        <h1 className={"text-sm"} id={"antiDark"}>See my resume</h1>
+                        <ArrowDownToLine width={20} height={20}/>
+                        <h1 className={"text-sm"}>See my resume</h1>
                     </a>
                     <br/>
                     <br/>
@@ -67,30 +70,26 @@ export default function Page() {
                     </h1>
                     <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"}>
                         <div
-                            className={" w-full flex flex-col justify-center m-auto"}
-                            id={"gallery"}>
+                            className={" w-full flex flex-col justify-center m-auto"}>
                             <img src={"/place1.png"} alt={"Image"}
                                  className={" w-full"}/>
                             <p className={"text-newGray text-sm mt-2 text-center"} id={"based"}>Weekender's Coffee,
                                 Kyoto Japan</p>
                         </div>
                         <div
-                            className={"w-full flex flex-col justify-center m-auto"}
-                            id={"gallery"}>
+                            className={"w-full flex flex-col justify-center m-auto"}>
                             <img src={"/place2.png"} alt={"Image"}
                                  className={" w-full"}/>
                             <p className={"text-newGray text-sm mt-2 text-center"} id={"based"}>Mt. Fuji, Japan</p>
                         </div>
                         <div
-                            className={"w-full flex flex-col justify-center m-auto"}
-                            id={"gallery"}>
+                            className={"w-full flex flex-col justify-center m-auto"}>
                             <img src={"/place3.png"} alt={"Image"}
                                  className={" w-full"}/>
                             <p className={"text-newGray text-sm mt-2 text-center"} id={"based"}>Venice!</p>
                         </div>
                         <div
-                            className={"w-full flex flex-col justify-center m-auto"}
-                            id={"gallery"}>
+                            className={"w-full flex flex-col justify-center m-auto"}>
                             <img src={"/place4.png"} alt={"Image"}
                                  className={" w-full"}/>
                             <p className={"text-newGray text-sm mt-2 text-center"} id={"based"}>Jay Peak, VT!</p>

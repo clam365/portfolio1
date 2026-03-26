@@ -16,6 +16,6 @@ export const Customcursor = () => {
         })
     }, []);
 
-    return <div className={"app-cursor"} id={"appCursor"} ref={cursorRef}/>;
+    return <div className={"app-cursor"} ref={cursorRef}/>;
 
 }

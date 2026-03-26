@@ -70,7 +70,7 @@ export default function Hero() {
                         </p>
                     </Link>
                 </div>
-                <div className="flex justify-between items-center border-t border-t-[#e1e1e1] py-2 " id={"newLine"}/>
+                <div className="flex justify-between items-center border-t border-t-[#e1e1e1] py-2 "/>
             </motion.footer>
         </section>
     );

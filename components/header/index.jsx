@@ -22,19 +22,14 @@ export default function Header() {
 
 
                 <div className={"flex gap-x-6 items-center cursor-pointer"}>
-                    {/*<div>*/}
-                    {/*    <DarkModeButton/>*/}
-                    {/*</div>*/}
                     <div className={"space-x-8 hidden lg:block dark:text-white"}>
                         <Link href={"/#craft"}>Projects</Link>
                         <Link href={"/about"}>About</Link>
                         <a href="/resume.pdf" target="_blank" rel="opener referrer">Resume</a>
                     </div>
-                    <div className={"transition transform hover:-translate-y-1 duration-200 lg:hidden"}
-                         id={"transparency"}>
+                    <div className={"transition transform hover:-translate-y-1 duration-200 lg:hidden"}>
                         <div onClick={() => setIsActive(!isActive)} className={styles.el}>
-                            <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}
-                                 id={"borgor"}></div>
+                            <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
                         </div>
                     </div>
 

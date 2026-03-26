@@ -3,7 +3,7 @@ import "@/app/globals.css"
 import {ProjectIntro} from "@/app/schneider-electric/project-intro";
 import {ProjectBackground} from "@/app/schneider-electric/project-background";
 import {ProjectNext} from "@/app/kyoto-project-center/project-next";
-import CaseStudyStart from "@/components/caseStudy/caseStudyStart";
+import CaseStudyStart from "@/components/caseStudyStart";
 import {motion} from "framer-motion";
 
 

@@ -4,11 +4,10 @@ import React from "react";
 
 export function LinkButton({ link: link, text }) {
     return (
-        <div className={"rounded-full inline-block w-fit"} id={"descriptionTag"}>
+        <div className={"rounded-full inline-block w-fit"}>
             <a href={link}
                target="_blank" rel="opener referrer"
-               className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}
-               id={"descriptionTag"}>
+               className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}>
                 <h1 className={"text-sm"}>{text}</h1>
                 <ArrowUpRight
                     className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "

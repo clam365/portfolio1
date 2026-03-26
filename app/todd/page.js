@@ -1,7 +1,7 @@
 "use client";
 import "@/app/globals.css"
 import {ProjectIntro} from "@/app/todd/project-intro";
-import CaseStudyStart from "@/components/caseStudy/caseStudyStart";
+import CaseStudyStart from "@/components/caseStudyStart";
 import {ProjectNext} from "@/app/todd/project-next";
 import {motion} from "framer-motion";
 

@@ -9,22 +9,22 @@ export const ProjectIntro = () => {
                 {/* BASIC INFO */}
                 <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6"}>
                     <div>
-                        <h1 className={"text-newGray"} id={"based"}>ROLE</h1>
+                        <h1 className={"text-newGray"}>ROLE</h1>
                         <h1>Designer &amp; Developer</h1>
                     </div>
                     <div>
-                        <h1 className={"text-newGray"} id={"based"}>TIMELINE</h1>
+                        <h1 className={"text-newGray"}>TIMELINE</h1>
                         <h1>May 2024 - Oct 2024</h1>
                     </div>
                     <div>
-                        <h1 className={"text-newGray"} id={"based"}>TEAM</h1>
+                        <h1 className={"text-newGray"}>TEAM</h1>
                         <h1>Hunter Poulin</h1>
                         <h1>James Walden</h1>
                         <h1>Nate Schneider</h1>
                         <h1>Gus Montana</h1>
                     </div>
                     <div>
-                        <h1 className={"text-newGray"} id={"based"}>SKILLS</h1>
+                        <h1 className={"text-newGray"}>SKILLS</h1>
                         <h1>Product Design</h1>
                         <h1>Front-End Development</h1>
                         <h1>UXR &amp; Testing</h1>
