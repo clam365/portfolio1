@@ -33,7 +33,7 @@ export const ProjectIntro = () => {
                 {/*Overview*/}
                 <div className={"mt-20 space-y-2 scroll-mt-40"} id={"overview"}>
                     <div className={"flex items-center m-auto space-x-2"}>
-                        <IoSparkles className={"text-newGray w-6 h-6"}/>
+                        <IoSparkles className={"text-sparkle w-6 h-6"}/>
                         <h1 className={"text-newGray"}>Chris-generated Overview</h1>
                     </div>
                     <h1 className={"font-medium text-3xl"}>WPI Capstone Project</h1>

@@ -15,6 +15,7 @@ export default {
         'spotify': '#3cda64',
         'slight-black': '#141517',
         'newGray': '#808080',
+        'sparkle': '#90D5FF',
       },
     },
   },
