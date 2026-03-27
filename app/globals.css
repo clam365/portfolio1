@@ -6,42 +6,38 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-  margin: 0;
-  font-family: 'Manrope', sans-serif;
-  background-color: #FAFAFA;
-  scroll-behavior: smooth;
-}
-
-#hero {
-  font-family: 'Libre Baskerville', serif;
+html {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: #FAFAFA;
+    scroll-behavior: smooth;
 }
 
 ::selection {
-  background-color: #3cda64;
-  color: white;
+    background-color: #3cda64;
+    color: white;
 }
 
 .selection-group::selection {
-  background-color: #3cda64;
-  color: white;
+    background-color: #3cda64;
+    color: white;
 }
 
 .selection-group span::selection {
-  background-color: #3cda64;
-  color: white;
+    background-color: #3cda64;
+    color: white;
 }
 
 .list-dot {
-  background-color: #3cda64;
+    background-color: #3cda64;
 }
 
 #about {
-  scroll-margin-top: 20vh;
+    scroll-margin-top: 20vh;
 }
 
 #craft {
-  scroll-margin-top: 20vh;
+    scroll-margin-top: 20vh;
 }
 
 

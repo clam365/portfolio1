@@ -7,9 +7,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        libreBaskerville: ['Libre Baskerville', 'serif'],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'foreground': '#0a0a0a',
         'spotify': '#3cda64',
         'slight-black': '#141517',
         'newGray': '#808080',

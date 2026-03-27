@@ -18,8 +18,7 @@ export default function Page() {
                     <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10"}>
                         <div className={"items-center m-auto order-2 md:order-1"}>
                             <h1
-                                id={"hero"}
-                                className={"text-4xl"}>
+                                className={"text-4xl font-libreBaskerville"}>
                                 I&apos;m a designer with a software engineering foundation who builds on authentic
                                 expression and
                                 strategy.
