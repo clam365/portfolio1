@@ -95,7 +95,7 @@ export const ProjectIntro = () => {
                 <div className={"bg-white p-4 inline-block rounded-[20rem] drop-shadow-sm"}>
                     <RiProgress2Line className={"text-newGray w-6 h-6"}/>
                 </div>
-                <h1 className={"text-2xl"}>This case study is currently under construction.</h1>
+                <h1 className={"text-2xl"}>This case study is currently confidential.</h1>
                 <h1 className={"text-xl text-newGray"}>Please
                     <a className="hover:text-blue-400 transition" href="mailto:christopherlam110@gmail.com"> email
                         me </a>
