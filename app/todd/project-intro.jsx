@@ -1,6 +1,6 @@
 import React from "react";
 import { IoSparkles} from "react-icons/io5";
-import {RiProgress2Line} from "react-icons/ri";
+import {FaLock} from "react-icons/fa";
 
 export const ProjectIntro = () => {
     return (
@@ -93,7 +93,7 @@ export const ProjectIntro = () => {
             </div>
             <div className={"bg-[#f2f2f2] rounded-lg p-16 scroll-mt-40 mb-40 space-y-2"}>
                 <div className={"bg-white p-4 inline-block rounded-[20rem] drop-shadow-sm"}>
-                    <RiProgress2Line className={"text-newGray w-6 h-6"}/>
+                    <FaLock className={"text-newGray w-5 h-5"}/>
                 </div>
                 <h1 className={"text-2xl"}>This case study is currently confidential.</h1>
                 <h1 className={"text-xl text-newGray"}>Please

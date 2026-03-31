@@ -205,34 +205,34 @@ export const ProjectBackground = () => {
                 />
                 <h1 className={"mt-2 text-newGray"}>After</h1>
             </div>
-            <div className={"mt-20 space-y-2 scroll-mt-40"} id={"feedback"}>
-                <h1 className={"text-newGray"}>FEEDBACK</h1>
-                <h1 className={"font-medium text-3xl"}>What did students think?</h1>
+            <div className={"mt-20 space-y-2 scroll-mt-40"} id={"outcomes"}>
+                <h1 className={"text-newGray"}>OUTCOMES</h1>
+                <h1 className={"font-medium text-3xl"}>System-wide Integration</h1>
 
                 <h1>
-                    After a successful user testing session, we asked the last testing session to fill out an
-                    experience survey of the application.
-                    Below are the final screenshots of the application and stats of the Likert scale survey.
+                    After a successful user testing session, we presented our solutions to the WPI President and Global School Dean.
+                    Our application was then officially integrated into WPI&apos;s servers, making it accessible to more than
+                    1,200 students across 50+ project sites worldwide!
                 </h1>
             </div>
-            <div className={"mt-10 flex flex-col sm:flex-row flex-wrap justify-between gap-y-5 gap-x-5"}>
-                <div>
-                    <h1 className={"text-5xl font-medium"}>88%</h1>
-                    <h1 className={"my-1"}>Overall Satisfaction </h1>
-                </div>
-                <div>
-                    <h1 className={"text-5xl font-medium"}>100%</h1>
-                    <h1 className={"my-1"}>Aesthetics</h1>
-                </div>
-                <div>
-                    <h1 className={"text-5xl font-medium"}>87%</h1>
-                    <h1 className={"my-1"}>Navigation</h1>
-                </div>
-                <div>
-                    <h1 className={"text-5xl font-medium"}>81%</h1>
-                    <h1 className={"my-1"}>Performance</h1>
-                </div>
-            </div>
+            {/*<div className={"mt-10 flex flex-col sm:flex-row flex-wrap justify-between gap-y-5 gap-x-5"}>*/}
+            {/*    <div>*/}
+            {/*        <h1 className={"text-5xl font-medium"}>88%</h1>*/}
+            {/*        <h1 className={"my-1"}>Overall Satisfaction </h1>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*        <h1 className={"text-5xl font-medium"}>100%</h1>*/}
+            {/*        <h1 className={"my-1"}>Aesthetics</h1>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*        <h1 className={"text-5xl font-medium"}>87%</h1>*/}
+            {/*        <h1 className={"my-1"}>Navigation</h1>*/}
+            {/*    </div>*/}
+            {/*    <div>*/}
+            {/*        <h1 className={"text-5xl font-medium"}>81%</h1>*/}
+            {/*        <h1 className={"my-1"}>Performance</h1>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"reflections"}>
                 <h1 className={"text-newGray"}>REFLECTIONS</h1>
                 <h1 className={"font-medium text-3xl"}>What I learned</h1>

@@ -30,7 +30,7 @@ export default function Page() {
                                 System</a></li>
                             <li><a href="#designiterations" className="hover:text-black text-newGray transition">Design
                                 Iterations</a></li>
-                            <li><a href="#feedback" className="hover:text-black text-newGray transition">Feedback</a>
+                            <li><a href="#outcomes" className="hover:text-black text-newGray transition">Outcomes</a>
                             </li>
                             <li><a href="#reflections"
                                    className="hover:text-black text-newGray transition">Reflections</a></li>
