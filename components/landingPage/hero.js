@@ -52,7 +52,7 @@ export default function Hero() {
                 </h1>
             </div>
             <motion.div
-                className="absolute top-[10%] right-[10%] lg:top-[15%] lg:right-[15%] z-10"
+                className="absolute hidden lg:block lg:top-[15%] lg:right-[15%] z-10"
                 initial={{opacity: 0, scale: 0.9}}
                 animate={{
                     opacity: 1,
@@ -77,7 +77,7 @@ export default function Hero() {
                 />
             </motion.div>
             <motion.div
-                className="absolute top-[5%] left-[10%] lg:top-[5%] lg:left-[25%] z-10"
+                className="absolute hidden lg:block lg:top-[5%] lg:left-[25%] z-10"
                 initial={{opacity: 0, scale: 0.9}}
                 animate={{
                     opacity: 1,
@@ -102,7 +102,7 @@ export default function Hero() {
                 />
             </motion.div>
             <motion.div
-                className="absolute bottom-[25%] left-[5%] md:bottom-[15%] md:left-[10%] lg:bottom-[15%] lg:left-[20%] xl:bottom-[30%] xl:left-[10%] z-10"
+                className="absolute hidden lg:block lg:bottom-[15%] lg:left-[20%] xl:bottom-[30%] xl:left-[10%] z-10"
                 initial={{opacity: 0, scale: 0.9}}
                 animate={{
                     opacity: 1,
@@ -127,7 +127,7 @@ export default function Hero() {
                 />
             </motion.div>
             <motion.div
-                className="absolute bottom-[30%] right-[15%] xl:bottom-[20%] xl:right-[30%] lg:bottom-[30%] lg:right-[20%] z-10"
+                className=" absolute hidden lg:block xl:bottom-[20%] xl:right-[30%] lg:bottom-[30%] lg:right-[20%] z-10"
                 initial={{opacity: 0, scale: 0.9}}
                 animate={{
                     opacity: 1,
