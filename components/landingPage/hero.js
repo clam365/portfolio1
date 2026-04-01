@@ -63,15 +63,15 @@ export default function Hero() {
                 transition={{
                     opacity: {duration: 0.8, delay: 0.5},
                     scale: {duration: 0.8, delay: 0.5},
-                    y: {duration: 4, repeat: Infinity, ease: "easeInOut"},
+                    y: {duration: 2, repeat: Infinity, ease: "easeInOut"},
                     rotate: {duration: 5, repeat: Infinity, ease: "easeInOut"},
                 }}
             >
                 <Image
                     src="/dragon.png"
                     alt="Dragon"
-                    width={100}
-                    height={100}
+                    width={75}
+                    height={75}
                     className="select-none"
                     priority
                 />
@@ -113,7 +113,7 @@ export default function Hero() {
                 transition={{
                     opacity: {duration: 0.8, delay: 0.5},
                     scale: {duration: 0.8, delay: 0.5},
-                    y: {duration: 4, repeat: Infinity, ease: "easeInOut"},
+                    y: {duration: 3, repeat: Infinity, ease: "easeInOut"},
                     rotate: {duration: 5, repeat: Infinity, ease: "easeInOut"},
                 }}
             >
@@ -138,7 +138,7 @@ export default function Hero() {
                 transition={{
                     opacity: {duration: 0.8, delay: 0.5},
                     scale: {duration: 0.8, delay: 0.5},
-                    y: {duration: 4, repeat: Infinity, ease: "easeInOut"},
+                    y: {duration: 5, repeat: Infinity, ease: "easeInOut"},
                     rotate: {duration: 5, repeat: Infinity, ease: "easeInOut"},
                 }}
             >
@@ -162,8 +162,8 @@ export default function Hero() {
             >
                 <div className={"text-sm text-newGray flex justify-between items-center pb-2"}>
                     <div>
-                        Currently designing at <CustomLink link={"https://toddagriscience.com/en"} text={"Todd"}/>.
                         Previously at&nbsp;
+                        <CustomLink link={"https://toddagriscience.com/en"} text={"Todd"}/> and&nbsp;
                         <CustomLink link={"https://www.se.com/ww/en/"} text={"Schneider Electric"}/>.
                         <br/>
                         Based in Greater Boston.

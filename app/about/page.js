@@ -42,11 +42,10 @@ export default function Page() {
                                 <br/>
                             </h1>
                             <div className={"text-newGray"}>
-                                Currently designing at <CustomLink link={"https://toddagriscience.com/en"}
-                                                                   text={"Todd"}/>.
-                                Previously at&nbsp;
+                                Previously at&nbsp;<CustomLink link={"https://toddagriscience.com/en"}
+                                                               text={"Todd"}/>,&nbsp;
                                 <CustomLink link={"https://www.se.com/ww/en/"}
-                                            text={"Schneider Electric"}/> and <CustomLink
+                                            text={"Schneider Electric"}/>, and <CustomLink
                                 link={"https://www.airforce.com/"} text={"Air Force"}/>.
                                 <br/>
                                 Based in Greater Boston.
