@@ -40,6 +40,10 @@ html {
     scroll-margin-top: 20vh;
 }
 
+.word {
+    display: inline-block;
+    will-change: transform;
+}
 
 
 

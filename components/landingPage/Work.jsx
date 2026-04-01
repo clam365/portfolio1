@@ -23,7 +23,7 @@ export default function work() {
     }
     return (
         <>
-            <section id={"craft"} className={"grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 pb-32 px-32"}>
+            <section id={"craft"} className={"grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 pb-32 lg:px-32"}>
                 <RevealOnScroll>
                     <SelectedCraft
                         projectDescription={"Farm-to-Screen Design"}
