@@ -36,15 +36,17 @@ export const ProjectIntro = () => {
                         <IoSparkles className={"text-sparkle w-6 h-6"}/>
                         <h1 className={"text-newGray"}>Chris-generated Overview</h1>
                     </div>
-                    <h1 className={"font-medium text-3xl"}>WPI Capstone Project</h1>
+                    <h1 className={"font-medium text-3xl"}>One home for Global IQP Research</h1>
                     <h1>
-                        For my major qualifying project (MQP), we created the IQP Data Collection Tool:
-                        a platform that unifying data collection for 1,200+ WPI students conducting
-                        humanitarian research globally. As a Product Designer and Frontend Developer, I led UXR,
-                        conducted 30 testing sessions, and built a PERN stack app with offline storage, geotagging,
-                        and AI transcription—achieving 88% user satisfaction.
+                        Our team delivered the IQP Data Collection Tool: a unified workspace for interviews,
+                        surveys, and field data for 1,200+ students across 50+ global project sites. I led product
+                        design and frontend development, including 30 usability sessions, shipping a PERN stack
+                        application with offline storage, geotagging, and AI-assisted transcription. After user
+                        testing, we presented to the WPI President and Global School Dean, and the application was
+                        officially integrated into WPI&apos;s servers, putting it in reach of the full student population
+                        annually!
                     </h1>
-                    <div className={"inline-flex f gap-3"}>
+                    <div className={"inline-flex gap-3"}>
                         <LinkButton
                             link={"https://www.wpi.edu/project-based-learning/project-based-education/interactive-qualifying-project"}
                             text={"WPI IQP"}
