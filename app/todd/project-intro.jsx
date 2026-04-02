@@ -23,6 +23,8 @@ export const ProjectIntro = () => {
                     <div>
                         <h1 className={"text-newGray"}>SKILLS</h1>
                         <h1>Product Design</h1>
+                        <h1>Design System</h1>
+                        <h1>Branding</h1>
                     </div>
                 </div>
             </div>
@@ -32,23 +34,14 @@ export const ProjectIntro = () => {
                     <IoSparkles className={"text-sparkle w-6 h-6"}/>
                     <h1 className={"text-newGray"}>Chris-generated Overview</h1>
                 </div>
-                <h1 className={"font-medium text-3xl"}>Designing end-to-end product experience for an AI-driven
-                    agricultural analytics platform</h1>
+                <h1 className={"font-medium text-3xl"}>Turning farm data into operational clarity</h1>
                 <h1>
-                    This past year, I joined Todd Agriscience as a product designer to own the full design of their
-                    onboarding and core platform experience.
-                    Working closely with engineers, I architected the design system foundations, brand guidelines, and
-                    analytics workflows, translating complex AI-driven
-                    insights into interfaces that help farms make confident operational decisions.
+                    At Todd Agriscience, I led product design for onboarding and the core platform as the team 
+                    scaled to 10+ farms and partnerships with organizations like the USDA and Whole Foods. I built
+                    the design system, brand, and analytics experiences that make AI outputs actionable for day-to-day operations.
                     <br/>
                     <br/>
-                    Along the way, I mentored two product design interns, providing feedback, aligning their
-                    deliverables with the broader product direction, and helping
-                    them grow their intuition in an environment where ambiguity is the default.
-                    <br/>
-                    <br/>
-                    Grateful to the many collaborators and their dedication to bring a product that impacts our own
-                    lives directly!
+                    With engineering, I mentored 2 product design interns in a high-ambiguity environment. Super grateful to this team!
                 </h1>
             </div>
             <div className={"mt-20 space-y-2 border-l-4 border-gray-300 pl-4"}>
@@ -95,7 +88,7 @@ export const ProjectIntro = () => {
                 <div className={"bg-white p-4 inline-block rounded-[20rem] drop-shadow-sm"}>
                     <FaLock className={"text-newGray w-5 h-5"}/>
                 </div>
-                <h1 className={"text-2xl"}>This case study is currently confidential.</h1>
+                <h1 className={"text-2xl"}>This case study is confidential.</h1>
                 <h1 className={"text-xl text-newGray"}>Please
                     <a className="hover:text-blue-400 transition" href="mailto:christopherlam110@gmail.com"> email
                         me </a>
