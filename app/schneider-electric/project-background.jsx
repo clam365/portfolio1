@@ -1,6 +1,7 @@
 import React from "react";
 import {LinkButton} from "@/components/linkButton";
 import SimpleParallax from "simple-parallax-js";
+import {LayoutGrid, List, Waypoints} from "lucide-react";
 
 export const ProjectBackground = () => {
     return (
@@ -11,37 +12,41 @@ export const ProjectBackground = () => {
                     BostonHub DCR Team!
                 </h1>
             </div>
-            <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"context"}>
-                <h1 className={"text-newGray"}>CONTEXT</h1>
-                <h1 className={"font-medium text-3xl"}>From enterprise buyer to everyday homeowner</h1>
-                <div className={"grid grid-cols-1 md:grid-cols-3 gap-4 justify-between"}>
-                    <div className={"space-y-2"}>
+            <div className={"mt-20 scroll-mt-40 "} id={"context"}>
+                <h1 className={"text-newGray mb-2"}>CONTEXT</h1>
+                <h1 className={"font-medium text-3xl mb-2"}>From enterprise buyer to everyday homeowner</h1>
+                <h1>
+                    Schneider Electric is a global leader in energy management and automation. Their ecosystem was built
+                    for enterprise buyers.
+                    But the market shifted. A PWC report found that:
+                </h1>
+                <div className={"grid grid-cols-1 md:grid-cols-3 gap-4 justify-between my-6"}>
+                    <div className={"text-center"}>
                         <h1 className="text-spotify text-5xl font-bold">80-90%</h1>
                         <h1>B2B buyers expect B2C experiences</h1>
                     </div>
-                    <div className={"space-y-2"}>
+                    <div className={"text-center"}>
                         <h1 className="text-spotify text-5xl font-bold">73%</h1>
                         <h1>buyers say the UX matters as much as product</h1>
                     </div>
-                    <div className={"space-y-2"}>
+                    <div className={"text-center"}>
                         <h1 className="text-spotify text-5xl font-bold">49%</h1>
                         <h1>consumers say companies have a good UX</h1>
                     </div>
                 </div>
                 <h1>
-                    With the digital landscape evolving, we recognized the need to rethink its enterprise-focused
-                    digital ecosystem. 80-90% of B2B buyers now expect B2C-like experiences that are fast, personalized,
-                    and mobile-friendly. They no longer want to sit through the lengthy sales cycles, they want insights and
-                    digital platforms with self-service. During the development of the B2C experience, I drove our CMS and
-                    conducted UI fixes across the site.
+                    Competitors like Siemens, Eaton, and Legrand were already investing in cleaner storefronts and
+                    consumer-friendly journeys. SE responded by launching their own B2C
+                    experience, letting homeowners browse, interact with AR, and find nearby retailers.
                 </h1>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"problem"}>
                 <h1 className={"text-newGray"}>PROBLEM</h1>
-                <h1 className={"font-medium text-3xl"}>Reducing Friction</h1>
+                <h1 className={"font-medium text-3xl"}>Reducing browsing friction</h1>
                 <h1>
-                    We benchmarked the product landing pages against industry standards, combining competitive analysis
-                    with heuristic evaluation and heatmaps. This revealed critical usability issues.
+                    As I worked in the CMS and ran heatmap analysis in parallel, friction points kept surfacing in
+                    product discovery. The experience was consumer-facing, but the conventions users rely on to orient
+                    themselves were not there.
                 </h1>
             </div>
             <div className={"my-10"}>
@@ -56,47 +61,75 @@ export const ProjectBackground = () => {
             </div>
             <div className={"grid grid-cols-1 md:grid-cols-3 gap-8"}>
                 <div>
-                    <h1 className={"text-newGray text-xl"}>Repetitive Flow</h1>
-                    <h1 className={""}>Filters require repeated opening/closing to apply or reset,
-                        creating friction that slows product discovery and discourages exploration.
+                    <div className={"items-center flex gap-2 mb-2"}>
+                        <Waypoints className={"text-newGray"}/>
+                        <h1 className={"text-newGray text-xl"}>3 Step Filtering</h1>
+                    </div>
+                    <h1 className={""}>Open, select, apply pop-up method. No iterative feedback or visible change.
                     </h1>
                 </div>
                 <div>
-                    <h1 className={"text-newGray text-xl"}>Filter Overload</h1>
-                    <h1 className={""}>108 presently uncollapsible filters displayed vertically. Super
-                        overwhelming and causes exhaustive scanning.
+                    <div className={"items-center flex gap-2 mb-2"}>
+                        <List className={"text-newGray"}/>
+                        <h1 className={"text-newGray text-xl"}>Unclear Hierarchy</h1>
+                    </div>
+                    <h1 className={""}>106 options with no real hierarchy and poor grouping. Immediate
+                        cognitive load.
                     </h1>
                 </div>
                 <div>
-                    <h1 className={"text-newGray text-xl"}>Sparse Cards</h1>
-                    <h1 className={""}>Product cards lacked essential details yet take excessive,
-                        forcing users to scroll more while still missing information.
+                    <div className={"items-center flex gap-2 mb-2"}>
+                        <LayoutGrid className={"text-newGray"}/>
+                        <h1 className={"text-newGray text-xl"}>Product Layout</h1>
+                    </div>
+                    <h1 className={""}>Huge card real estate, yet no details, leading to low confidence browsing.
                     </h1>
                 </div>
+            </div>
+            <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"success"}>
+                <h1 className={"text-newGray"}>FRAMING SUCCESS</h1>
+                <h1 className={"font-medium text-3xl"}>Connect user problem to business outcome</h1>
+                <h1>
+                    Looking at all the filtering friction, I synthesized the definition of success to frame it in a way
+                    that connected
+                    the user problem to the business outcome. Confidence is the missing ingredient to the stew, just
+                    orient someone so that
+                    they have enough control to find what they need.
+                </h1>
+            </div>
+            <div className={"my-20 scroll-mt-40 text-center font-libreBaskerville italic text-2xl"}>
+                By enabling homeowners to browse and discover products{" "}
+                <span className="bg-yellow-200 hover:bg-yellow-300 transition px-1 rounded">with confidence</span>,
+                Schneider Electric can{" "}
+                <span className="bg-yellow-200 hover:bg-yellow-300 transition px-1 rounded">reduce drop-off</span> rate
+                at the discovery stage and
+                ultimately{" "}
+                <span className="bg-yellow-200 hover:bg-yellow-300 transition px-1 rounded">convert a first-time visitor into a buyer</span>.
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"research"}>
                 <h1 className={"text-newGray"}>RESEARCH</h1>
-                <h1 className={"font-medium text-3xl"}>Data-Driven Insights</h1>
+                <h1 className={"font-medium text-3xl"}>Pattern Alignment</h1>
                 <h1>
-                    We reviewed UX research, which contextualized my findings within best practices, using evidence to
-                    identify where improvements in navigation, filtering, and readability would deliver the
-                    greatest impact.
+                    Looking at our competitors through benchmarking to contextualize best practices, I found that most
+                    use left-aligned filter panels. They are common
+                    and exist for a reason. They stay visible as your scroll, are adjustable without losing context, and
+                    do not involve pop-ups to refine search.
                 </h1>
             </div>
             <div className={"my-10"}>
-                <img src={"/schneider-electric/odace_heatmap2.png"} alt={"team photo"} className={"w-full"}/>
+                <img src={"/schneider-electric/competitors.png"} alt={"team photo"} className={"w-full"}/>
                 <h1 className={"text-newGray mt-2"}>
-                    ContentSquare heatmaps detailing points of friction
+                    Competitors similarly utilizing filter panels
                 </h1>
             </div>
-            <div className={"mt-10 space-y-2 scroll-mt-40 "} id={"problem"}>
-                <h1 className={" text-newGray"}>Filter Optimization</h1>
+            <div className={"mt-10 space-y-2 scroll-mt-40 "}>
+                <h1 className={" text-newGray"}>What are the returns on this UI pattern?</h1>
                 <h1>
-                    Optimized filters can boost conversions by nearly 6%. Left-aligned filters work best
-                    because they stay visible, reduce mental effort, and let users refine searches without
-                    losing their place. Our current hidden filters create unnecessary friction, making them
-                    accessible and visible will help users find products faster and align with proven UX
-                    practices.
+                    Fully is a D2C furniture brand that went through a filtering redesign. When they implemented a
+                    filter panel to create a clearer journey,
+                    it resulted in a 5.97% conversion lift. What&apos;s even more compelling it that got a 75:1 ROI from
+                    this project with the agency. If they spend 10k,
+                    they get 75,000 DOLLARS BACK. SE with their wide cast net can see even more with this implemented.
                 </h1>
                 <LinkButton link={"https://thegood.com/insights/ecommerce-product-filters/"} text={"THE GOOD"}/>
             </div>
@@ -111,87 +144,66 @@ export const ProjectBackground = () => {
                         text={"FIGMA ANNOTATIONS"}/>
                 </div>
                 <h1>
-                    Throughout my internship, 2 senior UX designers whom I connected with outside my team provided
-                    invaluable mentorship through each stage. Initially, I focused on UI nitpicks, but I was guided to
-                    prioritize user journey and flow. We then refined my recommendations to cohesive designs.
+                    With my findings in hand, I moved into solutions. I worked with my senior designer mentors
+                    throughout this process to pressure-test decisions
+                    against the design system. I presented this to my director, 2 VPs, engineers, and the regional
+                    representations from France and Spain whom I collaborated with.
                 </h1>
             </div>
             <div className="mt-10">
                 <SimpleParallax scale={1.05}>
                     <img
-                        src={"/schneider-electric/se_mockup.png"}
+                        src={"/schneider-electric/beforeafter.png"}
                         alt="Image"
                         className=""
                     />
                 </SimpleParallax>
             </div>
-            <div className={"grid grid-cols-1 gap-5 md:grid-cols-2 mt-5 mb-10"}>
-                <div className="">
-                    <img
-                        src={"/schneider-electric/article_page.png"}
-                        alt="Image"
-                        className="w-full"
-                    />
-                </div>
-                <div className="">
-                    <img
-                        src={"/schneider-electric/se_mockup1.png"}
-                        alt="Image"
-                        className="w-full"
-                    />
-                </div>
-            </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"focusareas"}>
                 <h1 className={"text-newGray"}>FOCUS REDESIGN AREAS</h1>
-                <h1 className={"font-medium text-3xl"}>Reducing Friction</h1>
             </div>
-            <div className={"mt-10 grid grid-cols-1 md:grid-cols-2 gap-5"}>
-                <img src={"/schneider-electric/product_Cards.png"} alt={"Image"}
-                     className={"w-full h-auto border border-gray-300"}/>
-                <div className="flex flex-col justify-end">
-                    <h1 className={"text-newGray"}>Product Cards</h1>
-                    <h1>
-                        Product cards stay in their three-column grid at 75% width with left-side filters.
-                        They now show color swatches and SKUs for clearer evaluation, with room for future
-                        additions like reviews and ratings.
-                    </h1>
-                </div>
+            <div className={"my-10"}>
+                <img src={"/schneider-electric/popupvpanel.png"} alt={"team photo"} className={"w-full"}/>
+                <h1 className={"text-newGray mt-2"}>
+                    Previous 3 Step Pop Up flow replaced with persistent filter panel anchored to left side. Gives
+                    users more control and a significant decrease in drop-off rates at the stage where people would leave
+                    before reaching a product.
+                </h1>
             </div>
-            <div className={"mt-10 grid grid-cols-1 md:grid-cols-2 gap-5"}>
-                <img src={"/schneider-electric/filters.png"} alt={"Image"}
-                     className={"w-full h-auto border border-gray-300"}/>
-                <div className="flex flex-col justify-end">
-                    <h1 className={"text-newGray"}>Filter Optimization</h1>
-                    <h1>
-                        Filters sit in a left sidebar (25% width) with accordion navigation. 48 product
-                        filters were card sorted into 6 categories, and text colors became visual swatches.
-                    </h1>
-                </div>
+            <div className={"my-10"}>
+                <img src={"/schneider-electric/cardsort.png"} alt={"team photo"} className={"w-full"}/>
+                <h1 className={"text-newGray mt-2"}>
+                    106 flurried options were card sorted into product types, along with color options switched to visual swatches, promoting recognition
+                    over recall.
+                </h1>
+            </div>
+            <div className={"my-10"}>
+                <img src={"/schneider-electric/card.png"} alt={"team photo"} className={"w-full"}/>
+                <h1 className={"text-newGray mt-2"}>
+                    Product cards have more information, where homeowners can now make preliminary decisions, leading to more confident browsing.
+                </h1>
             </div>
 
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"userflow"}>
-                <h1 className={"text-newGray"}>IMPROVED USER FLOW</h1>
-                <h1 className={"font-medium text-3xl"}>Less clickity clackity!</h1>
+                <h1 className={"text-newGray"}>IMPROVED JOURNEY FLOW</h1>
+                <h1 className={"font-medium text-3xl"}>Effective browsing</h1>
                 <h1>
-                    The left sidebar eliminated the repeated opening, closing, and resetting of filters, therefore
-                    cutting down the average click depth from the home page by 2 clicks, or 33%. Users can now
-                    filter iteratively and responsively, making product discovery far more seamless.
+                    From the position of a homeowner starting from the homepage, it required a minimum of 6 discrete steps to reach a filtered set of products on PLP.
+                    Now, it is 33% less steps. That is 33% fewer moments someone can losing their footing, and more time to find something worth buying.
+
                 </h1>
             </div>
             <div className={"mt-10"}>
-                <img src={"/schneider-electric/userflow.png"} alt={"team photo"}
-                     className={"w-full border border-gray-300"}/>
+                <img src={"/schneider-electric/flow.png"} alt={"team photo"}
+                     className={"w-full border border-gray-300 bg-[#f5f5f7] p-8"}/>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"outcome"}>
                 <h1 className={"text-newGray"}>OUTCOME</h1>
-                <h1 className={"font-medium text-3xl"}>The big stage...</h1>
+                <h1 className={"font-medium text-3xl"}>Currently in development!</h1>
                 <h1>
-                    I presented my designs to a HUGE stakeholder crowd: 2 directors, 5 engineers, and my 2 senior
-                    designer mentors.
-                    It was overwhelmingly positive, being approved for implementation in Phase 2 of the site&apos;s
-                    development. The pilot
-                    launch continues in France, with plans to expand to additional countries en route to full global
-                    load out.
+                    If I had more time during my internship, I would test the design with A/B and look at statistics for its effectiveness. There&apos;s also opportunities
+                    to continue at the E2E system areas. Working in a complex environment, tight timelines, and a big stakeholder room, my project was green-lit for
+                    development!
                 </h1>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"reflections"}>

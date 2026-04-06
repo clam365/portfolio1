@@ -22,6 +22,7 @@ export default function Page() {
                             </li>
                             <li><a href="#context" className="hover:text-black text-newGray transition">Context</a></li>
                             <li><a href="#problem" className="hover:text-black text-newGray transition">Problem</a></li>
+                            <li><a href="#success" className="hover:text-black text-newGray transition">Framing Success</a></li>
                             <li><a href="#research" className="hover:text-black text-newGray transition">Research</a>
                             </li>
                             <li><a href="#finaldesigns" className="hover:text-black text-newGray transition">Final
@@ -29,7 +30,7 @@ export default function Page() {
                             <li><a href="#focusareas" className="hover:text-black text-newGray transition">Focus
                                 Areas</a>
                             </li>
-                            <li><a href="#userflow" className="hover:text-black text-newGray transition">Improved User
+                            <li><a href="#userflow" className="hover:text-black text-newGray transition">Improved Journey
                                 Flow</a></li>
                             <li><a href="#outcome" className="hover:text-black text-newGray transition">Outcome</a></li>
                             <li><a href="#reflections"
