@@ -1,6 +1,5 @@
 import React from "react";
 import {LinkButton} from "@/components/linkButton";
-import SimpleParallax from "simple-parallax-js";
 import {LayoutGrid, List, Waypoints} from "lucide-react";
 
 export const ProjectBackground = () => {
@@ -151,13 +150,11 @@ export const ProjectBackground = () => {
                 </h1>
             </div>
             <div className="mt-10">
-                <SimpleParallax scale={1.05}>
-                    <img
-                        src={"/schneider-electric/beforeafter.png"}
-                        alt="Image"
-                        className=""
-                    />
-                </SimpleParallax>
+                <img
+                    src={"/schneider-electric/beforeafter.png"}
+                    alt="Image"
+                    className=""
+                />
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"focusareas"}>
                 <h1 className={"text-newGray"}>FOCUS REDESIGN AREAS</h1>
@@ -166,21 +163,24 @@ export const ProjectBackground = () => {
                 <img src={"/schneider-electric/popupvpanel.png"} alt={"team photo"} className={"w-full"}/>
                 <h1 className={"text-newGray mt-2"}>
                     Previous 3 Step Pop Up flow replaced with persistent filter panel anchored to left side. Gives
-                    users more control and a significant decrease in drop-off rates at the stage where people would leave
+                    users more control and a significant decrease in drop-off rates at the stage where people would
+                    leave
                     before reaching a product.
                 </h1>
             </div>
             <div className={"my-10"}>
                 <img src={"/schneider-electric/cardsort.png"} alt={"team photo"} className={"w-full"}/>
                 <h1 className={"text-newGray mt-2"}>
-                    106 flurried options were card sorted into product types, along with color options switched to visual swatches, promoting recognition
+                    106 flurried options were card sorted into product types, along with color options switched to
+                    visual swatches, promoting recognition
                     over recall.
                 </h1>
             </div>
             <div className={"my-10"}>
                 <img src={"/schneider-electric/card.png"} alt={"team photo"} className={"w-full"}/>
                 <h1 className={"text-newGray mt-2"}>
-                    Product cards have more information, where homeowners can now make preliminary decisions, leading to more confident browsing.
+                    Product cards have more information, where homeowners can now make preliminary decisions, leading to
+                    more confident browsing.
                 </h1>
             </div>
 
@@ -188,8 +188,10 @@ export const ProjectBackground = () => {
                 <h1 className={"text-newGray"}>IMPROVED JOURNEY FLOW</h1>
                 <h1 className={"font-medium text-3xl"}>Effective browsing</h1>
                 <h1>
-                    From the position of a homeowner starting from the homepage, it required a minimum of 6 discrete steps to reach a filtered set of products on PLP.
-                    Now, it is 33% less steps. That is 33% fewer moments someone can losing their footing, and more time to find something worth buying.
+                    From the position of a homeowner starting from the homepage, it required a minimum of 6 discrete
+                    steps to reach a filtered set of products on PLP.
+                    Now, it is 33% less steps. That is 33% fewer moments someone can losing their footing, and more time
+                    to find something worth buying.
 
                 </h1>
             </div>
@@ -201,8 +203,10 @@ export const ProjectBackground = () => {
                 <h1 className={"text-newGray"}>OUTCOME</h1>
                 <h1 className={"font-medium text-3xl"}>Currently in development!</h1>
                 <h1>
-                    If I had more time during my internship, I would test the design with A/B and look at statistics for its effectiveness. There&apos;s also opportunities
-                    to continue at the E2E system areas. Working in a complex environment, tight timelines, and a big stakeholder room, my project was green-lit for
+                    If I had more time during my internship, I would test the design with A/B and look at statistics for
+                    its effectiveness. There&apos;s also opportunities
+                    to continue at the E2E system areas. Working in a complex environment, tight timelines, and a big
+                    stakeholder room, my project was green-lit for
                     development!
                 </h1>
             </div>
