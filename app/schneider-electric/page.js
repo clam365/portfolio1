@@ -41,8 +41,8 @@ export default function Page() {
                         <CaseStudyStart
                             tag={"INTERNSHIP"}
                             title={"Schneider Electric"}
-                            description={"Optimizing Product Discovery for a B2C Shift"}
-                            imageSrc={"/schneider-electric/se_backdrop.png"}
+                            description={"From enterprise buyer to everyday homeowner"}
+                            imageSrc={"/schneider-electric/se_mockup11.png"}
                             imageAlt={"schneider-electric"}/>
                         <ProjectIntro/>
                         <ProjectBackground/>

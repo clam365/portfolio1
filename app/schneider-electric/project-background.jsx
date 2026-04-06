@@ -13,7 +13,21 @@ export const ProjectBackground = () => {
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"context"}>
                 <h1 className={"text-newGray"}>CONTEXT</h1>
-                <h1 className={"font-medium text-3xl"}>Meeting consumers where they are</h1>
+                <h1 className={"font-medium text-3xl"}>From enterprise buyer to everyday homeowner</h1>
+                <div className={"grid grid-cols-1 md:grid-cols-3 gap-4 justify-between"}>
+                    <div className={"space-y-2"}>
+                        <h1 className="text-spotify text-5xl font-bold">80-90%</h1>
+                        <h1>B2B buyers expect B2C experiences</h1>
+                    </div>
+                    <div className={"space-y-2"}>
+                        <h1 className="text-spotify text-5xl font-bold">73%</h1>
+                        <h1>buyers say the UX matters as much as product</h1>
+                    </div>
+                    <div className={"space-y-2"}>
+                        <h1 className="text-spotify text-5xl font-bold">49%</h1>
+                        <h1>consumers say companies have a good UX</h1>
+                    </div>
+                </div>
                 <h1>
                     With the digital landscape evolving, we recognized the need to rethink its enterprise-focused
                     digital ecosystem. 80-90% of B2B buyers now expect B2C-like experiences that are fast, personalized,

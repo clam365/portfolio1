@@ -37,7 +37,7 @@ export default function work() {
                         pageLink={"/schneider-electric"}
                         imageSrc={"/schneider-electric/se_mockupe.png"}
                         projectName={"Schneider Electric"}
-                        projectDescription={"Optimizing Product Discovery for a B2C Shift"}
+                        projectDescription={"From enterprise buyer to everyday homeowner"}
                     />
                 </RevealOnScroll>
                 {/*IQP*/}

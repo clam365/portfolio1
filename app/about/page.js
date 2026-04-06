@@ -2,7 +2,7 @@
 import "@/app/globals.css"
 import Image from "next/image";
 import {CustomLink} from "@/components/link";
-import {ArrowDownToLine} from "lucide-react";
+import {ArrowDownToLine, Presentation} from "lucide-react";
 import {motion} from "framer-motion";
 
 export default function Page() {
@@ -15,22 +15,24 @@ export default function Page() {
                 transition={{duration: 0.8, ease: "easeOut"}}
             >
                 <div className={"py-32 px-10 lg:px-32"}>
+                    <h1 className={"text-2xl text-[#d1d5dc] font-semibold tracking-wide mb-2"}>ABOUT ME</h1>
+                    <h1 className="font-libreBaskerville text-4xl">Hi there, I'm Chris!</h1> 
                     <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10"}>
                         <div className={"items-center m-auto order-2 md:order-1"}>
-                            <h1
-                                className={"text-4xl font-libreBaskerville"}>
-                                I&apos;m a designer with a software engineering foundation who builds on authentic
-                                expression and
-                                strategy.
-                            </h1>
-                            <h1 className={"text-newGray mt-8"}>
+                            <h1 className={"text-newGray text-sm mt-8"}>
+                                I&apos;m a designer with an engineering foundation, driven by authentic expression and strategy.
+                                <br/>
+                                <br/> 
                                 I learned early in my study abroad in Japan that the best insights come from simply
                                 watching. Not software and surveys, but in coffee shops — noticing how people moved,
-                                paused, and interacted. Those tiny moments of friction revealed everything. Research
-                                and system thinking became a mindset for me, not a step in a process.
+                                paused, and interacted. Those tiny moments revealed everything. Research
+                                and system thinking became a mindset for me, not a step in a process. 
                                 <br/>
                                 <br/>
-                                <span>Design to me is noticing patterns, tuning into subtle emotions, and shaping experiences that truly resonate with real people.</span>
+                                <span className="text-spotify">
+                                Design to me 
+                                is noticing patterns, tuning into subtle emotions, and shaping experiences that truly resonate with real people. 
+                                </span>
                                 <br/>
                                 <br/>
                                 That same sensibility carries into how I work: translating complex technical systems
@@ -52,14 +54,22 @@ export default function Page() {
                             </div>
                         </div>
                         <Image src={"/polaroid.png"} alt={"Me!"} height={500} width={350}
-                               className={" m-auto md:justify-self-end md:rotate-2 order-1 md:order-2"}/>
+                               className={" m-auto md:justify-self-end order-1 md:order-2"}/>
                     </div>
                     <br/>
-                    <a href="/resume.pdf" target="_blank" rel="opener referrer"
-                       className={"inline-flex hover:bg-[#61E88A] transition gap-x-1.5 bg-spotify px-4 py-3 rounded-full items-center"}>
-                        <ArrowDownToLine width={20} height={20}/>
-                        <h1 className={"text-sm"}>See my resume</h1>
-                    </a>
+                    <div className="gap-x-4 flex">
+                        <a href="/resume.pdf" target="_blank" rel="opener referrer"
+                        className={"inline-flex hover:bg-[#61E88A] transition gap-x-1.5 bg-spotify px-4 py-3 rounded-full items-center"}>
+                            <ArrowDownToLine width={20} height={20}/>
+                            <h1 className={"text-sm"}>See my resume</h1>
+                        </a>
+                        <a href="https://www.figma.com/deck/ALzY9sh2H4tz1r1Pwu70rC/Porfolio?node-id=1-42&viewport=-754%2C59%2C0.32&t=FKBdQJUSog1U2qUU-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="opener referrer"
+                        className={"inline-flex hover:bg-[#61E88A] transition gap-x-1.5 bg-spotify px-4 py-3 rounded-full items-center"}>
+                            <Presentation width={20} height={20}/>
+                            <h1 className={"text-sm"}>See my case studies presentation</h1>
+                        </a>
+                    </div>
+                    
                     <br/>
                     <br/>
                     <br/>
