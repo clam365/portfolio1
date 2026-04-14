@@ -1,40 +1,23 @@
 import React from "react";
-import {AppWindow, ListOrdered, Sprout} from "lucide-react";
+import {AppWindow, ListOrdered, MapPinned, PieChart, Sparkles, Sprout, WifiOff} from "lucide-react";
 export const ProjectBackground = () => {
     return (
         <>
             <div className={"mt-20 space-y-2 scroll-mt-40"} id={"challenge"}>
                 <h1 className={"text-newGray"}>CHALLENGE</h1>
-                <h1 className={"font-medium text-3xl"}>From chaos to clarity</h1>
+                <h1 className={"font-medium text-3xl"}>No playbook. No system. Figure it out.</h1>
                 <h1>
-                    Every year, 1,200 WPI undergrads travel to 50+ global locations for 8-week
-                    humanitarian projects, collecting interviews, surveys, and qualitative/quantitative
-                    data across scattered platforms. The result? Disorganized workflows, lost data, and students
-                    spending more time managing tools than conducting analysis.
+                    Imagine landing in a country you&apos;ve never been to, with 8 weeks to deliver
+                    real research, but there is no system for how to collect, organize, or store any of it.
+                    IQP teams improvise, stitching together platforms that don&apos;talk to each other. The most
+                    critical weeks of the project get quietly eaten up by logistics, not research.
                 </h1>
             </div>
             <div className={"mt-10"}>
                 <img src={"dct/disorganized.png"} alt={"team photo"} className={"w-full border border-gray-300"}/>
                 <h1 className={"text-newGray mt-2"}>
-                    Lots of context switching, data fragmentation, and export/compatability issues.
+                    Lots of context switching, data fragmentation, and export/compatability issues between platforms.
                 </h1>
-            </div>
-            <div className={"mt-10 space-y-2 scroll-mt-40"}>
-                <h1 className={"text-newGray"}>Solution</h1>
-                <h1 className={"font-medium text-3xl"}>Build a unified platform to eliminate logistical overhead</h1>
-                <h1>
-                    Using a PERN stack application, we aimed to eliminate the base logistical overhead and empower our
-                    fellow students to focus on what matters most: solving real world problems.
-                </h1>
-            </div>
-            <div className={"mt-10 space-y-2 scroll-mt-40"}>
-                <h1 className={"text-newGray"}>Key Expected Features</h1>
-                <div className={"grid grid-cols-1 md:grid-cols-2 gap-5"}>
-                    <h1>IQP teams can create/manage their own dashboard</h1>
-                    <h1>Logged data will be geotagged on an interactive map</h1>
-                    <h1>Store data on local storage in offline spaces until later sync</h1>
-                    <h1>Export data onto .csv for further analysis</h1>
-                </div>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40"} id={"uxr"}>
                 <h1 className={"text-newGray"}>USER RESEARCH</h1>
@@ -50,9 +33,8 @@ export const ProjectBackground = () => {
                         <h1 className={"text-newGray"} id={"based"}>Prioritization</h1>
                     </div>
                     <h1>
-                        We analyzed 20 IQP papers to identify common data collection methods, with peer reviews to
-                        minimize bias. This guided our feature prioritization: interviews and qualitative data first,
-                        followed by surveys and quantitative metrics.
+                        Analyzed 20 IQP papers to identify common data collection methods, guiding sprint feature
+                        prioritization.
                     </h1>
                 </div>
                 <div>
@@ -61,9 +43,9 @@ export const ProjectBackground = () => {
                         <h1 className={"text-newGray"} id={"based"}>Viability</h1>
                     </div>
                     <h1>
-                        Existing tools like Fastfield and Jotfield were costly,
-                        had complex UIs, and were designed for electrical industries, not students. This validated
-                        our opportunity to create a free, student-tailored solution.
+                        Existing tools were costly, had complex UIs, and were designed for enterprise industries, not
+                        students. This validated
+                        our opportunity for a free, student-tailored solution.
                     </h1>
                 </div>
                 <div>
@@ -72,12 +54,63 @@ export const ProjectBackground = () => {
                         <h1 className={"text-newGray"} id={"based"}>Revitalization</h1>
                     </div>
                     <h1>
-                        WPI's existing digital interfaces
-                        established familiar patterns for students. Leveraging shadcn UI modernized the visual language
-                        while maintaining recognizability, reducing cognitive load for users already comfortable with
-                        WPI's
-                        ecosystem.
+                        Using existing WPI digital foundations allows a natural extension of the ecosystem.
                     </h1>
+                </div>
+            </div>
+            <div className={"mt-10 space-y-2 scroll-mt-40"}>
+                <h1 className={"text-newGray"}>Solution</h1>
+                <h1 className={"font-medium text-3xl"}>
+                    Create a unified platform that standardizes data collection to
+                    <span className="bg-yellow-200 hover:bg-yellow-300 transition px-1 rounded">streamline project workflows</span> and
+                    <span className="bg-yellow-200 hover:bg-yellow-300 transition px-1 rounded">
+                    eliminate logistical overhead
+                    </span>.
+                </h1>
+                <h1>
+                    Using a PERN stack application, we aimed to eliminate the base logistical overhead and empower our
+                    fellow students to focus on what matters most: solving real world problems.
+                </h1>
+            </div>
+            <div className={"mt-10 space-y-2 scroll-mt-40"}>
+                <h1 className={"text-newGray"}>Key Expected Features</h1>
+                <div className={"grid grid-cols-1 md:grid-cols-2 gap-4"}>
+                    <div>
+                        <div className={"flex gap-2 items-center text-newGray"}>
+                            <PieChart/>
+                            <h1>Team Dashboard</h1>
+                        </div>
+                        <h1>
+                            Manage team contributions and data.
+                        </h1>
+                    </div>
+                    <div>
+                        <div className={"flex gap-2 items-center text-newGray"}>
+                            <MapPinned/>
+                            <h1>Geotagging</h1>
+                        </div>
+                        <h1>
+                            Data entries are geotagged onto map for location context.
+                        </h1>
+                    </div>
+                    <div>
+                        <div className={"flex gap-2 items-center text-newGray"}>
+                            <WifiOff/>
+                            <h1>Offline Usage</h1>
+                        </div>
+                        <h1>
+                            Data linked to local storage when outages occur.
+                        </h1>
+                    </div>
+                    <div>
+                        <div className={"flex gap-2 items-center text-newGray"}>
+                            <Sparkles/>
+                            <h1>AI Forms</h1>
+                        </div>
+                        <h1>
+                            Dynamic form building and AI assisted interviews.
+                        </h1>
+                    </div>
                 </div>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40"} id={"userflows"}>
@@ -160,42 +193,19 @@ export const ProjectBackground = () => {
                     two weeks.
                 </h1>
             </div>
-            <div className={"mt-10 grid grid-cols-1 md:grid-cols-2 gap-5"}>
-                <img src={"/dct/forms_after.png"} alt={"Image"}
-                     className={"w-full h-auto border border-gray-300"}/>
-                <div className="flex flex-col justify-end">
-                    <h1 className={"text-newGray"}>Forms</h1>
-                    <h1>
-                        Forms were restructured into collapsible accordions instead of sidebar pages. '
-                        Qualitative, quantitative, and survey forms unified under "Data Form" with integrated
-                        tables and graphs, eliminating click depth and centralizing all form functions in one place.
-                    </h1>
-                </div>
+            <div className={"my-10"}>
+                <img src={"/dct/dashboard1.png"} alt={"team photo"} className={"w-full"}/>
+                <h1 className={"text-newGray mt-2"}>
+                    The original forms flat table buried forms in click depth, so we restructured how students actually worked from start to finish in task flow: collapsible
+                    accordion groups with entry counts and actions visible.
+                </h1>
             </div>
-            <div className={"mt-10 grid grid-cols-1 md:grid-cols-2 gap-5"}>
-                <img src={"/dct/dashboard.png"} alt={"Image"}
-                     className={"w-full h-auto border border-gray-300"}/>
-                <div className="flex flex-col justify-end">
-                    <h1 className={"text-newGray"}>Dashboard</h1>
-                    <h1>
-                        The dashboard replaced a redundant data map with member contributions and real-time project
-                        updates,
-                        transforming it from a visualization duplicate into a genuine project command center.
-                    </h1>
-                </div>
-            </div>
-            <div className={"mt-10 grid grid-cols-1 md:grid-cols-2 gap-5"}>
-                <img src={"/dct/interview.png"} alt={"Image"}
-                     className={"w-full h-auto border border-gray-300"}/>
-                <div className="flex flex-col justify-end">
-                    <h1 className={"text-newGray"}>Interview Form</h1>
-                    <h1>
-                        The original mockup lacked visual hierarchy where all fields appeared identical and recording
-                        placement was unclear. The redesigned two-panel layout splits structured form fields (left)
-                        and audio recording/transcription (right), enabling multitasking and aligning with how teams
-                        actually conduct interviews.
-                    </h1>
-                </div>
+            <div className={"my-10"}>
+                <img src={"/dct/interview1.png"} alt={"team photo"} className={"w-full"}/>
+                <h1 className={"text-newGray mt-2"}>
+                    Interview process literally had no IA structure. There is now 2 panels with structured fields on the left, and AI-assisted recording
+                    and notes on the right for separate context and multitasking abilities.
+                </h1>
             </div>
             <div className="mt-20">
                 <img
@@ -210,8 +220,10 @@ export const ProjectBackground = () => {
                 <h1 className={"font-medium text-3xl"}>System-wide Integration</h1>
 
                 <h1>
-                    After a successful user testing session, we presented our solutions to the WPI President and Global School Dean.
-                    Our application was then officially integrated into WPI&apos;s servers, making it accessible to more than
+                    After a successful user testing session, we presented our solutions to the WPI President and Global
+                    School Dean.
+                    Our application was then officially integrated into WPI&apos;s servers, making it accessible to more
+                    than
                     1,200 students across 50+ project sites worldwide!
                 </h1>
             </div>
