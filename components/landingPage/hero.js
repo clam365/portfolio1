@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import {ArrowDown} from "lucide-react";
 import {motion} from "framer-motion";
 import "@/app/globals.css"
@@ -41,7 +40,7 @@ export default function Hero() {
 
     return (
         <section className="pt-40 lg:px-32 min-h-[60vh] flex flex-col relative overflow-hidden">
-            <div className={"max-w-[90rem] flex-grow"}>
+            <div className={"max-w-[90rem] flex-grow mb-20 md:mb-0"}>
                 <h1
                     ref={textRef}
                     className="text-black font-libreBaskerville text-3xl md:text-5xl "
@@ -51,106 +50,106 @@ export default function Hero() {
                     className={"italic"}>strategy</span>.
                 </h1>
             </div>
-            <motion.div
-                className="absolute hidden lg:block lg:top-[15%] lg:right-[15%] z-10"
-                initial={{opacity: 0, scale: 0.9}}
-                animate={{
-                    opacity: 1,
-                    scale: 1,
-                    y: [0, -12, 0],
-                    rotate: [-5, 5, -5],
-                }}
-                transition={{
-                    opacity: {duration: 0.8, delay: 0.5},
-                    scale: {duration: 0.8, delay: 0.5},
-                    y: {duration: 2, repeat: Infinity, ease: "easeInOut"},
-                    rotate: {duration: 5, repeat: Infinity, ease: "easeInOut"},
-                }}
-            >
-                <Image
-                    src="/dragon.png"
-                    alt="Dragon"
-                    width={75}
-                    height={75}
-                    className="select-none"
-                    priority
-                />
-            </motion.div>
-            <motion.div
-                className="absolute hidden lg:block lg:top-[5%] lg:left-[25%] z-10"
-                initial={{opacity: 0, scale: 0.9}}
-                animate={{
-                    opacity: 1,
-                    scale: 1,
-                    y: [0, -12, 0],
+            {/*<motion.div*/}
+            {/*    className="absolute hidden lg:block lg:top-[15%] lg:right-[15%] z-10"*/}
+            {/*    initial={{opacity: 0, scale: 0.9}}*/}
+            {/*    animate={{*/}
+            {/*        opacity: 1,*/}
+            {/*        scale: 1,*/}
+            {/*        y: [0, -12, 0],*/}
+            {/*        rotate: [-5, 5, -5],*/}
+            {/*    }}*/}
+            {/*    transition={{*/}
+            {/*        opacity: {duration: 0.8, delay: 0.5},*/}
+            {/*        scale: {duration: 0.8, delay: 0.5},*/}
+            {/*        y: {duration: 2, repeat: Infinity, ease: "easeInOut"},*/}
+            {/*        rotate: {duration: 5, repeat: Infinity, ease: "easeInOut"},*/}
+            {/*    }}*/}
+            {/*>*/}
+            {/*    <Image*/}
+            {/*        src="/dragon.png"*/}
+            {/*        alt="Dragon"*/}
+            {/*        width={75}*/}
+            {/*        height={75}*/}
+            {/*        className="select-none"*/}
+            {/*        priority*/}
+            {/*    />*/}
+            {/*</motion.div>*/}
+            {/*<motion.div*/}
+            {/*    className="absolute hidden lg:block lg:top-[5%] lg:left-[25%] z-10"*/}
+            {/*    initial={{opacity: 0, scale: 0.9}}*/}
+            {/*    animate={{*/}
+            {/*        opacity: 1,*/}
+            {/*        scale: 1,*/}
+            {/*        y: [0, -12, 0],*/}
 
-                }}
-                transition={{
-                    opacity: {duration: 0.8, delay: 0.5},
-                    scale: {duration: 0.8, delay: 0.5},
-                    y: {duration: 4, repeat: Infinity, ease: "easeInOut"},
-                    rotate: {duration: 5, repeat: Infinity, ease: "easeInOut"},
-                }}
-            >
-                <Image
-                    src="/smiski.png"
-                    alt="smiski"
-                    width={100}
-                    height={100}
-                    className="select-none"
-                    priority
-                />
-            </motion.div>
-            <motion.div
-                className="absolute hidden lg:block lg:bottom-[15%] lg:left-[20%] xl:bottom-[30%] xl:left-[10%] z-10"
-                initial={{opacity: 0, scale: 0.9}}
-                animate={{
-                    opacity: 1,
-                    scale: 1,
-                    y: [0, -12, 0],
-                    rotate: [5, -5, 5],
-                }}
-                transition={{
-                    opacity: {duration: 0.8, delay: 0.5},
-                    scale: {duration: 0.8, delay: 0.5},
-                    y: {duration: 3, repeat: Infinity, ease: "easeInOut"},
-                    rotate: {duration: 5, repeat: Infinity, ease: "easeInOut"},
-                }}
-            >
-                <Image
-                    src="/flower.png"
-                    alt="flower"
-                    width={50}
-                    height={50}
-                    className="select-none"
-                    priority
-                />
-            </motion.div>
-            <motion.div
-                className=" absolute hidden lg:block xl:bottom-[20%] xl:right-[30%] lg:bottom-[30%] lg:right-[20%] z-10"
-                initial={{opacity: 0, scale: 0.9}}
-                animate={{
-                    opacity: 1,
-                    scale: 1,
-                    y: [0, -12, 0],
+            {/*    }}*/}
+            {/*    transition={{*/}
+            {/*        opacity: {duration: 0.8, delay: 0.5},*/}
+            {/*        scale: {duration: 0.8, delay: 0.5},*/}
+            {/*        y: {duration: 4, repeat: Infinity, ease: "easeInOut"},*/}
+            {/*        rotate: {duration: 5, repeat: Infinity, ease: "easeInOut"},*/}
+            {/*    }}*/}
+            {/*>*/}
+            {/*    <Image*/}
+            {/*        src="/smiski.png"*/}
+            {/*        alt="smiski"*/}
+            {/*        width={100}*/}
+            {/*        height={100}*/}
+            {/*        className="select-none"*/}
+            {/*        priority*/}
+            {/*    />*/}
+            {/*</motion.div>*/}
+            {/*<motion.div*/}
+            {/*    className="absolute hidden lg:block lg:bottom-[15%] lg:left-[20%] xl:bottom-[18%] xl:left-[10%] z-10"*/}
+            {/*    initial={{opacity: 0, scale: 0.9}}*/}
+            {/*    animate={{*/}
+            {/*        opacity: 1,*/}
+            {/*        scale: 1,*/}
+            {/*        y: [0, -12, 0],*/}
+            {/*        rotate: [5, -5, 5],*/}
+            {/*    }}*/}
+            {/*    transition={{*/}
+            {/*        opacity: {duration: 0.8, delay: 0.5},*/}
+            {/*        scale: {duration: 0.8, delay: 0.5},*/}
+            {/*        y: {duration: 3, repeat: Infinity, ease: "easeInOut"},*/}
+            {/*        rotate: {duration: 5, repeat: Infinity, ease: "easeInOut"},*/}
+            {/*    }}*/}
+            {/*>*/}
+            {/*    <Image*/}
+            {/*        src="/flower.png"*/}
+            {/*        alt="flower"*/}
+            {/*        width={50}*/}
+            {/*        height={50}*/}
+            {/*        className="select-none"*/}
+            {/*        priority*/}
+            {/*    />*/}
+            {/*</motion.div>*/}
+            {/*<motion.div*/}
+            {/*    className=" absolute hidden lg:block xl:bottom-[20%] xl:right-[30%] lg:bottom-[30%] lg:right-[20%] z-10"*/}
+            {/*    initial={{opacity: 0, scale: 0.9}}*/}
+            {/*    animate={{*/}
+            {/*        opacity: 1,*/}
+            {/*        scale: 1,*/}
+            {/*        y: [0, -12, 0],*/}
 
-                }}
-                transition={{
-                    opacity: {duration: 0.8, delay: 0.5},
-                    scale: {duration: 0.8, delay: 0.5},
-                    y: {duration: 5, repeat: Infinity, ease: "easeInOut"},
-                    rotate: {duration: 5, repeat: Infinity, ease: "easeInOut"},
-                }}
-            >
-                <Image
-                    src="/musicGuy.png"
-                    alt="musicGuy"
-                    width={100}
-                    height={100}
-                    className="select-none"
-                    priority
-                />
-            </motion.div>
+            {/*    }}*/}
+            {/*    transition={{*/}
+            {/*        opacity: {duration: 0.8, delay: 0.5},*/}
+            {/*        scale: {duration: 0.8, delay: 0.5},*/}
+            {/*        y: {duration: 5, repeat: Infinity, ease: "easeInOut"},*/}
+            {/*        rotate: {duration: 5, repeat: Infinity, ease: "easeInOut"},*/}
+            {/*    }}*/}
+            {/*>*/}
+            {/*    <Image*/}
+            {/*        src="/musicGuy.png"*/}
+            {/*        alt="musicGuy"*/}
+            {/*        width={100}*/}
+            {/*        height={100}*/}
+            {/*        className="select-none"*/}
+            {/*        priority*/}
+            {/*    />*/}
+            {/*</motion.div>*/}
 
             <motion.footer
                 initial="hidden"
