@@ -9,21 +9,21 @@ export const ProjectIntro = () => {
                 {/* BASIC INFO */}
                 <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6"}>
                     <div>
-                        <h1 className={"text-newGray"}>ROLE</h1>
+                        <h1 className={"text-gray"}>ROLE</h1>
                         <h1>Designer &amp; Developer</h1>
                     </div>
                     <div>
-                        <h1 className={"text-newGray"}>TIMELINE</h1>
+                        <h1 className={"text-gray"}>TIMELINE</h1>
                         <h1>Oct 2024 - Dec 2024</h1>
                     </div>
                     <div>
-                        <h1 className={"text-newGray"}>TEAM</h1>
+                        <h1 className={"text-gray"}>TEAM</h1>
                         <h1>Jason Zhang</h1>
                         <h1>Arjun Bhat</h1>
                         <h1>Szymon Mamro</h1>
                     </div>
                     <div>
-                        <h1 className={"text-newGray"}>SKILLS</h1>
+                        <h1 className={"text-gray"}>SKILLS</h1>
                         <h1>Product Design</h1>
                         <h1>Coding</h1>
                     </div>
@@ -31,8 +31,8 @@ export const ProjectIntro = () => {
                 {/*Overview*/}
                 <div className={"mt-20 space-y-2 scroll-mt-40"} id={"overview"}>
                     <div className={"flex items-center m-auto space-x-2"}>
-                        <IoSparkles className={"text-sparkle w-6 h-6"}/>
-                        <h1 className={"text-newGray"}>Chris-generated Overview</h1>
+                        <IoSparkles className={"text-surface-decorative w-6 h-6"}/>
+                        <h1 className={"text-gray"}>Chris-generated Overview</h1>
                     </div>
                     <h1 className={"font-medium text-3xl"}>Study Abroad in Kyoto, Japan</h1>
                     <h1>

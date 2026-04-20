@@ -24,7 +24,7 @@ export function SelectedCraft({ pageLink, imageSrc, projectDescription, projectN
 
                     {/* Arrow button */}
                     <div
-                        className="absolute right-10 bottom-10 z-50 rounded-full p-2 bg-spotify opacity-0 group-hover:opacity-100 translate-x-0 group-hover:translate-x-4 transition duration-300 ease-in-out"
+                        className="absolute right-10 bottom-10 z-50 rounded-full p-2 bg-brand-primary opacity-0 group-hover:opacity-100 translate-x-0 group-hover:translate-x-4 transition duration-300 ease-in-out"
                     >
                         <ArrowRight className="text-black" width={25} height={25} />
                     </div>
@@ -33,7 +33,7 @@ export function SelectedCraft({ pageLink, imageSrc, projectDescription, projectN
                 {/* Text */}
                 <div className="mt-2">
                     <h1 className={"text-xl"}>{projectName}</h1>
-                    <h1 className="text-newGray" id="based">
+                    <h1 className="text-gray" id="based">
                         {projectDescription}
                     </h1>
                 </div>

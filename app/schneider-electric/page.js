@@ -18,23 +18,23 @@ export default function Page() {
                 <div className={"flex flex-col lg:flex-row"}>
                     <nav className="lg:w-1/4 hidden lg:block">
                         <ul className="space-y-4 sticky top-24 p-10">
-                            <li><a href="#overview" className="hover:text-black text-newGray transition">Overview</a>
+                            <li><a href="#overview" className="hover:text-black text-gray transition">Overview</a>
                             </li>
-                            <li><a href="#context" className="hover:text-black text-newGray transition">Context</a></li>
-                            <li><a href="#problem" className="hover:text-black text-newGray transition">Problem</a></li>
-                            <li><a href="#success" className="hover:text-black text-newGray transition">Framing Success</a></li>
-                            <li><a href="#research" className="hover:text-black text-newGray transition">Research</a>
+                            <li><a href="#context" className="hover:text-black text-gray transition">Context</a></li>
+                            <li><a href="#problem" className="hover:text-black text-gray transition">Problem</a></li>
+                            <li><a href="#success" className="hover:text-black text-gray transition">Framing Success</a></li>
+                            <li><a href="#research" className="hover:text-black text-gray transition">Research</a>
                             </li>
-                            <li><a href="#finaldesigns" className="hover:text-black text-newGray transition">Final
+                            <li><a href="#finaldesigns" className="hover:text-black text-gray transition">Final
                                 Designs</a></li>
-                            <li><a href="#focusareas" className="hover:text-black text-newGray transition">Focus
+                            <li><a href="#focusareas" className="hover:text-black text-gray transition">Focus
                                 Areas</a>
                             </li>
-                            <li><a href="#userflow" className="hover:text-black text-newGray transition">Improved Journey
+                            <li><a href="#userflow" className="hover:text-black text-gray transition">Improved Journey
                                 Flow</a></li>
-                            <li><a href="#outcome" className="hover:text-black text-newGray transition">Outcome</a></li>
+                            <li><a href="#outcome" className="hover:text-black text-gray transition">Outcome</a></li>
                             <li><a href="#reflections"
-                                   className="hover:text-black text-newGray transition">Reflections</a>
+                                   className="hover:text-black text-gray transition">Reflections</a>
                             </li>
                         </ul>
                     </nav>

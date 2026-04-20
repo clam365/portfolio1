@@ -159,7 +159,7 @@ export default function Hero() {
                     show: {opacity: 1, transition: {duration: 0.75}},
                 }}
             >
-                <div className={"text-sm text-newGray flex justify-between items-center pb-2"}>
+                <div className={"text-sm text-gray flex justify-between items-center pb-2"}>
                     <div>
                         Previously at&nbsp;
                         <CustomLink link={"https://toddagriscience.com/en"} text={"Todd"}/> and&nbsp;
@@ -168,8 +168,8 @@ export default function Hero() {
                         Based in Greater Boston.
                     </div>
                     <Link href={"/#craft"} className={"hidden lg:block"}>
-                        <p className="text-newGray flex items-center">
-                            Selected Projects <span><ArrowDown className="ml-1 text-spotify"/></span>
+                        <p className="text-gray flex items-center">
+                            Selected Projects <span><ArrowDown className="ml-1 text-brand-primary"/></span>
                         </p>
                     </Link>
                 </div>

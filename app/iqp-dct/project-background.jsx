@@ -4,7 +4,7 @@ export const ProjectBackground = () => {
     return (
         <>
             <div className={"mt-20 space-y-2 scroll-mt-40"} id={"challenge"}>
-                <h1 className={"text-newGray"}>CHALLENGE</h1>
+                <h1 className={"text-gray"}>CHALLENGE</h1>
                 <h1 className={"font-medium text-3xl"}>No playbook. No system. Figure it out.</h1>
                 <h1>
                     Imagine landing in a country you&apos;ve never been to, with 8 weeks to deliver
@@ -15,12 +15,12 @@ export const ProjectBackground = () => {
             </div>
             <div className={"mt-10"}>
                 <img src={"dct/disorganized.png"} alt={"team photo"} className={"w-full border border-gray-300"}/>
-                <h1 className={"text-newGray mt-2"}>
+                <h1 className={"text-gray mt-2"}>
                     Lots of context switching, data fragmentation, and export/compatability issues between platforms.
                 </h1>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40"} id={"uxr"}>
-                <h1 className={"text-newGray"}>USER RESEARCH</h1>
+                <h1 className={"text-gray"}>USER RESEARCH</h1>
                 <h1 className={"font-medium text-3xl"}>Student Needs &amp; Competitive Analysis</h1>
                 <h1>
                     We took a three-pillar approach to understand our student needs and validate our direction.
@@ -29,8 +29,8 @@ export const ProjectBackground = () => {
             <div className={"mt-10 grid grid-cols-1 md:grid-cols-3 gap-5"}>
                 <div>
                     <div className={"flex gap-x-1 mb-2"}>
-                        <ListOrdered className={"text-newGray"} id={"based"}/>
-                        <h1 className={"text-newGray"} id={"based"}>Prioritization</h1>
+                        <ListOrdered className={"text-gray"} id={"based"}/>
+                        <h1 className={"text-gray"} id={"based"}>Prioritization</h1>
                     </div>
                     <h1>
                         Analyzed 20 IQP papers to identify common data collection methods, guiding sprint feature
@@ -39,8 +39,8 @@ export const ProjectBackground = () => {
                 </div>
                 <div>
                     <div className={"flex gap-x-1 mb-2"}>
-                        <Sprout className={"text-newGray"} id={"based"}/>
-                        <h1 className={"text-newGray"} id={"based"}>Viability</h1>
+                        <Sprout className={"text-gray"} id={"based"}/>
+                        <h1 className={"text-gray"} id={"based"}>Viability</h1>
                     </div>
                     <h1>
                         Existing tools were costly, had complex UIs, and were designed for enterprise industries, not
@@ -50,8 +50,8 @@ export const ProjectBackground = () => {
                 </div>
                 <div>
                     <div className={"flex gap-x-1 mb-2"}>
-                        <AppWindow className={"text-newGray"} id={"based"}/>
-                        <h1 className={"text-newGray"} id={"based"}>Revitalization</h1>
+                        <AppWindow className={"text-gray"} id={"based"}/>
+                        <h1 className={"text-gray"} id={"based"}>Revitalization</h1>
                     </div>
                     <h1>
                         Using existing WPI digital foundations allows a natural extension of the ecosystem.
@@ -59,7 +59,7 @@ export const ProjectBackground = () => {
                 </div>
             </div>
             <div className={"mt-10 space-y-2 scroll-mt-40"}>
-                <h1 className={"text-newGray"}>Solution</h1>
+                <h1 className={"text-gray"}>Solution</h1>
                 <h1 className={"font-medium text-3xl"}>
                     Create a unified platform that standardizes data collection to
                     <span className="bg-yellow-200 hover:bg-yellow-300 transition px-1 rounded">streamline project workflows</span> and
@@ -73,10 +73,10 @@ export const ProjectBackground = () => {
                 </h1>
             </div>
             <div className={"mt-10 space-y-2 scroll-mt-40"}>
-                <h1 className={"text-newGray"}>Key Expected Features</h1>
+                <h1 className={"text-gray"}>Key Expected Features</h1>
                 <div className={"grid grid-cols-1 md:grid-cols-2 gap-4"}>
                     <div>
-                        <div className={"flex gap-2 items-center text-newGray"}>
+                        <div className={"flex gap-2 items-center text-gray"}>
                             <PieChart/>
                             <h1>Team Dashboard</h1>
                         </div>
@@ -85,7 +85,7 @@ export const ProjectBackground = () => {
                         </h1>
                     </div>
                     <div>
-                        <div className={"flex gap-2 items-center text-newGray"}>
+                        <div className={"flex gap-2 items-center text-gray"}>
                             <MapPinned/>
                             <h1>Geotagging</h1>
                         </div>
@@ -94,7 +94,7 @@ export const ProjectBackground = () => {
                         </h1>
                     </div>
                     <div>
-                        <div className={"flex gap-2 items-center text-newGray"}>
+                        <div className={"flex gap-2 items-center text-gray"}>
                             <WifiOff/>
                             <h1>Offline Usage</h1>
                         </div>
@@ -103,7 +103,7 @@ export const ProjectBackground = () => {
                         </h1>
                     </div>
                     <div>
-                        <div className={"flex gap-2 items-center text-newGray"}>
+                        <div className={"flex gap-2 items-center text-gray"}>
                             <Sparkles/>
                             <h1>AI Forms</h1>
                         </div>
@@ -114,7 +114,7 @@ export const ProjectBackground = () => {
                 </div>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40"} id={"userflows"}>
-                <h1 className={"text-newGray"}>User Flows</h1>
+                <h1 className={"text-gray"}>User Flows</h1>
                 <h1 className={"font-medium text-3xl"}>Onboarding &amp; Platform</h1>
                 <h1>
                     The platform features two core flows: onboarding (SSO login to project setup with role-based
@@ -133,7 +133,7 @@ export const ProjectBackground = () => {
                 className="w-full mt-10 border border-gray-300"
             />
             <div className={"mt-20 space-y-2 scroll-mt-40"} id={"designsystem"}>
-                <h1 className={"text-newGray"}>DESIGN SYSTEM</h1>
+                <h1 className={"text-gray"}>DESIGN SYSTEM</h1>
                 <h1>
                     The design system of the IQP DCT serves as a visual bridge between WPI's existing
                     interfaces and a refreshed, modern aesthetic from shadcn. By blending in familiarity
@@ -168,7 +168,7 @@ export const ProjectBackground = () => {
                 />
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40"} id={"designiterations"}>
-                <h1 className={"text-newGray"}>DESIGN ITERATIONS</h1>
+                <h1 className={"text-gray"}>DESIGN ITERATIONS</h1>
                 <h1>
                     After defining the design system, initial mockups visualized basic layouts for forms,
                     dashboards, and onboarding. With the team unfamiliar with Figma and shadcn's design system,
@@ -182,10 +182,10 @@ export const ProjectBackground = () => {
                     alt="Image"
                     className=""
                 />
-                <h1 className={"mt-2 text-newGray"}>Before</h1>
+                <h1 className={"mt-2 text-gray"}>Before</h1>
             </div>
             <div className={"mt-10 space-y-2 scroll-mt-40"}>
-                <h1 className={"text-newGray"}>Iterative User Testing</h1>
+                <h1 className={"text-gray"}>Iterative User Testing</h1>
                 <h1>
                     With a functional full-stack prototype, we conducted 30 user testing sessions over 3 weeks
                     (10 per week) with students and faculty. This iterative approach revealed critical usability
@@ -195,14 +195,14 @@ export const ProjectBackground = () => {
             </div>
             <div className={"my-10"}>
                 <img src={"/dct/dashboard1.png"} alt={"team photo"} className={"w-full"}/>
-                <h1 className={"text-newGray mt-2"}>
+                <h1 className={"text-gray mt-2"}>
                     The original forms flat table buried forms in click depth, so we restructured how students actually worked from start to finish in task flow: collapsible
                     accordion groups with entry counts and actions visible.
                 </h1>
             </div>
             <div className={"my-10"}>
                 <img src={"/dct/interview1.png"} alt={"team photo"} className={"w-full"}/>
-                <h1 className={"text-newGray mt-2"}>
+                <h1 className={"text-gray mt-2"}>
                     Interview process literally had no IA structure. There is now 2 panels with structured fields on the left, and AI-assisted recording
                     and notes on the right for separate context and multitasking abilities.
                 </h1>
@@ -213,10 +213,10 @@ export const ProjectBackground = () => {
                     alt="Image"
                     className=""
                 />
-                <h1 className={"mt-2 text-newGray"}>After</h1>
+                <h1 className={"mt-2 text-gray"}>After</h1>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40"} id={"outcomes"}>
-                <h1 className={"text-newGray"}>OUTCOMES</h1>
+                <h1 className={"text-gray"}>OUTCOMES</h1>
                 <h1 className={"font-medium text-3xl"}>System-wide Integration</h1>
 
                 <h1>
@@ -246,18 +246,18 @@ export const ProjectBackground = () => {
             {/*    </div>*/}
             {/*</div>*/}
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"reflections"}>
-                <h1 className={"text-newGray"}>REFLECTIONS</h1>
+                <h1 className={"text-gray"}>REFLECTIONS</h1>
                 <h1 className={"font-medium text-3xl"}>What I learned</h1>
             </div>
             <div className={"mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 mb-20"}>
                 <div>
-                    <h1 className={"text-newGray text-xl"}>System Thinking</h1>
+                    <h1 className={"text-gray text-xl"}>System Thinking</h1>
                     <h1>
                         Frontend and design work closely together, and I understood the capabilities of each.
                     </h1>
                 </div>
                 <div>
-                    <h1 className={"text-newGray text-xl"}>One UI component can change everything</h1>
+                    <h1 className={"text-gray text-xl"}>One UI component can change everything</h1>
                     <h1>
                         What one component may work for one area may not work for another. Seeing what is out there
                         in the market helps determine your unique pick.

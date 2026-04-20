@@ -48,8 +48,8 @@ export default function Content() {
                 <div
                     className={"flex justify-between py-4 text-xs md:text-sm border-t border-t-[#e1e1e1]"}
                 >
-                    <h1 className={"text-newGray"}>© 2026 Chris Lam</h1>
-                    <h1 className={"text-newGray"}>Designed & coded by me!</h1>
+                    <h1 className={"text-gray"}>© 2026 Chris Lam</h1>
+                    <h1 className={"text-gray"}>Designed & coded by me!</h1>
                 </div>
             </div>
         </div>

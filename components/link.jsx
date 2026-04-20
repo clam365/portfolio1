@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 
 export function CustomLink({ link: link, text }) {
     return (
-        <span className="text-spotify hover:text-slight-black">
+        <span className="text-brand-primary hover:text-black">
             <a href={link} target="_blank" rel="opener referrer">{text}</a>
         </span>
     )

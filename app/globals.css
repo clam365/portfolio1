@@ -6,6 +6,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #808080;
+    --color-content-bg: #EFF3F6;
+    --color-content-border: #D1D5D6;
+    --color-fresh-green-400: #3cda64;
+    --color-fresh-green-500: #23C44C;
+    --color-brand-primary: var(--color-fresh-green-400);
+    --color-baby-blue-300: #90D5FF;
+    --color-highlight-yellow-200: #fff085;
+    --color-highlight-yellow-300: #ffdf20;
+}
+
 html {
     margin: 0;
     font-family: 'Manrope', sans-serif;
@@ -14,22 +28,22 @@ html {
 }
 
 ::selection {
-    background-color: #3cda64;
-    color: white;
+    background-color: var(--color-brand-primary);
+    color: var(--color-white);
 }
 
 .selection-group::selection {
-    background-color: #3cda64;
-    color: white;
+    background-color: var(--color-brand-primary);
+    color: var(--color-white);
 }
 
 .selection-group span::selection {
-    background-color: #3cda64;
-    color: white;
+    background-color: var(--color-brand-primary);
+    color: var(--color-white);
 }
 
 .list-dot {
-    background-color: #3cda64;
+    background-color: var(--color-brand-primary);
 }
 
 #about {

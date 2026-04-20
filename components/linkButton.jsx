@@ -10,7 +10,7 @@ export function LinkButton({ link: link, text }) {
                className={"group flex items-center px-3 py-2 border border-[#e1e1e1] rounded-full hover:bg-[#e7e7e7] transition"}>
                 <h1 className={"text-sm"}>{text}</h1>
                 <ArrowUpRight
-                    className="text-spotify group-hover:text-[#2c8b44] transition w-5 h-5 "
+                    className="text-brand-primary group-hover:text-[#2c8b44] transition w-5 h-5 "
                 />
             </a>
         </div>
