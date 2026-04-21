@@ -23,7 +23,7 @@ export default function Header() {
 
                 <div className={"flex gap-x-6 items-center cursor-pointer"}>
                     <div className={"space-x-8 hidden lg:block"}>
-                        <Link href={"/#craft"} className={""}>Projects</Link>
+                        <Link href={"/#craft"} className={""}>Work</Link>
                         <Link href={"/about"}>About</Link>
                         <a href="/resume.pdf" target="_blank" rel="opener referrer">Resume</a>
                     </div>
