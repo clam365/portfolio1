@@ -4,6 +4,17 @@ import {motion} from "framer-motion";
 import Typography from "@/app/design-system/typography";
 import Colors from "@/app/design-system/colors";
 import ButtonPreview from "@/app/design-system/buttonPreview";
+import HeaderSection from "@/app/design-system/headerSection";
+import CaseStudyNav from "@/components/caseStudyNav";
+import CaseStudyNavSection from "@/app/design-system/caseStudyNavSection";
+
+export const designSystemSections = [
+    { id: "colors", label: "Colors", group: "FOUNDATIONS" },
+    { id: "typography", label: "Typography", group: "FOUNDATIONS" },
+    { id: "button", label: "Button", group: "COMPONENTS" },
+    { id: "header", label: "Header", group: "COMPONENTS" },
+    { id: "casestudynav", label: "CaseStudyNav", group: "COMPONENTS" },
+];
 
 export default function Page() {
     return (
@@ -13,26 +24,9 @@ export default function Page() {
             transition={{duration: 0.8, ease: "easeOut"}}
         >
             <div className={"flex flex-col lg:flex-row pt-10"}>
-                <nav className="lg:w-1/4 hidden lg:block">
-                    <ul className="space-y-6 sticky top-24 p-10">
-                        <div className={"space-y-2"}>
-                            <h1 className={"font-semibold text-secondary"}>FOUNDATIONS</h1>
-                            <li><a href="#colors" className="hover:text-primary text-secondary transition">Colors</a>
-                            </li>
-                            <li><a href="#typography"
-                                   className="hover:text-primary text-secondary transition">Typography</a></li>
-                        </div>
-                        <div className={"space-y-2"}>
-                            <h1 className={"font-semibold text-secondary"}>COMPONENTS</h1>
-                            <li><a href="#button"
-                                   className="hover:text-primary text-secondary transition">Button</a></li>
-                        </div>
-
-
-                    </ul>
-                </nav>
+                <CaseStudyNav sections={designSystemSections}/>
                 <main className="lg:w-2/4 px-10 lg:px-0">
-                    <h1 className={"text-2xl md:text-4xl font-medium mt-10"}>Orchid Design System</h1>
+                <h1 className={"text-2xl md:text-4xl font-medium mt-10"}>Orchid Design System</h1>
                     <h1 className={"text-md md:text-md text-secondary mt-2"}>
                         The Orchid design system is a thoughtful and scalable foundation for creating a clean,
                         consistent,
@@ -50,6 +44,8 @@ export default function Page() {
                     <Colors/>
                     <Typography/>
                     <ButtonPreview/>
+                    <HeaderSection/>
+                    <CaseStudyNavSection/>
                 </main>
             </div>
         </motion.div>

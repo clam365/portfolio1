@@ -5,6 +5,15 @@ import {ProjectBackground} from "@/app/kyoto-project-center/project-background";
 import {ProjectNext} from "@/app/kyoto-project-center/project-next";
 import CaseStudyStart from "@/components/caseStudyStart";
 import {motion} from "framer-motion";
+import CaseStudyNav from "@/components/caseStudyNav";
+
+export const sections = [
+    { id: "overview", label: "Overview" },
+    { id: "challenge", label: "Challenge" },
+    { id: "ideation", label: "Ideation" },
+    { id: "finaldesigns", label: "Final Designs" },
+    { id: "reflections", label: "Reflection" },
+];
 
 export default function Page() {
 
@@ -16,20 +25,7 @@ export default function Page() {
                 transition={{duration: 0.8, ease: "easeOut"}}
             >
                 <div className={"flex flex-col lg:flex-row"}>
-                    <nav className="lg:w-1/4 hidden lg:block">
-                        <ul className="space-y-4 sticky top-24 p-10">
-                            <li><a href="#overview" className="hover:text-primary text-secondary transition">Overview</a>
-                            </li>
-                            <li><a href="#challenge" className="hover:text-primary text-secondary transition">Challenge</a>
-                            </li>
-                            <li><a href="#ideation" className="hover:text-primary text-secondary transition">Ideation</a>
-                            </li>
-                            <li><a href="#finaldesigns" className="hover:text-primary text-secondary transition">Final
-                                Designs</a></li>
-                            <li><a href="#reflections"
-                                   className="hover:text-primary text-secondary transition">Reflections</a></li>
-                        </ul>
-                    </nav>
+                    <CaseStudyNav sections={sections}/>
                     <main className="lg:w-2/4 px-10 lg:px-0">
                         <CaseStudyStart
                             tag={"FREELANCE"}

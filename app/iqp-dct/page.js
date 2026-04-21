@@ -5,6 +5,18 @@ import {ProjectBackground} from "@/app/iqp-dct/project-background";
 import {ProjectNext} from "@/app/iqp-dct/project-next";
 import CaseStudyStart from "@/components/caseStudyStart";
 import {motion} from "framer-motion";
+import CaseStudyNav from "@/components/caseStudyNav";
+
+export const iqpSections = [
+    { id: "overview", label: "Overview" },
+    { id: "challenge", label: "Challenge" },
+    { id: "uxr", label: "User Research" },
+    { id: "userflows", label: "User Flows" },
+    { id: "designsystem", label: "Design System" },
+    { id: "designiterations", label: "Design Iterations" },
+    { id: "outcomes", label: "Outcomes" },
+    { id: "reflections", label: "Reflection" },
+];
 
 export default function Page() {
 
@@ -16,26 +28,7 @@ export default function Page() {
                 transition={{duration: 0.8, ease: "easeOut"}}
             >
                 <div className={"flex flex-col lg:flex-row"}>
-                    <nav className="lg:w-1/4 hidden lg:block">
-                        <ul className="space-y-4 sticky top-24 p-10">
-                            <li><a href="#overview" className="hover:text-primary text-secondary transition">Overview</a>
-                            </li>
-                            <li><a href="#challenge" className="hover:text-primary text-secondary transition">Challenge</a>
-                            </li>
-                            <li><a href="#uxr" className="hover:text-primary text-secondary transition">User Research</a>
-                            </li>
-                            <li><a href="#userflows" className="hover:text-primary text-secondary transition">User Flows</a>
-                            </li>
-                            <li><a href="#designsystem" className="hover:text-primary text-secondary transition">Design
-                                System</a></li>
-                            <li><a href="#designiterations" className="hover:text-primary text-secondary transition">Design
-                                Iterations</a></li>
-                            <li><a href="#outcomes" className="hover:text-primary text-secondary transition">Outcomes</a>
-                            </li>
-                            <li><a href="#reflections"
-                                   className="hover:text-primary text-secondary transition">Reflections</a></li>
-                        </ul>
-                    </nav>
+                    <CaseStudyNav sections={iqpSections}/>
                     <main className="lg:w-2/4 px-10 lg:px-0">
                         <CaseStudyStart
                             tag={"MAJOR QUALIFYING PROJECT"}
