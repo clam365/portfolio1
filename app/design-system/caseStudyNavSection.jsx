@@ -1,6 +1,7 @@
 "use client";
 import React, {useEffect, useState} from "react";
 
+
 export const sections = [
     { id: "a", label: "Overview" },
     { id: "b", label: "Challenge" },
@@ -99,6 +100,55 @@ export default function CaseStudyNavSection() {
             <div className="border bg-surface-raised border-border rounded-md p-12 mt-10 flex justify-center">
                 <CaseStudyNavPreview sections={sections}/>
             </div>
+            <div className={"border border-border rounded-md overflow-x-auto mt-2"}>
+                <table className={"w-full"}>
+                    <thead>
+                    <tr className={"bg-surface-raised  "}>
+                        {["Prop", "Type", "Description"].map((h) => (
+                            <th
+                                key={h}
+                                className="text-[10px] text-left font-semibold text-primary p-2 px-4 border-b border-border"
+                            >
+                                {h}
+                            </th>
+                        ))}
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td className={"p-4 font-mono text-xs "}>sections</td>
+                        <td className={"p-4  text-xs  text-secondary"}>{`{ id: string, label: string, group: string}[]`}</td>
+                        <td className={"p-4  text-xs text-secondary"}>List of sections to render as nav items.
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div className={"bg-[#1E1F22] rounded-md p-4 mt-2"}>
+                <h1 className={"font-mono text-yellow-200 text-xs"}>
+                    {`const sections = [ `}
+                    <br/>&nbsp;&nbsp;
+                    {`{ id: "overview", label: "Overview"},`}
+                    <br/>&nbsp;&nbsp;
+                    {`{ id: "reflection", label: "Reflection"},`}
+                    <br/>
+                    {`]`}
+                    <br/>
+                    <br/>
+                    {`<div className={"flex flex-col lg:flex-row pt-10"}>`}
+                    <br/>&nbsp;&nbsp;
+                    {`<CaseStudyNav sections={sections}>`}
+                    <br/>&nbsp;&nbsp;
+                    {`<main className={"lg:w-2/4 px-10 lg:px-0"}>`}
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                    {`...`}
+                    <br/>&nbsp;&nbsp;
+                    {`<main/>`}
+                    <br/>
+                    {`<div/>`}
+                </h1>
+            </div>
         </section>
     )
 }
+
