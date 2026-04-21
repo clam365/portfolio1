@@ -16,7 +16,7 @@ export default function Page() {
             >
                 <div className={"py-32 px-10 lg:px-32"}>
                     <h1 className={"text-2xl text-[#d1d5dc] font-semibold tracking-wide mb-2"}>ABOUT ME</h1>
-                    <h1 className="font-libreBaskerville text-4xl">Hi there, I'm Chris!</h1> 
+                    <h1 className="font-display text-4xl">Hi there, I'm Chris!</h1>
                     <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10"}>
                         <div className={"items-center m-auto order-2 md:order-1"}>
                             <h1 className={"text-secondary text-sm mt-8"}>

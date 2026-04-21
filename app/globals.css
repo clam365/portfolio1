@@ -6,6 +6,12 @@
 @tailwind utilities;
 
 :root {
+    --font-family-display: "Libre Baskerville", serif;
+    --font-family-base: "Manrope", serif;
+    --text-hero-font: var(--font-family-display);
+    --text-heading-font: var(--font-family-base);
+    --text-body-font: var(--font-family-base);
+
     --color-white: #ffffff;
     --color-black: #000000;
     --color-gray: #808080;

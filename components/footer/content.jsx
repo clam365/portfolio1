@@ -9,7 +9,7 @@ export default function Content() {
             <div className='bg-[#f0f0f0] pt-10 px-10 py-[3rem] md:pt-20  justify-center' id="footer1">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 space-y-8 md:space-y-0 justify-center">
-                    <div className={"font-libreBaskerville italic"}>
+                    <div className={"font-display italic"}>
                         <h1 className={"text-7xl lg:text-9xl"}>Chris Lam</h1>
                     </div>
                     <div className="grid grid-cols-2 space-x-10 md:justify-items-center">

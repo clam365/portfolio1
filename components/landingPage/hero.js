@@ -43,7 +43,7 @@ export default function Hero() {
             <div className={"max-w-[90rem] flex-grow mb-20 md:mb-0"}>
                 <h1
                     ref={textRef}
-                    className="text-primary font-libreBaskerville text-3xl md:text-5xl "
+                    className="text-primary font-display text-3xl md:text-5xl "
                 >
                     I&#39;m Chris Lam,
                     a product designer who builds with <span className={"italic"}>authentic expression</span> and <span

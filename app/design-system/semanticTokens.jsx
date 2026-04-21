@@ -331,7 +331,7 @@ export default function SemanticTokens() {
     return (
         <section className="w-full ">
             <div className={"overflow-x-auto"}>
-                <div className={"min-w-[37.5rem] min-h-[42.5rem]"}>
+                <div className={"min-w-[37.5rem]"}>
                     {/* Main grid + SVG overlay */}
                     <div ref={containerRef} className="grid grid-cols-3 relative gap-x-10 xl:gap-x-44">
                         {/* SVG overlay for curves */}

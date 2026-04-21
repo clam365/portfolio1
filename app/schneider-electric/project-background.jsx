@@ -96,7 +96,7 @@ export const ProjectBackground = () => {
                     they have enough control to find what they need.
                 </h1>
             </div>
-            <div className={"my-20 scroll-mt-40 text-center font-libreBaskerville italic text-2xl"}>
+            <div className={"my-20 scroll-mt-40 text-center font-display italic text-2xl"}>
                 By enabling homeowners to browse and discover products{" "}
                 <span className="bg-yellow-200 hover:bg-yellow-300 transition px-1 rounded">with confidence</span>,
                 Schneider Electric can{" "}

@@ -8,7 +8,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        libreBaskerville: ['Libre Baskerville', 'serif'],
+        display: ['Libre Baskerville', 'serif'],
+        sans: ['Manrope', 'serif'],
       },
       colors: {
         'brand-primary': "var(--color-brand-primary)",
