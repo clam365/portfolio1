@@ -65,7 +65,7 @@ export default function work() {
                     <h1 className={"text-2xl md:text-5xl text-center"}>
                         Curious to how this was built?
                         <br/>
-                        Check out my <CustomLink link={"/design-system"} text={"portfolio design system"}/>!
+                        Check out my <CustomLink link={"/design-system"} text={"orchid design system"}/>!
                     </h1>
                 </RevealOnScroll>
             </section>
