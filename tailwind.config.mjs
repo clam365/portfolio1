@@ -11,13 +11,22 @@ export default {
         libreBaskerville: ['Libre Baskerville', 'serif'],
       },
       colors: {
-        'white': "var(--color-white)",
-        'black': "var(--color-black)",
-        'gray': "var(--color-gray)",
-        'content-bg': "var(--color-content-bg)",
-        'content-border': "var(--color-content-border)",
         'brand-primary': "var(--color-brand-primary)",
-        'surface-decorative': "var(--color-baby-blue-300)",
+
+        'surface-base': "var(--color-surface-base)",
+        'surface-decorative': "var(--color-surface-decorative)",
+        'surface-raised': "var(--color-surface-raised)",
+
+        'border': "var(--color-border)",
+
+        'primary': "var(--color-text-primary)",
+        'secondary': "var(--color-text-secondary)",
+        'tertiary': "var(--color-text-tertiary)",
+
+        'button': "var(--color-button-text)",
+        'button-bg-primary': "var(--color-button-bg-primary)",
+        'button-bg-primary-hover': "var(--color-button-bg-primary-hover)",
+        'button-bg-outline-hover': "var(--color-button-bg-outline-hover)",
       },
     },
   },

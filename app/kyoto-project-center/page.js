@@ -18,16 +18,16 @@ export default function Page() {
                 <div className={"flex flex-col lg:flex-row"}>
                     <nav className="lg:w-1/4 hidden lg:block">
                         <ul className="space-y-4 sticky top-24 p-10">
-                            <li><a href="#overview" className="hover:text-black text-gray transition">Overview</a>
+                            <li><a href="#overview" className="hover:text-primary text-secondary transition">Overview</a>
                             </li>
-                            <li><a href="#challenge" className="hover:text-black text-gray transition">Challenge</a>
+                            <li><a href="#challenge" className="hover:text-primary text-secondary transition">Challenge</a>
                             </li>
-                            <li><a href="#ideation" className="hover:text-black text-gray transition">Ideation</a>
+                            <li><a href="#ideation" className="hover:text-primary text-secondary transition">Ideation</a>
                             </li>
-                            <li><a href="#finaldesigns" className="hover:text-black text-gray transition">Final
+                            <li><a href="#finaldesigns" className="hover:text-primary text-secondary transition">Final
                                 Designs</a></li>
                             <li><a href="#reflections"
-                                   className="hover:text-black text-gray transition">Reflections</a></li>
+                                   className="hover:text-primary text-secondary transition">Reflections</a></li>
                         </ul>
                     </nav>
                     <main className="lg:w-2/4 px-10 lg:px-0">

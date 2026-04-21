@@ -17,8 +17,8 @@ export default function Page() {
                 <div className={"flex flex-col lg:flex-row"}>
                     <nav className="lg:w-1/4 hidden lg:block">
                         <ul className="space-y-4 sticky top-24 p-10">
-                            <li><a href="#overview" className="hover:text-black text-gray transition">Overview</a></li>
-                            <li><a href="#reflections" className="hover:text-black text-gray transition">Reflections</a></li>
+                            <li><a href="#overview" className="hover:text-primary text-secondary transition">Overview</a></li>
+                            <li><a href="#reflections" className="hover:text-primary text-secondary transition">Reflections</a></li>
 
                         </ul>
                     </nav>

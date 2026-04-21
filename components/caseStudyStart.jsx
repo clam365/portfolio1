@@ -8,7 +8,7 @@ export default function CaseStudyStart({title, description, imageAlt, imageSrc})
         <>
             <div className={"py-10 pt-20 md:pt-20"}>
                 <h1 className={"text-4xl md:text-4xl font-medium"}>{title}</h1>
-                <h1  className={"text-xl md:text-2xl text-gray mt-3"}>{description}</h1>
+                <h1  className={"text-xl md:text-2xl text-secondary mt-3"}>{description}</h1>
             </div>
             <Image src={imageSrc} alt={imageAlt} className={"w-full object-cover max-h-[600px]"} width={1280} height={720}/>
         </>

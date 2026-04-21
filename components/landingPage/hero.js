@@ -43,7 +43,7 @@ export default function Hero() {
             <div className={"max-w-[90rem] flex-grow mb-20 md:mb-0"}>
                 <h1
                     ref={textRef}
-                    className="text-black font-libreBaskerville text-3xl md:text-5xl "
+                    className="text-primary font-libreBaskerville text-3xl md:text-5xl "
                 >
                     I&#39;m Chris Lam,
                     a product designer who builds with <span className={"italic"}>authentic expression</span> and <span
@@ -159,7 +159,7 @@ export default function Hero() {
                     show: {opacity: 1, transition: {duration: 0.75}},
                 }}
             >
-                <div className={"text-sm text-gray flex justify-between items-center pb-2"}>
+                <div className={"text-sm text-secondary flex justify-between items-center pb-2"}>
                     <div>
                         Previously at&nbsp;
                         <CustomLink link={"https://toddagriscience.com/en"} text={"Todd"}/> and&nbsp;
@@ -168,7 +168,7 @@ export default function Hero() {
                         Based in Greater Boston.
                     </div>
                     <Link href={"/#craft"} className={"hidden lg:block"}>
-                        <p className="text-gray flex items-center">
+                        <p className="text-secondary flex items-center">
                             Selected Projects <span><ArrowDown className="ml-1 text-brand-primary"/></span>
                         </p>
                     </Link>

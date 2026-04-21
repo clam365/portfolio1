@@ -19,7 +19,7 @@ export default function Page() {
                     <h1 className="font-libreBaskerville text-4xl">Hi there, I'm Chris!</h1> 
                     <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10"}>
                         <div className={"items-center m-auto order-2 md:order-1"}>
-                            <h1 className={"text-gray text-sm mt-8"}>
+                            <h1 className={"text-secondary text-sm mt-8"}>
                                 I&apos;m a designer with an engineering foundation, driven by authentic expression and strategy.
                                 <br/>
                                 <br/> 
@@ -43,7 +43,7 @@ export default function Page() {
                                 <br/>
                                 <br/>
                             </h1>
-                            <div className={"text-gray"}>
+                            <div className={"text-secondary"}>
                                 Previously at&nbsp;<CustomLink link={"https://toddagriscience.com/en"}
                                                                text={"Todd"}/>,&nbsp;
                                 <CustomLink link={"https://www.se.com/ww/en/"}
@@ -81,26 +81,26 @@ export default function Page() {
                             className={" w-full flex flex-col justify-center m-auto"}>
                             <img src={"/place1.png"} alt={"Image"}
                                  className={" w-full"}/>
-                            <p className={"text-gray text-sm mt-2 text-center"} id={"based"}>Weekender's Coffee,
+                            <p className={"text-secondary text-sm mt-2 text-center"} id={"based"}>Weekender's Coffee,
                                 Kyoto Japan</p>
                         </div>
                         <div
                             className={"w-full flex flex-col justify-center m-auto"}>
                             <img src={"/place2.png"} alt={"Image"}
                                  className={" w-full"}/>
-                            <p className={"text-gray text-sm mt-2 text-center"} id={"based"}>Mt. Fuji, Japan</p>
+                            <p className={"text-secondary text-sm mt-2 text-center"} id={"based"}>Mt. Fuji, Japan</p>
                         </div>
                         <div
                             className={"w-full flex flex-col justify-center m-auto"}>
                             <img src={"/place3.png"} alt={"Image"}
                                  className={" w-full"}/>
-                            <p className={"text-gray text-sm mt-2 text-center"} id={"based"}>Venice!</p>
+                            <p className={"text-secondary text-sm mt-2 text-center"} id={"based"}>Venice!</p>
                         </div>
                         <div
                             className={"w-full flex flex-col justify-center m-auto"}>
                             <img src={"/place4.png"} alt={"Image"}
                                  className={" w-full"}/>
-                            <p className={"text-gray text-sm mt-2 text-center"} id={"based"}>Jay Peak, VT!</p>
+                            <p className={"text-secondary text-sm mt-2 text-center"} id={"based"}>Jay Peak, VT!</p>
                         </div>
                     </div>
                 </div>

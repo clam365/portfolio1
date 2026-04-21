@@ -14,21 +14,21 @@ export default function Page() {
                 <div className={"flex flex-col lg:flex-row pt-10"}>
                     <nav className="lg:w-1/4 hidden lg:block">
                         <ul className="space-y-2 sticky top-24 p-10">
-                            <h1 className={"font-semibold text-gray"}>FOUNDATIONS</h1>
-                            <li><a href="#colors" className="hover:text-black text-gray transition">Colors</a>
+                            <h1 className={"font-semibold text-secondary"}>FOUNDATIONS</h1>
+                            <li><a href="#colors" className="hover:text-primary text-secondary transition">Colors</a>
                             </li>
-                            <li><a href="#context" className="hover:text-black text-gray transition">Typography</a>
+                            <li><a href="#typography" className="hover:text-primary text-secondary transition">Typography</a>
                             </li>
-
                         </ul>
                     </nav>
                     <main className="lg:w-2/4 px-10 lg:px-0">
                         <section className={"py-10 scroll-mt-40"} id={"colors"}>
                             <h1 className={"text-2xl md:text-2xl font-medium"}>Primitive Colors</h1>
-                            <h1 className={"text-md md:text-md text-gray mt-2"}>Raw color palette values. Use semantic
+                            <h1 className={"text-md md:text-md text-secondary mt-2"}>Raw color palette values. Use
+                                semantic
                                 tokens in components, not these directly.</h1>
                             <div className={"mt-8"}>
-                                <h1 className={"text-gray text-sm font-semibold"}>NEUTRALS</h1>
+                                <h1 className={"text-secondary text-sm font-semibold"}>NEUTRALS</h1>
                                 <div className={"grid grid-cols-5 md:grid-cols-10 gap-2 mt-4"}>
                                     <ColorPaletteCard colorName={"white"} hexCode={"ffffff"}/>
                                     <ColorPaletteCard colorName={"steel"} hexCode={"eff3f6"}/>
@@ -38,7 +38,7 @@ export default function Page() {
                                 </div>
                             </div>
                             <div className={"mt-8"}>
-                                <h1 className={"text-gray text-sm font-semibold"}>FRESH GREEN</h1>
+                                <h1 className={"text-secondary text-sm font-semibold"}>FRESH GREEN</h1>
                                 <div className={"grid grid-cols-5 md:grid-cols-10 gap-2 mt-4"}>
                                     <ColorPaletteCard colorName={"50"} hexCode={"f0fdf3"}/>
                                     <ColorPaletteCard colorName={"100"} hexCode={"dcfce3"}/>
@@ -52,11 +52,36 @@ export default function Page() {
                                     <ColorPaletteCard colorName={"900"} hexCode={"145326"}/>
                                 </div>
                             </div>
+                            <div className={"mt-8"}>
+                                <h1 className={"text-secondary text-sm font-semibold"}>BABY BLUE</h1>
+                                <div className={"grid grid-cols-5 md:grid-cols-10 gap-2 mt-4"}>
+                                    <ColorPaletteCard colorName={"50"} hexCode={"f0f8ff"}/>
+                                    <ColorPaletteCard colorName={"100"} hexCode={"dff0ff"}/>
+                                    <ColorPaletteCard colorName={"200"} hexCode={"b8e3ff"}/>
+                                    <ColorPaletteCard colorName={"300"} hexCode={"33b4fd"}/>
+                                    <ColorPaletteCard colorName={"400"} hexCode={"33b4fd"}/>
+                                    <ColorPaletteCard colorName={"500"} hexCode={"099aee"}/>
+                                    <ColorPaletteCard colorName={"600"} hexCode={"007bcc"}/>
+                                    <ColorPaletteCard colorName={"700"} hexCode={"0061a5"}/>
+                                    <ColorPaletteCard colorName={"800"} hexCode={"045388"}/>
+                                    <ColorPaletteCard colorName={"900"} hexCode={"0a4570"}/>
+                                </div>
+                            </div>
+                            <div className={"mt-10"}>
+                                <h1 className={"text-2xl md:text-2xl font-medium"}>Semantic Tokens</h1>
+                                <h1 className={"text-md md:text-md text-secondary mt-2"}>Hover or tap any item to trace
+                                    its
+                                    connections.</h1>
+                            </div>
+
+                        </section>
+                        <section className={"py-10 scroll-mt-40"} id={"typography"}>
+                            <h1 className={"text-2xl md:text-2xl font-medium"}>Typography</h1>
+
                         </section>
                     </main>
                 </div>
             </motion.div>
         </>
-
     );
 }

@@ -20,20 +20,20 @@ export function SelectedCraft({ pageLink, imageSrc, projectDescription, projectN
                     />
 
                     {/* Highlight overlay */}
-                    <div className="absolute inset-0 bg-gray-200 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-surface-raised bg-opacity-40 opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
 
                     {/* Arrow button */}
                     <div
                         className="absolute right-10 bottom-10 z-50 rounded-full p-2 bg-brand-primary opacity-0 group-hover:opacity-100 translate-x-0 group-hover:translate-x-4 transition duration-300 ease-in-out"
                     >
-                        <ArrowRight className="text-black" width={25} height={25} />
+                        <ArrowRight className="text-primary" width={25} height={25} />
                     </div>
                 </div>
 
                 {/* Text */}
                 <div className="mt-2">
                     <h1 className={"text-xl"}>{projectName}</h1>
-                    <h1 className="text-gray" id="based">
+                    <h1 className="text-secondary" id="based">
                         {projectDescription}
                     </h1>
                 </div>
