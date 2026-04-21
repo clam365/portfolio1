@@ -2,6 +2,7 @@
 import "@/app/globals.css"
 import {motion} from "framer-motion";
 import ColorPaletteCard from "@/components/colorPaletteCard";
+import SemanticTokens from "@/app/design-system/semanticTokens";
 
 export default function Page() {
     return (
@@ -17,16 +18,22 @@ export default function Page() {
                             <h1 className={"font-semibold text-secondary"}>FOUNDATIONS</h1>
                             <li><a href="#colors" className="hover:text-primary text-secondary transition">Colors</a>
                             </li>
-                            <li><a href="#typography" className="hover:text-primary text-secondary transition">Typography</a>
+                            <li><a href="#typography"
+                                   className="hover:text-primary text-secondary transition">Typography</a>
                             </li>
                         </ul>
                     </nav>
                     <main className="lg:w-2/4 px-10 lg:px-0">
-                        <section className={"py-10 scroll-mt-40"} id={"colors"}>
+                        <h1 className={"text-2xl md:text-4xl font-medium mt-10"}>Orchid Design System</h1>
+                        <h1 className={"text-md md:text-md text-secondary mt-2"}>
+                            The Orchid design system is a thoughtful and scalable foundation for creating a clean, consistent,
+                            and welcoming portfolio experience. Built with reusable case study components, tokens, and design standards.
+                            I've contributed and built design systems across ALL my experiences, so here's a visualization of mine :)
+                        </h1>
+                        <section className={"py-10 scroll-mt-24"} id={"colors"}>
                             <h1 className={"text-2xl md:text-2xl font-medium"}>Primitive Colors</h1>
-                            <h1 className={"text-md md:text-md text-secondary mt-2"}>Raw color palette values. Use
-                                semantic
-                                tokens in components, not these directly.</h1>
+                            <h1 className={"text-md md:text-md text-secondary mt-2"}>These are raw color palette values. Use
+                                semantic tokens in components.</h1>
                             <div className={"mt-8"}>
                                 <h1 className={"text-secondary text-sm font-semibold"}>NEUTRALS</h1>
                                 <div className={"grid grid-cols-5 md:grid-cols-10 gap-2 mt-4"}>
@@ -69,9 +76,8 @@ export default function Page() {
                             </div>
                             <div className={"mt-10"}>
                                 <h1 className={"text-2xl md:text-2xl font-medium"}>Semantic Tokens</h1>
-                                <h1 className={"text-md md:text-md text-secondary mt-2"}>Hover or tap any item to trace
-                                    its
-                                    connections.</h1>
+                                <h1 className={"text-md md:text-md text-secondary mt-2 mb-10"}>Hover or tap any item to see the connections!</h1>
+                                <SemanticTokens/>
                             </div>
 
                         </section>

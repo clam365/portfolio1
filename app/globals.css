@@ -18,6 +18,8 @@
     --color-baby-blue-300: #90D5FF;
 
     --color-brand-primary: var(--color-fresh-green-400);
+    --color-brand-primary-50: var(--color-fresh-green-50);
+
 
     --color-surface-base: var(--color-white);
     --color-surface-decorative: var(--color-baby-blue-300);

@@ -12,6 +12,7 @@ export default {
       },
       colors: {
         'brand-primary': "var(--color-brand-primary)",
+        'brand-primary-50': "var(--color-brand-primary-50)",
 
         'surface-base': "var(--color-surface-base)",
         'surface-decorative': "var(--color-surface-decorative)",
