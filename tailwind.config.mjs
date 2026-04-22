@@ -8,14 +8,27 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        libreBaskerville: ['Libre Baskerville', 'serif'],
+        display: ['Libre Baskerville', 'serif'],
+        sans: ['Manrope', 'serif'],
       },
       colors: {
-        'foreground': '#0a0a0a',
-        'spotify': '#3cda64',
-        'slight-black': '#141517',
-        'newGray': '#808080',
-        'sparkle': '#90D5FF',
+        'brand-primary': "var(--color-brand-primary)",
+        'brand-primary-50': "var(--color-brand-primary-50)",
+
+        'surface-base': "var(--color-surface-base)",
+        'surface-decorative': "var(--color-surface-decorative)",
+        'surface-raised': "var(--color-surface-raised)",
+
+        'border': "var(--color-border)",
+
+        'primary': "var(--color-text-primary)",
+        'secondary': "var(--color-text-secondary)",
+        'tertiary': "var(--color-text-tertiary)",
+
+        'button': "var(--color-button-text)",
+        'button-bg-primary': "var(--color-button-bg-primary)",
+        'button-bg-primary-hover': "var(--color-button-bg-primary-hover)",
+        'button-bg-outline-hover': "var(--color-button-bg-outline-hover)",
       },
     },
   },

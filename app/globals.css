@@ -1,35 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --font-family-display: "Libre Baskerville", serif;
+    --font-family-base: "Manrope", serif;
+    --text-hero-font: var(--font-family-display);
+    --text-heading-font: var(--font-family-base);
+    --text-body-font: var(--font-family-base);
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #808080;
+    --color-steel: #EFF3F6;
+    --color-sand-gray: #D1D5D6;
+    --color-fresh-green-50: #f0fdf3;
+    --color-fresh-green-300: #87eea1;
+    --color-fresh-green-400: #3cda64;
+    --color-fresh-green-500: #23C44C;
+    --color-baby-blue-300: #90D5FF;
+
+    --color-brand-primary: var(--color-fresh-green-400);
+    --color-brand-primary-50: var(--color-fresh-green-50);
+
+
+    --color-surface-base: var(--color-white);
+    --color-surface-decorative: var(--color-baby-blue-300);
+    --color-surface-raised: var(--color-steel);
+
+    --color-border: var(--color-sand-gray);
+
+    --color-text-primary: var(--color-black);
+    --color-text-secondary: var(--color-gray);
+    --color-text-tertiary: var(--color-fresh-green-400);
+
+    --color-button-text: var(--color-black);
+    --color-button-bg-primary: var(--color-fresh-green-400);
+    --color-button-bg-primary-hover: var(--color-fresh-green-300);
+    --color-button-bg-outline-hover: var(--color-fresh-green-500);
+
+}
+
 html {
     margin: 0;
     font-family: 'Manrope', sans-serif;
-    background-color: #FAFAFA;
+    background-color: var(--color-surface-base);
     scroll-behavior: smooth;
 }
 
-::selection {
-    background-color: #3cda64;
-    color: white;
-}
-
-.selection-group::selection {
-    background-color: #3cda64;
-    color: white;
-}
-
-.selection-group span::selection {
-    background-color: #3cda64;
-    color: white;
-}
-
 .list-dot {
-    background-color: #3cda64;
+    background-color: var(--color-brand-primary);
 }
 
 #about {
@@ -40,10 +63,6 @@ html {
     scroll-margin-top: 20vh;
 }
 
-.word {
-    display: inline-block;
-    will-change: transform;
-}
 
 
 

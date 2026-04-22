@@ -1,95 +1,66 @@
 import React from "react";
-import { IoSparkles} from "react-icons/io5";
+import {IoSparkles} from "react-icons/io5";
 import {FaLock} from "react-icons/fa";
+import Quote from "@/components/quote";
+import InfoBlock from "@/components/InfoBlock";
 
 export const ProjectIntro = () => {
     return (
         <>
-            <div className={"mt-10"}>
-                {/* BASIC INFO */}
-                <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6"}>
-                    <div>
-                        <h1 className={"text-newGray"}>ROLE</h1>
-                        <h1>Product Designer</h1>
-                    </div>
-                    <div>
-                        <h1 className={"text-newGray"}>TIMELINE</h1>
-                        <h1>Sep 2025 - Mar 2026</h1>
-                    </div>
-                    <div>
-                        <h1 className={"text-newGray"}>TEAM</h1>
-                        <h1>Todd Agriscience</h1>
-                    </div>
-                    <div>
-                        <h1 className={"text-newGray"}>SKILLS</h1>
-                        <h1>Product Design</h1>
-                        <h1>Design System</h1>
-                        <h1>Branding</h1>
-                    </div>
-                </div>
-            </div>
             {/*Overview*/}
             <div className={"mt-20 space-y-2 mb-20 scroll-mt-40"} id={"overview"}>
                 <div className={"flex items-center m-auto space-x-2"}>
-                    <IoSparkles className={"text-sparkle w-6 h-6"}/>
-                    <h1 className={"text-newGray"}>Chris-generated Overview</h1>
+                    <IoSparkles className={"text-surface-decorative w-6 h-6"}/>
+                    <h1 className={"text-secondary"}>Chris-generated Overview</h1>
                 </div>
                 <h1 className={"font-medium text-3xl"}>Turning farm data into operational clarity</h1>
                 <h1>
-                    At Todd Agriscience, I led product design for onboarding and the core platform as the team 
+                    At Todd Agriscience, I led product design for onboarding and the core platform as the team
                     scaled to 10+ farms and partnerships with organizations like the USDA and Whole Foods. I built
-                    the design system, brand, and analytics experiences that make AI outputs actionable for day-to-day operations.
+                    the design system, brand, and analytics experiences that make AI outputs actionable for day-to-day
+                    operations.
                     <br/>
                     <br/>
-                    With engineering, I mentored 2 product design interns in a high-ambiguity environment. Super grateful to this team!
+                    With engineering, I mentored 2 product design interns in a high-ambiguity environment. Super
+                    grateful to this team!
                 </h1>
             </div>
-            <div className={"mt-20 space-y-2 border-l-4 border-gray-300 pl-4"}>
-                <h1 className={"text-newGray italic"}>
-                    Chris helped me and Todd translate all of our messy ideas into Figma designs, user flows, and
-                    a
-                    brand identity that allowed me to develop solutions for our customers much quicker. Chris is great
-                    at
-                    taking an abstract idea and laying it out in a way that I, someone with only a little practical
-                    experience
-                    in UI/UX could easily understand.
-                    <br/>
-                    <br/>
-                    Furthermore, he laid out all of the foundational framework for future UI/UX development, and gave me
-                    a standard to build new features off of via Figma.
-                    <br/>
-                    <br/>
-                    ~ Oscar Gaske, Founding Software Engineer
-                </h1>
-            </div>
+            <Quote className={"mt-20"}>
+                Chris helped me and Todd translate all of our messy ideas into Figma designs, user flows, and
+                a
+                brand identity that allowed me to develop solutions for our customers much quicker. Chris is great
+                at
+                taking an abstract idea and laying it out in a way that I, someone with only a little practical
+                experience
+                in UI/UX could easily understand.
+                <br/>
+                <br/>
+                Furthermore, he laid out all of the foundational framework for future UI/UX development, and gave me
+                a standard to build new features off of via Figma.
+                <br/>
+                <br/>
+                ~ Oscar Gaske, Founding Software Engineer
+            </Quote>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"reflections"}>
-                <h1 className={"text-newGray"}>REFLECTIONS</h1>
+                <h1 className={"text-secondary"}>REFLECTIONS</h1>
                 <h1 className={"font-medium text-3xl"}>What I learned</h1>
             </div>
             <div className={"mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 mb-20"}>
-                <div>
-                    <h1 className={"text-newGray text-xl"}>Navigating Ambiguity</h1>
-                    <h1>
-                        There are no established playbooks at a pre-seed startup. I learned to move forward
-                        with incomplete information, but always making design decisions that are grounded in
-                        user needs and are defensible/reversible.
-                    </h1>
-                </div>
-                <div>
-                    <h1 className={"text-newGray text-xl"}>Creating a Space for Design</h1>
-                    <h1>
-                        Design isn't always seen as a priority in many environments at first. The value of my work shows
-                        up
-                        in rationale and consistency, until the work spoke for itself.
-                    </h1>
-                </div>
+                <InfoBlock title={"Navigating Ambiguity"}
+                           description={"There are no established playbooks at a pre-seed startup. I learned to move forward\n" +
+                               "                        with incomplete information, but always making design decisions that are grounded in\n" +
+                               "                        user needs and are defensible/reversible."}/>
+                <InfoBlock title={"Creating a Space for Design"}
+                           description={"Design isn't always seen as a priority in many environments at first. The value of my work shows\n" +
+                               "                        up\n" +
+                               "                        in rationale and consistency, until the work spoke for itself."}/>
             </div>
-            <div className={"bg-[#f2f2f2] rounded-lg p-16 scroll-mt-40 mb-40 space-y-2"}>
-                <div className={"bg-white p-4 inline-block rounded-[20rem] drop-shadow-sm"}>
-                    <FaLock className={"text-newGray w-5 h-5"}/>
+            <div className={"bg-surface-raised rounded-lg p-16 scroll-mt-40 mb-40 space-y-2"}>
+                <div className={"bg-surface-base p-4 inline-block rounded-[20rem] drop-shadow-sm"}>
+                    <FaLock className={"text-secondary w-5 h-5"}/>
                 </div>
                 <h1 className={"text-2xl"}>This case study is confidential.</h1>
-                <h1 className={"text-xl text-newGray"}>Please
+                <h1 className={"text-xl text-secondary"}>Please
                     <a className="hover:text-blue-400 transition" href="mailto:christopherlam110@gmail.com"> email
                         me </a>
                     if you'd like to chat!</h1>

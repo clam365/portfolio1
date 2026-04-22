@@ -5,7 +5,20 @@ import {ProjectBackground} from "@/app/schneider-electric/project-background";
 import {ProjectNext} from "@/app/kyoto-project-center/project-next";
 import CaseStudyStart from "@/components/caseStudyStart";
 import {motion} from "framer-motion";
+import CaseStudyNav from "@/components/caseStudyNav";
 
+export const sesections = [
+    { id: "overview", label: "Overview" },
+    { id: "context", label: "Challenge" },
+    { id: "problem", label: "Problem" },
+    { id: "success", label: "Framing Success" },
+    { id: "research", label: "Research" },
+    { id: "finaldesigns", label: "Final Designs" },
+    { id: "focusareas", label: "Focus Areas" },
+    { id: "userflow", label: "Improved Journey Flow" },
+    { id: "outcome", label: "Outcome" },
+    { id: "reflections", label: "Reflection" },
+];
 
 export default function Page() {
     return (
@@ -16,35 +29,21 @@ export default function Page() {
                 transition={{duration: 0.8, ease: "easeOut"}}
             >
                 <div className={"flex flex-col lg:flex-row"}>
-                    <nav className="lg:w-1/4 hidden lg:block">
-                        <ul className="space-y-4 sticky top-24 p-10">
-                            <li><a href="#overview" className="hover:text-black text-newGray transition">Overview</a>
-                            </li>
-                            <li><a href="#context" className="hover:text-black text-newGray transition">Context</a></li>
-                            <li><a href="#problem" className="hover:text-black text-newGray transition">Problem</a></li>
-                            <li><a href="#success" className="hover:text-black text-newGray transition">Framing Success</a></li>
-                            <li><a href="#research" className="hover:text-black text-newGray transition">Research</a>
-                            </li>
-                            <li><a href="#finaldesigns" className="hover:text-black text-newGray transition">Final
-                                Designs</a></li>
-                            <li><a href="#focusareas" className="hover:text-black text-newGray transition">Focus
-                                Areas</a>
-                            </li>
-                            <li><a href="#userflow" className="hover:text-black text-newGray transition">Improved Journey
-                                Flow</a></li>
-                            <li><a href="#outcome" className="hover:text-black text-newGray transition">Outcome</a></li>
-                            <li><a href="#reflections"
-                                   className="hover:text-black text-newGray transition">Reflections</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <CaseStudyNav sections={sesections}/>
                     <main className="lg:w-2/4 px-10 lg:px-0">
                         <CaseStudyStart
                             tag={"INTERNSHIP"}
                             title={"Schneider Electric"}
                             description={"From enterprise buyer to everyday homeowner"}
                             imageSrc={"/schneider-electric/se_mockup11.png"}
-                            imageAlt={"schneider-electric"}/>
+                            imageAlt={"schneider-electric"}
+                            fields={[
+                                { label: "ROLE",     values: "Product Design Intern" },
+                                { label: "TIMELINE", values: "Jun 2025 - Aug 2026" },
+                                { label: "TEAM",     values: "Digital Customer Relationship Team" },
+                                { label: "SKILLS",   values: ["Product Design", "User Research", "Stakeholder Management"] },
+                            ]}
+                        />
                         <ProjectIntro/>
                         <ProjectBackground/>
                         <ProjectNext/>

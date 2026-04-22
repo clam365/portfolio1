@@ -4,6 +4,12 @@ import {ProjectIntro} from "@/app/todd/project-intro";
 import CaseStudyStart from "@/components/caseStudyStart";
 import {ProjectNext} from "@/app/todd/project-next";
 import {motion} from "framer-motion";
+import CaseStudyNav from "@/components/caseStudyNav";
+
+export const sections = [
+    { id: "overview", label: "Overview" },
+    { id: "reflections", label: "Reflections" },
+];
 
 export default function Page() {
 
@@ -15,20 +21,21 @@ export default function Page() {
                 transition={{duration: 0.8, ease: "easeOut"}}
             >
                 <div className={"flex flex-col lg:flex-row"}>
-                    <nav className="lg:w-1/4 hidden lg:block">
-                        <ul className="space-y-4 sticky top-24 p-10">
-                            <li><a href="#overview" className="hover:text-black text-newGray transition">Overview</a></li>
-                            <li><a href="#reflections" className="hover:text-black text-newGray transition">Reflections</a></li>
-
-                        </ul>
-                    </nav>
+                    <CaseStudyNav sections={sections}/>
                     <main className="lg:w-2/4 px-10 lg:px-0">
                         <CaseStudyStart
                             tag={"PART TIME"}
                             title={"Todd Agriscience"}
-                            description={"Farm-to-screen design"}
+                            description={"Farm-to-screen-design"}
                             imageSrc={"/todd.png"}
-                            imageAlt={"todd"}/>
+                            imageAlt={"todd"}
+                            fields={[
+                                { label: "ROLE",     values: "Product Designer" },
+                                { label: "TIMELINE", values: "Sep 2025 - Mar 2026" },
+                                { label: "TEAM",     values: "Todd Agriscience" },
+                                { label: "SKILLS",   values: ["Product Design", "Design System", "Design Ops", "Branding"] },
+                            ]}
+                        />
                         <ProjectIntro/>
                         <ProjectNext/>
                     </main>

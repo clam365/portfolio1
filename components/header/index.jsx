@@ -16,14 +16,14 @@ export default function Header() {
         <div className={styles.header}>
             <div className={styles.bar}>
                 <Link href="/">
-                    <Image src="/lotus.png" alt="logo" width={87} height={48}
+                    <Image src="/flower1.png" alt="logo" width={87} height={48}
                            className="rounded-lg transition transform hover:-translate-y-1 duration-200 items-center"/>
                 </Link>
 
 
                 <div className={"flex gap-x-6 items-center cursor-pointer"}>
                     <div className={"space-x-8 hidden lg:block"}>
-                        <Link href={"/#craft"} className={""}>Projects</Link>
+                        <Link href={"/#craft"} className={""}>Work</Link>
                         <Link href={"/about"}>About</Link>
                         <a href="/resume.pdf" target="_blank" rel="opener referrer">Resume</a>
                     </div>
@@ -34,7 +34,6 @@ export default function Header() {
                     </div>
 
                 </div>
-
             </div>
             <motion.div
                 variants={background}

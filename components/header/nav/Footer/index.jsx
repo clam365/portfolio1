@@ -15,15 +15,15 @@ export default function Footer() {
                     <div className={"space-x-6 flex"}>
                         <a className={" text-lg md:text-xl flex space-x-2 group"} href={"https://www.linkedin.com/in/chrislam365"} target="_blank">
                             LinkedIn
-                            <ArrowUpRight className={"group-hover:text-spotify transition"}/>
+                            <ArrowUpRight className={"group-hover:text-brand-primary transition"}/>
                         </a>
                         <a className={" text-lg md:text-xl flex space-x-2 group"} href="/resume.pdf" target="_blank" rel="opener referrer">
                             Resume
-                            <ArrowUpRight className={"group-hover:text-spotify transition"}/>
+                            <ArrowUpRight className={"group-hover:text-brand-primary transition"}/>
                         </a>
                         <a className={" text-lg md:text-xl flex space-x-2 group"} href="mailto:christopherlam110@gmail.com">
                             Email
-                            <ArrowUpRight className={"group-hover:text-spotify transition"}/>
+                            <ArrowUpRight className={"group-hover:text-brand-primary transition"}/>
                         </a>
 
                     </div>

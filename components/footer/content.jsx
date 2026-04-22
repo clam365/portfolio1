@@ -9,7 +9,7 @@ export default function Content() {
             <div className='bg-[#f0f0f0] pt-10 px-10 py-[3rem] md:pt-20  justify-center' id="footer1">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 space-y-8 md:space-y-0 justify-center">
-                    <div className={"font-libreBaskerville italic"}>
+                    <div className={"font-display italic"}>
                         <h1 className={"text-7xl lg:text-9xl"}>Chris Lam</h1>
                     </div>
                     <div className="grid grid-cols-2 space-x-10 md:justify-items-center">
@@ -48,8 +48,8 @@ export default function Content() {
                 <div
                     className={"flex justify-between py-4 text-xs md:text-sm border-t border-t-[#e1e1e1]"}
                 >
-                    <h1 className={"text-newGray"}>© 2026 Chris Lam</h1>
-                    <h1 className={"text-newGray"}>Designed & coded by me!</h1>
+                    <h1 className={"text-secondary"}>© 2026 Chris Lam</h1>
+                    <h1 className={"text-secondary"}>Designed & coded by me!</h1>
                 </div>
             </div>
         </div>

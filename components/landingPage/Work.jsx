@@ -2,7 +2,8 @@
 import { useRef } from "react";
 import {motion, useInView} from "framer-motion";
 import "@/app/globals.css"
-import {SelectedCraft} from "@/components/selectedCraft";
+import {CaseStudyHeroCard} from "@/components/caseStudyHeroCard";
+import {CustomLink} from "@/components/link";
 
 export default function work() {
 
@@ -23,9 +24,9 @@ export default function work() {
     }
     return (
         <>
-            <section id={"craft"} className={"grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 pb-32 lg:px-32"}>
+            <section id={"craft"} className={"grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 lg:px-32"}>
                 <RevealOnScroll>
-                    <SelectedCraft
+                    <CaseStudyHeroCard
                         projectDescription={"Farm-to-Screen Design"}
                         imageSrc={"/thumbnail.png"}
                         projectName={"Todd Agriscience"}
@@ -33,7 +34,7 @@ export default function work() {
                 </RevealOnScroll>
                 {/*Schneider Electric*/}
                 <RevealOnScroll>
-                    <SelectedCraft
+                    <CaseStudyHeroCard
                         pageLink={"/schneider-electric"}
                         imageSrc={"/schneider-electric/se_mockupe.png"}
                         projectName={"Schneider Electric"}
@@ -42,7 +43,7 @@ export default function work() {
                 </RevealOnScroll>
                 {/*IQP*/}
                 <RevealOnScroll>
-                    <SelectedCraft
+                    <CaseStudyHeroCard
                         pageLink={"/iqp-dct"}
                         imageSrc={"/mockup2.png"}
                         projectName={"WPI Global Research Data Platform"}
@@ -51,14 +52,22 @@ export default function work() {
                 </RevealOnScroll>
                 {/*Kyoto*/}
                 <RevealOnScroll>
-                    <SelectedCraft
+                    <CaseStudyHeroCard
                         pageLink={"/kyoto-project-center"}
                         imageSrc={"/mockup1.png"}
                         projectName={"Kyoto Project Center"}
                         projectDescription={"Serving policymakers, students, and business partners across Kyoto"}
                     />
                 </RevealOnScroll>
-
+            </section>
+            <section id={"system"} className={"py-32 md:py-64 md:pb-64"}>
+                <RevealOnScroll>
+                    <h1 className={"text-2xl md:text-5xl text-center"}>
+                        Curious to how this was built?
+                        <br/>
+                        Check out my <CustomLink link={"/design-system"} text={"orchid design system"}/>!
+                    </h1>
+                </RevealOnScroll>
             </section>
         </>
 
