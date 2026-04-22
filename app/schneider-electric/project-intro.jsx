@@ -1,9 +1,9 @@
 import React from "react";
-import {LinkButton} from "@/components/linkButton";
 import {IoSparkles} from "react-icons/io5";
 import {CustomLink} from "@/components/link";
-import { track } from '@vercel/analytics';
 import Quote from "@/components/quote";
+import {ButtonOutline} from "@/components/button";
+import {ArrowUpRight} from "lucide-react";
 
 export const ProjectIntro = () => {
     return (
@@ -12,11 +12,9 @@ export const ProjectIntro = () => {
                 <div className={"mt-10 scroll-mt-40"}>
                     <h1 className={"text-secondary my-2"}>
                         Curious about the deeper processes with this case study? Check out my&nbsp;
-                        <span onClick={() => track('Figma Presentation Opened', {project: 'Schneider Electric'})}>
                             <CustomLink
                                 link={"https://www.figma.com/deck/ALzY9sh2H4tz1r1Pwu70rC/Porfolio?node-id=1-42&viewport=-754%2C59%2C0.32&t=FKBdQJUSog1U2qUU-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"}
                                 text={"presentation here"}/>
-                        </span>
                         , or shoot me an email!
                     </h1>
                 </div>
@@ -42,10 +40,9 @@ export const ProjectIntro = () => {
                         returns of 75:1.
                     </h1>
                     <div className={"inline-flex f gap-3"}>
-                        <LinkButton
-                            link={"https://www.se.com/fr/fr/home/"}
-                            text={"B2C WEBSITE"}
-                        />
+                        <a href={"https://www.se.com/fr/fr/home/"} target="_blank" rel="opener referrer">
+                            <ButtonOutline aria-label={"B2C Website"}>B2C WEBSITE<ArrowUpRight/></ButtonOutline>
+                        </a>
                     </div>
                 </div>
                 <Quote className={"mt-20"}>

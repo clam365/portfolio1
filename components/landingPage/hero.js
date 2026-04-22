@@ -169,7 +169,7 @@ export default function Hero() {
                     </div>
                     <Link href={"/#craft"} className={"hidden lg:block"}>
                         <p className="text-secondary flex items-center">
-                            Selected Work <span><ArrowDown className="ml-1 text-brand-primary"/></span>
+                            Selected Work <span><ArrowDown className="ml-1 text-brand-primary hover:text-button-bg-primary-hover transition"/></span>
                         </p>
                     </Link>
                 </div>

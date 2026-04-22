@@ -1,5 +1,7 @@
 import React from "react";
 import {AppWindow, ListOrdered, MapPinned, PieChart, Sparkles, Sprout, WifiOff} from "lucide-react";
+import InfoBlock from "@/components/InfoBlock";
+
 export const ProjectBackground = () => {
     return (
         <>
@@ -27,36 +29,14 @@ export const ProjectBackground = () => {
                 </h1>
             </div>
             <div className={"mt-10 grid grid-cols-1 md:grid-cols-3 gap-5"}>
-                <div>
-                    <div className={"flex gap-x-1 mb-2"}>
-                        <ListOrdered className={"text-secondary"} id={"based"}/>
-                        <h1 className={"text-secondary"} id={"based"}>Prioritization</h1>
-                    </div>
-                    <h1>
-                        Analyzed 20 IQP papers to identify common data collection methods, guiding sprint feature
-                        prioritization.
-                    </h1>
-                </div>
-                <div>
-                    <div className={"flex gap-x-1 mb-2"}>
-                        <Sprout className={"text-secondary"} id={"based"}/>
-                        <h1 className={"text-secondary"} id={"based"}>Viability</h1>
-                    </div>
-                    <h1>
-                        Existing tools were costly, had complex UIs, and were designed for enterprise industries, not
-                        students. This validated
-                        our opportunity for a free, student-tailored solution.
-                    </h1>
-                </div>
-                <div>
-                    <div className={"flex gap-x-1 mb-2"}>
-                        <AppWindow className={"text-secondary"} id={"based"}/>
-                        <h1 className={"text-secondary"} id={"based"}>Revitalization</h1>
-                    </div>
-                    <h1>
-                        Using existing WPI digital foundations allows a natural extension of the ecosystem.
-                    </h1>
-                </div>
+                <InfoBlock icon={ListOrdered} title={"Prioritization"}
+                           description={"Analyzed 20 IQP papers to identify common data collection methods, guiding sprint feature\n" +
+                               "                        prioritization."}/>
+                <InfoBlock icon={Sprout} title={"Viability"}
+                           description={"Existing tools were costly, had complex UIs, and were designed for enterprise industries, not\n" +
+                               "                        students. This validated\n" +
+                               "                        our opportunity for a free, student-tailored solution."}/>
+                <InfoBlock icon={AppWindow} title={"Revitalization"} description={" Using existing WPI digital foundations allows a natural extension of the ecosystem."}/>
             </div>
             <div className={"mt-10 space-y-2 scroll-mt-40"}>
                 <h1 className={"text-secondary"}>Solution</h1>
@@ -75,42 +55,10 @@ export const ProjectBackground = () => {
             <div className={"mt-10 space-y-2 scroll-mt-40"}>
                 <h1 className={"text-secondary"}>Key Expected Features</h1>
                 <div className={"grid grid-cols-1 md:grid-cols-2 gap-4"}>
-                    <div>
-                        <div className={"flex gap-2 items-center text-secondary"}>
-                            <PieChart/>
-                            <h1>Team Dashboard</h1>
-                        </div>
-                        <h1>
-                            Manage team contributions and data.
-                        </h1>
-                    </div>
-                    <div>
-                        <div className={"flex gap-2 items-center text-secondary"}>
-                            <MapPinned/>
-                            <h1>Geotagging</h1>
-                        </div>
-                        <h1>
-                            Data entries are geotagged onto map for location context.
-                        </h1>
-                    </div>
-                    <div>
-                        <div className={"flex gap-2 items-center text-secondary"}>
-                            <WifiOff/>
-                            <h1>Offline Usage</h1>
-                        </div>
-                        <h1>
-                            Data linked to local storage when outages occur.
-                        </h1>
-                    </div>
-                    <div>
-                        <div className={"flex gap-2 items-center text-secondary"}>
-                            <Sparkles/>
-                            <h1>AI Forms</h1>
-                        </div>
-                        <h1>
-                            Dynamic form building and AI assisted interviews.
-                        </h1>
-                    </div>
+                    <InfoBlock icon={PieChart} title={"Team Dashboard"} description={"Manage team contributions and data."}/>
+                    <InfoBlock icon={MapPinned} title={"Geotagging"} description={"Data entries are geotagged onto map for location context."}/>
+                    <InfoBlock icon={WifiOff} title={"Offline Usage"} description={"Data linked to local storage when outages occur."}/>
+                    <InfoBlock icon={Sparkles} title={"AI Forms"} description={"Dynamic form building and AI assisted interviews."}/>
                 </div>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40"} id={"userflows"}>
@@ -196,14 +144,16 @@ export const ProjectBackground = () => {
             <div className={"my-10"}>
                 <img src={"/dct/dashboard1.png"} alt={"team photo"} className={"w-full"}/>
                 <h1 className={"text-secondary mt-2"}>
-                    The original forms flat table buried forms in click depth, so we restructured how students actually worked from start to finish in task flow: collapsible
+                    The original forms flat table buried forms in click depth, so we restructured how students actually
+                    worked from start to finish in task flow: collapsible
                     accordion groups with entry counts and actions visible.
                 </h1>
             </div>
             <div className={"my-10"}>
                 <img src={"/dct/interview1.png"} alt={"team photo"} className={"w-full"}/>
                 <h1 className={"text-secondary mt-2"}>
-                    Interview process literally had no IA structure. There is now 2 panels with structured fields on the left, and AI-assisted recording
+                    Interview process literally had no IA structure. There is now 2 panels with structured fields on the
+                    left, and AI-assisted recording
                     and notes on the right for separate context and multitasking abilities.
                 </h1>
             </div>
@@ -250,19 +200,10 @@ export const ProjectBackground = () => {
                 <h1 className={"font-medium text-3xl"}>What I learned</h1>
             </div>
             <div className={"mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 mb-20"}>
-                <div>
-                    <h1 className={"text-secondary text-xl"}>System Thinking</h1>
-                    <h1>
-                        Frontend and design work closely together, and I understood the capabilities of each.
-                    </h1>
-                </div>
-                <div>
-                    <h1 className={"text-secondary text-xl"}>One UI component can change everything</h1>
-                    <h1>
-                        What one component may work for one area may not work for another. Seeing what is out there
-                        in the market helps determine your unique pick.
-                    </h1>
-                </div>
+                <InfoBlock title={"System Thinking"}
+                           description={"Frontend and design work closely together, and I understood the capabilities of each."}/>
+                <InfoBlock title={"One UI component can change everything"}
+                           description={"What one component may work for one area may not work for another. Seeing what it out there based on research helps determine your pick."}/>
             </div>
         </>
     )

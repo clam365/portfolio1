@@ -1,6 +1,7 @@
 import React from "react";
-import {LinkButton} from "@/components/linkButton";
 import {IoSparkles} from "react-icons/io5";
+import {ButtonOutline} from "@/components/button";
+import {ArrowUpRight} from "lucide-react";
 
 export const ProjectIntro = () => {
     return (
@@ -23,10 +24,9 @@ export const ProjectIntro = () => {
                         annually!
                     </h1>
                     <div className={"inline-flex gap-3"}>
-                        <LinkButton
-                            link={"https://www.wpi.edu/project-based-learning/project-based-education/interactive-qualifying-project"}
-                            text={"WPI IQP"}
-                        />
+                        <a href={"https://www.wpi.edu/project-based-learning/project-based-education/interactive-qualifying-project"} target="_blank" rel="opener referrer">
+                            <ButtonOutline aria-label={"WPI IQP"}>WPI IQP<ArrowUpRight/></ButtonOutline>
+                        </a>
                     </div>
                 </div>
             </div>

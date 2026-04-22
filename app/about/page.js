@@ -4,6 +4,7 @@ import Image from "next/image";
 import {CustomLink} from "@/components/link";
 import {ArrowDownToLine, Presentation} from "lucide-react";
 import {motion} from "framer-motion";
+import {ButtonPrimary} from "@/components/button";
 
 export default function Page() {
 
@@ -20,13 +21,14 @@ export default function Page() {
                     <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10"}>
                         <div className={"items-center m-auto order-2 md:order-1"}>
                             <h1 className={"text-secondary text-sm mt-8"}>
-                                I&apos;m a designer with an engineering foundation, driven by authentic expression and strategy.
+                                I&apos;m a designer with an engineering foundation, driven by authentic expression and
+                                strategy.
                                 <br/>
-                                <br/> 
+                                <br/>
                                 I learned early in my study abroad in Japan that the best insights come from simply
                                 watching. Not software and surveys, but in coffee shops — noticing how people moved,
                                 paused, and interacted. Those tiny moments revealed everything. Research
-                                and system thinking became a mindset for me, not a step in a process. 
+                                and system thinking became a mindset for me, not a step in a process.
                                 <br/>
                                 <br/>
                                 <span className="text-brand-primary">
@@ -58,18 +60,17 @@ export default function Page() {
                     </div>
                     <br/>
                     <div className="gap-x-4 flex">
-                        <a href="/resume.pdf" target="_blank" rel="opener referrer"
-                        className={"inline-flex hover:bg-[#61E88A] transition gap-x-1.5 bg-brand-primary px-4 py-3 rounded-full items-center"}>
-                            <ArrowDownToLine width={20} height={20}/>
-                            <h1 className={"text-sm"}>See my resume</h1>
+                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <ButtonPrimary aria-label="See my resume">
+                                <ArrowDownToLine/> See my resume
+                            </ButtonPrimary>
                         </a>
-                        <a href="https://www.figma.com/deck/ALzY9sh2H4tz1r1Pwu70rC/Porfolio?node-id=1-42&viewport=-754%2C59%2C0.32&t=FKBdQJUSog1U2qUU-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="opener referrer"
-                        className={"inline-flex hover:bg-[#61E88A] transition gap-x-1.5 bg-brand-primary px-4 py-3 rounded-full items-center"}>
-                            <Presentation width={20} height={20}/>
-                            <h1 className={"text-sm"}>See my case studies presentation</h1>
+                        <a href="https://www.figma.com/deck/ALzY9sh2H4tz1r1Pwu70rC/Porfolio?node-id=1-42&viewport=-754%2C59%2C0.32&t=FKBdQJUSog1U2qUU-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer">
+                            <ButtonPrimary aria-label="See my resume">
+                                <Presentation/> See my case studies presentation
+                            </ButtonPrimary>
                         </a>
                     </div>
-                    
                     <br/>
                     <br/>
                     <br/>

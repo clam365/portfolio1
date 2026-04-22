@@ -1,6 +1,7 @@
 import React from "react";
-import {LinkButton} from "@/components/linkButton";
-import {LayoutGrid, List, Waypoints} from "lucide-react";
+import {ArrowUpRight, LayoutGrid, List, Waypoints} from "lucide-react";
+import InfoBlock from "@/components/InfoBlock";
+import {ButtonOutline} from "@/components/button";
 
 export const ProjectBackground = () => {
     return (
@@ -59,31 +60,9 @@ export const ProjectBackground = () => {
                 />
             </div>
             <div className={"grid grid-cols-1 md:grid-cols-3 gap-8"}>
-                <div>
-                    <div className={"items-center flex gap-2 mb-2"}>
-                        <Waypoints className={"text-secondary"}/>
-                        <h1 className={"text-secondary text-xl"}>3 Step Filtering</h1>
-                    </div>
-                    <h1 className={""}>Open, select, apply pop-up method. No iterative feedback or visible change.
-                    </h1>
-                </div>
-                <div>
-                    <div className={"items-center flex gap-2 mb-2"}>
-                        <List className={"text-secondary"}/>
-                        <h1 className={"text-secondary text-xl"}>Unclear Hierarchy</h1>
-                    </div>
-                    <h1 className={""}>106 options with no real hierarchy and poor grouping. Immediate
-                        cognitive load.
-                    </h1>
-                </div>
-                <div>
-                    <div className={"items-center flex gap-2 mb-2"}>
-                        <LayoutGrid className={"text-secondary"}/>
-                        <h1 className={"text-secondary text-xl"}>Product Layout</h1>
-                    </div>
-                    <h1 className={""}>Huge card real estate, yet no details, leading to low confidence browsing.
-                    </h1>
-                </div>
+                <InfoBlock icon={Waypoints} title={"3 Step Filtering"} description={"Open, select, apply pop-up method. No iterative feedback or visible change."}/>
+                <InfoBlock icon={List} title={"Unclear Hierarchy"} description={"106 options with no real hierarchy and poor grouping. Immediate cognitive load."}/>
+                <InfoBlock icon={LayoutGrid} title={"Product Layout"} description={"Huge card real estate, yet no details, leading to low confidence browsing."}/>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"success"}>
                 <h1 className={"text-secondary"}>FRAMING SUCCESS</h1>
@@ -123,24 +102,30 @@ export const ProjectBackground = () => {
             </div>
             <div className={"mt-10 space-y-2 scroll-mt-40 "}>
                 <h1 className={" text-secondary"}>What are the returns on this UI pattern?</h1>
-                <h1>
+                <h1 className={"pb-2"}>
                     Fully is a D2C furniture brand that went through a filtering redesign. When they implemented a
                     filter panel to create a clearer journey,
                     it resulted in a 5.97% conversion lift. What&apos;s even more compelling it that got a 75:1 ROI from
                     this project with the agency. If they spend 10k,
                     they get 75,000 DOLLARS BACK. SE with their wide cast net can see even more with this implemented.
                 </h1>
-                <LinkButton link={"https://thegood.com/insights/ecommerce-product-filters/"} text={"THE GOOD"}/>
+                <a href={"https://thegood.com/insights/ecommerce-product-filters/"} target="_blank" rel="opener referrer" >
+                    <ButtonOutline aria-label={"Fully Case Study"}>FULLY CASE STUDY<ArrowUpRight/></ButtonOutline>
+                </a>
             </div>
             <div className={"mt-20 space-y-2 scroll-mt-40 "} id={"finaldesigns"}>
                 <h1 className={"text-secondary"}>FINAL DESIGNS</h1>
                 <div className={"flex space-x-2"}>
-                    <LinkButton
-                        link={"https://www.figma.com/proto/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=110-439&t=yExnMr3mmsqno6nw-1"}
-                        text={"FIGMA MOCKUP"}/>
-                    <LinkButton
-                        link={"https://www.figma.com/design/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=37-1402&t=yExnMr3mmsqno6nw-1"}
-                        text={"FIGMA ANNOTATIONS"}/>
+                    <a href={"https://www.figma.com/proto/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=110-439&t=yExnMr3mmsqno6nw-1"}
+                       target="_blank"
+                       rel="opener referrer">
+                        <ButtonOutline aria-label={"Figma Mockup"}>FIGMA MOCKUP<ArrowUpRight/></ButtonOutline>
+                    </a>
+                    <a href={"https://www.figma.com/design/QPMO0cmjGXg45y2joibFH7/SE-Mockups?node-id=37-1402&t=yExnMr3mmsqno6nw-1"}
+                       target="_blank"
+                       rel="opener referrer">
+                        <ButtonOutline aria-label={"Figma Annotations"}>FIGMA ANNOTATIONS<ArrowUpRight/></ButtonOutline>
+                    </a>
                 </div>
                 <h1>
                     With my findings in hand, I moved into solutions. I worked with my senior designer mentors
@@ -215,21 +200,9 @@ export const ProjectBackground = () => {
                 <h1 className={"font-medium text-3xl"}>What I learned</h1>
             </div>
             <div className={"mt-10 grid grid-cols-1 md:grid-cols-2 gap-10"}>
-                <div>
-                    <h1 className={"text-secondary text-xl"}>Think holistically</h1>
-                    <h1>
-                        Recognizing that fixing individual pain points was not enough, the entire flow
-                        needs to work together in harmony.
-                    </h1>
-                </div>
-                <div>
-                    <h1 className={"text-secondary text-xl"}>Business goals don&apos;t conflict user needs</h1>
-                    <h1>
-                        They can reinforce each other. Removing barriers for users also removes barriers to conversion
-                        and
-                        growth.
-                    </h1>
-                </div>
+                <InfoBlock title={"Think holistically"} description={"Recognizing that fixing individual pain points was not enough, the entire flow needs to work together in harmony."}/>
+                <InfoBlock title={"Business goals don't always conflict user needs"} description={"They can reinforce each other. Removing barriers for users also removes barriers to conversion growth."}/>
+
             </div>
         </div>
     )

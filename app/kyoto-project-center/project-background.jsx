@@ -1,4 +1,5 @@
 import React from "react";
+import InfoBlock from "@/components/InfoBlock";
 
 export const ProjectBackground = () => {
     return (
@@ -54,18 +55,8 @@ export const ProjectBackground = () => {
                 <h1 className={"font-medium text-3xl"}>What I learned</h1>
             </div>
             <div className={"mt-10 mb-20 grid grid-cols-1 md:grid-cols-2 gap-10"}>
-                <div>
-                    <h1 className={"text-secondary text-xl"}>Global Stakeholder management</h1>
-                    <h1>
-                        Working with different cultures challenges almost every bit of what you may consider to be okay. Assume nothing.
-                    </h1>
-                </div>
-                <div>
-                    <h1 className={"text-secondary text-xl"}>Restraint in design</h1>
-                    <h1>
-                        Not everything has to be there. Get what is important but have clarity in function.
-                    </h1>
-                </div>
+                <InfoBlock title={"Global stakeholder management"} description={"Working with different cultures challenges almost every bit of what you may consider to be okay."}/>
+                <InfoBlock title={"Restraint in design"} description={"Not everything has to be there. Get what is important but have clarity in function."}/>
             </div>
         </div>
     )

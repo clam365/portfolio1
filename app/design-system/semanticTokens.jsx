@@ -92,6 +92,27 @@ const usedIn = [
             {id: "u-btn-primary", label: "ButtonPrimary"},
         ],
     },
+    {
+        group: "Case Study Format",
+        items: [
+            {id: "u-caseStudyHeroCard", label: "CaseStudyHeroCard"},
+            {id: "u-caseStudyStart", label: "CaseStudyStart"},
+            {id: "u-caseStudyNav", label: "CaseStudyNav"},
+        ],
+    },
+    {
+        group: "Decorative",
+        items: [
+            {id: "u-infoBlock", label: "InfoBlock"},
+            {id: "u-quote", label: "Quote"},
+        ],
+    },
+    {
+        group: "Layout",
+        items: [
+            {id: "u-header", label: "Header"},
+        ],
+    },
 ];
 
 const connections = [
@@ -117,6 +138,26 @@ const connections = [
     {from: "t-button-text", to: "u-btn-primary"},
     {from: "t-button-bg-primary", to: "u-btn-primary"},
     {from: "t-button-bg-primary-hover", to: "u-btn-primary"},
+
+    {from: "t-surface-raised", to: "u-caseStudyHeroCard"},
+    {from: "t-brand-primary", to: "u-caseStudyHeroCard"},
+    {from: "t-button-text", to: "u-caseStudyHeroCard"},
+
+    {from: "t-text-primary", to: "u-caseStudyStart"},
+    {from: "t-text-secondary", to: "u-caseStudyStart"},
+
+    {from: "t-text-primary", to: "u-caseStudyNav"},
+    {from: "t-text-secondary", to: "u-caseStudyNav"},
+
+    {from: "t-text-primary", to: "u-infoBlock"},
+    {from: "t-text-secondary", to: "u-infoBlock"},
+
+    {from: "t-text-secondary", to: "u-quote"},
+
+    {from: "t-surface-base", to: "u-header"},
+    {from: "t-surface-raised", to: "u-header"},
+    {from: "t-text-primary", to: "u-header"},
+
 ];
 
 
@@ -331,7 +372,7 @@ export default function SemanticTokens() {
     return (
         <section className="w-full ">
             <div className={"overflow-x-auto"}>
-                <div className={"min-w-[37.5rem]"}>
+                <div className={"min-w-[37.5rem] min-h-[40rem]"}>
                     {/* Main grid + SVG overlay */}
                     <div ref={containerRef} className="grid grid-cols-3 relative gap-x-10 xl:gap-x-44">
                         {/* SVG overlay for curves */}
