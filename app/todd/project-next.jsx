@@ -1,4 +1,4 @@
-import {SelectedCraft} from "@/components/selectedCraft";
+import {CaseStudyHeroCard} from "@/components/caseStudyHeroCard";
 
 export const ProjectNext = () => {
   return (
@@ -6,7 +6,7 @@ export const ProjectNext = () => {
             <div className={"border-t border-t-[#e1e1e1] py-2"} >
                 <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-16 mt-5"}>
                     <h1 className={" text-4xl md:text-5xl"}>Next project</h1>
-                    <SelectedCraft
+                    <CaseStudyHeroCard
                         pageLink={"/schneider-electric"}
                         imageSrc={"/schneider-electric/se_mockupe.png"}
                         projectName={"Schneider Electric"}

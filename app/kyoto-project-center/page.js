@@ -32,7 +32,13 @@ export default function Page() {
                             title={"Kyoto Project Center"}
                             description={"Kyoto IQP Database"}
                             imageSrc={"/mockup1.1.png"}
-                            imageAlt={"kyoto"}/>
+                            imageAlt={"kyoto"}
+                            fields={[
+                                { label: "ROLE",     values: "Designer & Developer" },
+                                { label: "TIMELINE", values: "Oct 2024 - Dec 2024" },
+                                { label: "TEAM",     values: ["Jason Zhang", "Arjun Bhat", "Szymon Mamro"] },
+                                { label: "SKILLS",   values: ["Product Design", "Front-end Development", "Stakeholder Management"]}
+                            ]}  />
                         <ProjectIntro/>
                         <ProjectBackground/>
                         <ProjectNext/>

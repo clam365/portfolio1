@@ -5,29 +5,6 @@ import {FaLock} from "react-icons/fa";
 export const ProjectIntro = () => {
     return (
         <>
-            <div className={"mt-10"}>
-                {/* BASIC INFO */}
-                <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6"}>
-                    <div>
-                        <h1 className={"text-secondary"}>ROLE</h1>
-                        <h1>Product Designer</h1>
-                    </div>
-                    <div>
-                        <h1 className={"text-secondary"}>TIMELINE</h1>
-                        <h1>Sep 2025 - Mar 2026</h1>
-                    </div>
-                    <div>
-                        <h1 className={"text-secondary"}>TEAM</h1>
-                        <h1>Todd Agriscience</h1>
-                    </div>
-                    <div>
-                        <h1 className={"text-secondary"}>SKILLS</h1>
-                        <h1>Product Design</h1>
-                        <h1>Design System</h1>
-                        <h1>Branding</h1>
-                    </div>
-                </div>
-            </div>
             {/*Overview*/}
             <div className={"mt-20 space-y-2 mb-20 scroll-mt-40"} id={"overview"}>
                 <div className={"flex items-center m-auto space-x-2"}>
@@ -45,7 +22,7 @@ export const ProjectIntro = () => {
                 </h1>
             </div>
             <div className={"mt-20 space-y-2 border-l-4 border-secondary pl-4"}>
-                <h1 className={"text-secondary italic"}>
+                <h1 className={"text-secondary text-sm italic"}>
                     Chris helped me and Todd translate all of our messy ideas into Figma designs, user flows, and
                     a
                     brand identity that allowed me to develop solutions for our customers much quicker. Chris is great

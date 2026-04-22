@@ -31,11 +31,18 @@ export default function Page() {
                     <CaseStudyNav sections={iqpSections}/>
                     <main className="lg:w-2/4 px-10 lg:px-0">
                         <CaseStudyStart
-                            tag={"MAJOR QUALIFYING PROJECT"}
+                            tag={"MQP"}
                             title={"WPI Global Research Data Platform"}
                             description={"Unite all data methods into one platform"}
                             imageSrc={"/mockup2.2.png"}
-                            imageAlt={"iqp-dct"}/>
+                            imageAlt={"iqp-dct"}
+                            fields={[
+                                { label: "ROLE",     values: "Designer & Developer" },
+                                { label: "TIMELINE", values: "May 2024 - Oct 2024" },
+                                { label: "TEAM",     values: ["Hunter Poulin", "James Walden", "Nate Schneider", "Gus Montana"] },
+                                { label: "SKILLS",   values: ["Product Design", "Front-end Development", "UXR & Testing"] },
+                            ]}
+                        />
                         <ProjectIntro/>
                         <ProjectBackground/>
                         <ProjectNext/>

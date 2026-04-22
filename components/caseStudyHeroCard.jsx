@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 import "@/app/globals.css";
 import PropTypes from "prop-types";
 
-export function SelectedCraft({ pageLink, imageSrc, projectDescription, projectName }) {
+export function CaseStudyHeroCard({ pageLink, imageSrc, projectDescription, projectName }) {
     return (
         <div className="group relative">
             <Link href={pageLink} className="relative block">
@@ -42,7 +42,7 @@ export function SelectedCraft({ pageLink, imageSrc, projectDescription, projectN
     );
 }
 
-SelectedCraft.propTypes = {
+CaseStudyHeroCard.propTypes = {
     pageLink: PropTypes.string.isRequired,
     imageSrc: PropTypes.string.isRequired,
     projectName: PropTypes.string.isRequired,

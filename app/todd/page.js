@@ -26,9 +26,16 @@ export default function Page() {
                         <CaseStudyStart
                             tag={"PART TIME"}
                             title={"Todd Agriscience"}
-                            description={"Farm-to-screen design"}
+                            description={"Farm-to-screen-design"}
                             imageSrc={"/todd.png"}
-                            imageAlt={"todd"}/>
+                            imageAlt={"todd"}
+                            fields={[
+                                { label: "ROLE",     values: "Product Designer" },
+                                { label: "TIMELINE", values: "Sep 2025 - Mar 2026" },
+                                { label: "TEAM",     values: "Todd Agriscience" },
+                                { label: "SKILLS",   values: ["Product Design", "Design System", "Design Ops", "Branding"] },
+                            ]}
+                        />
                         <ProjectIntro/>
                         <ProjectNext/>
                     </main>

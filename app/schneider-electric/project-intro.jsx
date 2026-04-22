@@ -3,32 +3,12 @@ import {LinkButton} from "@/components/linkButton";
 import {IoSparkles} from "react-icons/io5";
 import {CustomLink} from "@/components/link";
 import { track } from '@vercel/analytics';
+import Quote from "@/components/quote";
 
 export const ProjectIntro = () => {
     return (
         <>
             <div className={"mt-10 "}>
-                {/* BASIC INFO */}
-                <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6"}>
-                    <div>
-                        <h1 className={"text-secondary"}>ROLE</h1>
-                        <h1>Product Designer Intern</h1>
-                    </div>
-                    <div>
-                        <h1 className={"text-secondary"}>TIMELINE</h1>
-                        <h1>Jun 2025 - Aug 2025</h1>
-                    </div>
-                    <div>
-                        <h1 className={"text-secondary"}>TEAM</h1>
-                        <h1>Digital Customer Relationship Team</h1>
-                    </div>
-                    <div>
-                        <h1 className={"text-secondary"}>SKILLS</h1>
-                        <h1>Product Design</h1>
-                        <h1>User Research</h1>
-                        <h1>Stakeholder Management</h1>
-                    </div>
-                </div>
                 <div className={"mt-10 scroll-mt-40"}>
                     <h1 className={"text-secondary my-2"}>
                         Curious about the deeper processes with this case study? Check out my&nbsp;
@@ -68,26 +48,24 @@ export const ProjectIntro = () => {
                         />
                     </div>
                 </div>
-                <div className={"mt-20 space-y-2 border-l-4 border-secondary pl-4"}>
-                    <h1 className={"text-secondary italic"}>
-                        I had the pleasure of working with Chris during his 10-week internship on our B2C Web Experience
-                        projects, and he
-                        quickly proved himself to be an invaluable contributor.
-                        <br/>
-                        <br/>
-                        He brought fresh perspectives, strong attention to detail, and an impressive ability to
-                        translate ideas into clear,
-                        practical outputs in Figma. Chris not only supported design work but also provided thoughtful
-                        recommendations that
-                        improved out user experience approach.
-                        <br/>
-                        <br/>
-                        His curiosity, professionalism, and collaborative spirit made him a great addition to the team.
-                        <br/>
-                        <br/>
-                        ~ Oz Hassan, Director of Digital Transformation & Strategic Communications
-                    </h1>
-                </div>
+                <Quote className={"mt-20"}>
+                    I had the pleasure of working with Chris during his 10-week internship on our B2C Web Experience
+                    projects, and he
+                    quickly proved himself to be an invaluable contributor.
+                    <br/>
+                    <br/>
+                    He brought fresh perspectives, strong attention to detail, and an impressive ability to
+                    translate ideas into clear,
+                    practical outputs in Figma. Chris not only supported design work but also provided thoughtful
+                    recommendations that
+                    improved out user experience approach.
+                    <br/>
+                    <br/>
+                    His curiosity, professionalism, and collaborative spirit made him a great addition to the team.
+                    <br/>
+                    <br/>
+                    ~ Oz Hassan, Director of Digital Transformation & Strategic Communications
+                </Quote>
             </div>
         </>
 

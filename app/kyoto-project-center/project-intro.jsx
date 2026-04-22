@@ -6,28 +6,6 @@ export const ProjectIntro = () => {
     return (
         <>
             <div className={"mt-10 "}>
-                {/* BASIC INFO */}
-                <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6"}>
-                    <div>
-                        <h1 className={"text-secondary"}>ROLE</h1>
-                        <h1>Designer &amp; Developer</h1>
-                    </div>
-                    <div>
-                        <h1 className={"text-secondary"}>TIMELINE</h1>
-                        <h1>Oct 2024 - Dec 2024</h1>
-                    </div>
-                    <div>
-                        <h1 className={"text-secondary"}>TEAM</h1>
-                        <h1>Jason Zhang</h1>
-                        <h1>Arjun Bhat</h1>
-                        <h1>Szymon Mamro</h1>
-                    </div>
-                    <div>
-                        <h1 className={"text-secondary"}>SKILLS</h1>
-                        <h1>Product Design</h1>
-                        <h1>Coding</h1>
-                    </div>
-                </div>
                 {/*Overview*/}
                 <div className={"mt-20 space-y-2 scroll-mt-40"} id={"overview"}>
                     <div className={"flex items-center m-auto space-x-2"}>

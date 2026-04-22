@@ -36,7 +36,14 @@ export default function Page() {
                             title={"Schneider Electric"}
                             description={"From enterprise buyer to everyday homeowner"}
                             imageSrc={"/schneider-electric/se_mockup11.png"}
-                            imageAlt={"schneider-electric"}/>
+                            imageAlt={"schneider-electric"}
+                            fields={[
+                                { label: "ROLE",     values: "Product Design Intern" },
+                                { label: "TIMELINE", values: "Jun 2025 - Aug 2026" },
+                                { label: "TEAM",     values: "Digital Customer Relationship Team" },
+                                { label: "SKILLS",   values: ["Product Design", "User Research", "Stakeholder Management"] },
+                            ]}
+                        />
                         <ProjectIntro/>
                         <ProjectBackground/>
                         <ProjectNext/>

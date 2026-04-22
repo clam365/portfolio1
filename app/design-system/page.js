@@ -7,13 +7,22 @@ import ButtonPreview from "@/app/design-system/buttonPreview";
 import HeaderSection from "@/app/design-system/headerSection";
 import CaseStudyNav from "@/components/caseStudyNav";
 import CaseStudyNavSection from "@/app/design-system/caseStudyNavSection";
+import QuoteSection from "@/app/design-system/quoteSection";
+import CaseStudyHeroCardSection from "@/app/design-system/caseStudyHeroCardSection";
+import InfoBlockSection from "@/app/design-system/infoBlockSection";
+import CaseStudyStartSection from "@/app/design-system/caseStudyStartSection";
 
 export const designSystemSections = [
     { id: "colors", label: "Colors", group: "FOUNDATIONS" },
     { id: "typography", label: "Typography", group: "FOUNDATIONS" },
     { id: "button", label: "Button", group: "COMPONENTS" },
     { id: "header", label: "Header", group: "COMPONENTS" },
+    { id: "infoblock", label: "InfoBlock", group: "COMPONENTS" },
+    { id: "casestudyherocard", label: "CaseStudyHeroCard", group: "COMPONENTS" },
+    { id: "casestudystart", label: "CaseStudyStart", group: "COMPONENTS" },
     { id: "casestudynav", label: "CaseStudyNav", group: "COMPONENTS" },
+    { id: "quote", label: "Quote", group: "COMPONENTS" },
+
 ];
 
 export default function Page() {
@@ -45,7 +54,12 @@ export default function Page() {
                     <Typography/>
                     <ButtonPreview/>
                     <HeaderSection/>
+                    <InfoBlockSection/>
+                    <CaseStudyHeroCardSection/>
+                    <CaseStudyStartSection/>
                     <CaseStudyNavSection/>
+                    <QuoteSection/>
+                    <div className={"pb-48"}></div>
                 </main>
             </div>
         </motion.div>
