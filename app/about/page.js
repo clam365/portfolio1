@@ -46,7 +46,9 @@ export default function Page() {
                                 <br/>
                             </h1>
                             <div className={"text-secondary"}>
-                                Previously at&nbsp;<CustomLink link={"https://toddagriscience.com/en"}
+                                Currently at <CustomLink link={"https://design.pega.com/"} text={"Pegasystems"}/>,
+                                &nbsp;previously at&nbsp;
+                                 at&nbsp;<CustomLink link={"https://toddagriscience.com/en"}
                                                                text={"Todd"}/>,&nbsp;
                                 <CustomLink link={"https://www.se.com/ww/en/"}
                                             text={"Schneider Electric"}/>, and <CustomLink

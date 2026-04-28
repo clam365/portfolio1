@@ -161,7 +161,8 @@ export default function Hero() {
             >
                 <div className={"text-sm text-secondary flex justify-between items-center pb-2"}>
                     <div>
-                        Previously at&nbsp;
+                        Currently at <CustomLink link={"https://design.pega.com/"} text={"Pegasystems"}/>,
+                        &nbsp;previously at&nbsp;
                         <CustomLink link={"https://toddagriscience.com/en"} text={"Todd"}/> and&nbsp;
                         <CustomLink link={"https://www.se.com/ww/en/"} text={"Schneider Electric"}/>.
                         <br/>
