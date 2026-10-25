@@ -15,10 +15,14 @@ export default function Page() {
                 animate={{opacity: 1}}
                 transition={{duration: 0.8, ease: "easeOut"}}
             >
-                <div className={"py-32 px-10 lg:px-32"}>
+                <div className={"py-32 px-10 lg:w-1/2 m-auto"}>
 
-                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-12"}>
+                    <div className={" gap-y-10 gap-x-12"}>
                         <div className={"items-center m-auto order-2 md:order-1"}>
+                            <div className={"mb-8 m-auto"}>
+                                <Image src={"/photo.jpg"} alt={"Me!"} height={1000} width={750}
+                                       className={"rounded-md w-full h-auto"}/>
+                            </div>
                             <h1 className={"text-2xl text-[#d1d5dc] font-semibold tracking-wide mb-2"}>ABOUT ME</h1>
                             <h1 className="font-display text-4xl">Hi there, I'm Chris!</h1>
                             <h1 className={"text-secondary text-sm mt-8"}>
@@ -83,11 +87,6 @@ export default function Page() {
                                 </div>
                             </div>
                         </div>
-                        <div className={"mt-8 md:justify-self-end order-1 md:order-2 self-center"}>
-                            <Image src={"/photo.jpg"} alt={"Me!"} height={1000} width={750}
-                                   className={"rounded-sm w-full h-auto"}/>
-                        </div>
-
                     </div>
                     <br/>
                     <div className="gap-x-4 flex">
