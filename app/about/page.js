@@ -1,10 +1,10 @@
 "use client";
 import "@/app/globals.css"
 import Image from "next/image";
-import {CustomLink} from "@/components/link";
 import {ArrowDownToLine, Presentation} from "lucide-react";
 import {motion} from "framer-motion";
 import {ButtonPrimary} from "@/components/button";
+import React from "react";
 
 export default function Page() {
 
@@ -16,10 +16,11 @@ export default function Page() {
                 transition={{duration: 0.8, ease: "easeOut"}}
             >
                 <div className={"py-32 px-10 lg:px-32"}>
-                    <h1 className={"text-2xl text-[#d1d5dc] font-semibold tracking-wide mb-2"}>ABOUT ME</h1>
-                    <h1 className="font-display text-4xl">Hi there, I'm Chris!</h1>
-                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10"}>
+
+                    <div className={"grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-12"}>
                         <div className={"items-center m-auto order-2 md:order-1"}>
+                            <h1 className={"text-2xl text-[#d1d5dc] font-semibold tracking-wide mb-2"}>ABOUT ME</h1>
+                            <h1 className="font-display text-4xl">Hi there, I'm Chris!</h1>
                             <h1 className={"text-secondary text-sm mt-8"}>
                                 I&apos;m a designer with an engineering foundation, driven by authentic expression and
                                 strategy.
@@ -28,7 +29,7 @@ export default function Page() {
                                 I learned early in my study abroad in Japan that the best insights come from simply
                                 watching. Not software and surveys, but in coffee shops — noticing how people moved,
                                 paused, and interacted. Those tiny moments revealed everything. Research
-                                and system thinking became a mindset for me, not a step in a process.
+                                and system thinking is a mindset, not a step in a process.
                                 <br/>
                                 <br/>
                                 <span className="text-brand-primary">
@@ -45,67 +46,68 @@ export default function Page() {
                                 <br/>
                                 <br/>
                             </h1>
-                            <div className={"text-secondary"}>
-                                Currently at <CustomLink link={"https://design.pega.com/"} text={"Pegasystems"}/>,
-                                &nbsp;previously at&nbsp;
-                                 at&nbsp;<CustomLink link={"https://toddagriscience.com/en"}
-                                                               text={"Todd"}/>,&nbsp;
-                                <CustomLink link={"https://www.se.com/ww/en/"}
-                                            text={"Schneider Electric"}/>, and <CustomLink
-                                link={"https://www.airforce.com/"} text={"Air Force"}/>.
-                                <br/>
-                                Based in Greater Boston.
+                            <div className={"space-y-2 mt-10"}>
+                                <h1 className={"text-secondary font-semibold"}>Experience</h1>
+                                <div className={"flex justify-between m-auto"}>
+                                    <p className={"text-sm text-brand-primary"}>Pegasystems • <span
+                                        className={"text-secondary"}> Product Design</span></p>
+                                    <p className={"text-secondary"}>2026</p>
+                                </div>
+                                <div className={"flex justify-between m-auto"}>
+                                    <p className={"text-sm text-brand-primary"}>Todd • <span
+                                        className={"text-secondary"}> Product Design</span></p>
+                                    <p className={"text-secondary"}>2025-26</p>
+                                </div>
+                                <div className={"flex justify-between m-auto"}>
+                                    <p className={"text-sm text-brand-primary"}>Schneider Electric • <span
+                                        className={"text-secondary"}> Product Design</span></p>
+                                    <p className={"text-secondary"}>2025</p>
+                                </div>
+                                <div className={"flex justify-between m-auto"}>
+                                    <p className={"text-sm text-brand-primary"}>Universal Education Initiative • <span
+                                        className={"text-secondary"}> Content Design</span></p>
+                                    <p className={"text-secondary"}>2023-25</p>
+                                </div>
+                                <div className={"flex justify-between m-auto"}>
+                                    <p className={"text-sm text-brand-primary"}>Air Force • <span
+                                        className={"text-secondary"}> Data Analyst</span></p>
+                                    <p className={"text-secondary"}>2024</p>
+                                </div>
+                            </div>
+                            <div className={"space-y-2 mt-4"}>
+                                <h1 className={"text-secondary font-semibold"}>Education</h1>
+                                <div className={"flex justify-between m-auto"}>
+                                    <p className={"text-sm text-brand-primary"}>WPI • <span
+                                        className={"text-secondary"}> Computer Science</span></p>
+                                    <p className={"text-secondary"}>2022-25</p>
+                                </div>
                             </div>
                         </div>
-                        <Image src={"/polaroid.png"} alt={"Me!"} height={500} width={350}
-                               className={" m-auto md:justify-self-end order-1 md:order-2"}/>
+                        <div className={"mt-8 md:justify-self-end order-1 md:order-2 self-center"}>
+                            <Image src={"/photo.jpg"} alt={"Me!"} height={1000} width={750}
+                                   className={"rounded-sm w-full h-auto"}/>
+                        </div>
+
                     </div>
                     <br/>
                     <div className="gap-x-4 flex">
                         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                             <ButtonPrimary aria-label="See my resume">
-                                <ArrowDownToLine/> See my resume
+                                <ArrowDownToLine/> Resume
                             </ButtonPrimary>
                         </a>
-                        <a href="https://www.figma.com/deck/ALzY9sh2H4tz1r1Pwu70rC/Porfolio?node-id=1-42&viewport=-754%2C59%2C0.32&t=FKBdQJUSog1U2qUU-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.figma.com/deck/ALzY9sh2H4tz1r1Pwu70rC/Porfolio?node-id=1-42&viewport=-754%2C59%2C0.32&t=FKBdQJUSog1U2qUU-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+                           target="_blank" rel="noopener noreferrer">
                             <ButtonPrimary aria-label="See my resume">
-                                <Presentation/> See my case studies presentation
+                                <Presentation/> Case studies
                             </ButtonPrimary>
                         </a>
                     </div>
                     <br/>
                     <br/>
                     <br/>
-                    <h1 id={"hero"} className={"text-lg mb-6 mt-10"}>
-                        Places I loved visiting and connecting location and emotion together...
-                    </h1>
-                    <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"}>
-                        <div
-                            className={" w-full flex flex-col justify-center m-auto"}>
-                            <img src={"/place1.png"} alt={"Image"}
-                                 className={" w-full"}/>
-                            <p className={"text-secondary text-sm mt-2 text-center"} id={"based"}>Weekender's Coffee,
-                                Kyoto Japan</p>
-                        </div>
-                        <div
-                            className={"w-full flex flex-col justify-center m-auto"}>
-                            <img src={"/place2.png"} alt={"Image"}
-                                 className={" w-full"}/>
-                            <p className={"text-secondary text-sm mt-2 text-center"} id={"based"}>Mt. Fuji, Japan</p>
-                        </div>
-                        <div
-                            className={"w-full flex flex-col justify-center m-auto"}>
-                            <img src={"/place3.png"} alt={"Image"}
-                                 className={" w-full"}/>
-                            <p className={"text-secondary text-sm mt-2 text-center"} id={"based"}>Venice!</p>
-                        </div>
-                        <div
-                            className={"w-full flex flex-col justify-center m-auto"}>
-                            <img src={"/place4.png"} alt={"Image"}
-                                 className={" w-full"}/>
-                            <p className={"text-secondary text-sm mt-2 text-center"} id={"based"}>Jay Peak, VT!</p>
-                        </div>
-                    </div>
+
+
                 </div>
             </motion.div>
         </>
